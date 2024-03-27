@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using CSharp.Lang;
 
 namespace CafeDatabase
 {
@@ -10,6 +7,18 @@ namespace CafeDatabase
     {
         static void Main(string[] args)
         {
+            Test test = new Test();
+            test.Start();
+            Console.WriteLine("eiei");
+        }
+    }
+
+    class Test : Thread
+    {
+        public override void Run()
+        {
+            Database database = new Database();
+            database.Connect_DB();
         }
     }
 }

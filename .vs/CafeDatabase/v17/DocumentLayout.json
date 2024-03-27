@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\skyri\\source\\repos\\CafeDatabase\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5097E9D4-590D-428C-9A61-E882D4889BD2}|CafeDatabase\\CafeDatabase.csproj|c:\\users\\skyri\\source\\repos\\cafedatabase\\cafedatabase\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5097E9D4-590D-428C-9A61-E882D4889BD2}|CafeDatabase\\CafeDatabase.csproj|solutionrelative:cafedatabase\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A7ADCFE7-61E8-4F58-815D-E14C42717805}|DatabaseConnectinoTest\\DatabaseConnectinoTest.csproj|c:\\users\\skyri\\source\\repos\\cafedatabase\\databaseconnectinotest\\dct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7ADCFE7-61E8-4F58-815D-E14C42717805}|DatabaseConnectinoTest\\DatabaseConnectinoTest.csproj|solutionrelative:databaseconnectinotest\\dct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7ADCFE7-61E8-4F58-815D-E14C42717805}|DatabaseConnectinoTest\\DatabaseConnectinoTest.csproj|c:\\users\\skyri\\source\\repos\\cafedatabase\\databaseconnectinotest\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7ADCFE7-61E8-4F58-815D-E14C42717805}|DatabaseConnectinoTest\\DatabaseConnectinoTest.csproj|solutionrelative:databaseconnectinotest\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,15 +34,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\skyri\\source\\repos\\CafeDatabase\\CafeDatabase\\Program.cs",
-              "RelativeDocumentMoniker": "CafeDatabase\\Program.cs",
-              "ToolTip": "C:\\Users\\skyri\\source\\repos\\CafeDatabase\\CafeDatabase\\Program.cs",
-              "RelativeToolTip": "CafeDatabase\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "Database.cs",
+              "DocumentMoniker": "C:\\Users\\skyri\\source\\repos\\CafeDatabase\\DatabaseConnectinoTest\\Database.cs",
+              "RelativeDocumentMoniker": "DatabaseConnectinoTest\\Database.cs",
+              "ToolTip": "C:\\Users\\skyri\\source\\repos\\CafeDatabase\\DatabaseConnectinoTest\\Database.cs",
+              "RelativeToolTip": "DatabaseConnectinoTest\\Database.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T12:39:28.855Z",
+              "WhenOpened": "2024-03-27T12:46:59.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DCT.cs",
+              "DocumentMoniker": "C:\\Users\\skyri\\source\\repos\\CafeDatabase\\DatabaseConnectinoTest\\DCT.cs",
+              "RelativeDocumentMoniker": "DatabaseConnectinoTest\\DCT.cs",
+              "ToolTip": "C:\\Users\\skyri\\source\\repos\\CafeDatabase\\DatabaseConnectinoTest\\DCT.cs",
+              "RelativeToolTip": "DatabaseConnectinoTest\\DCT.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAwwCEAAACLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T12:46:42.989Z",
               "EditorCaption": ""
             }
           ]
