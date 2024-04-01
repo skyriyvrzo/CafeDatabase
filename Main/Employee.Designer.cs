@@ -42,10 +42,12 @@
             this.bt_edit_emp = new System.Windows.Forms.Button();
             this.bt_delete_emp = new System.Windows.Forms.Button();
             this.tb_save_emp = new System.Windows.Forms.Button();
-            this.bt_Menu_emp = new System.Windows.Forms.Button();
+            this.bt_order_emp = new System.Windows.Forms.Button();
             this.mySqlCommand1 = new MySql.Data.MySqlClient.MySqlCommand();
             this.cb_sex = new System.Windows.Forms.ComboBox();
             this.bt_drink_emp = new System.Windows.Forms.Button();
+            this.bt_mat = new System.Windows.Forms.Button();
+            this.bt_topping_emp = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -170,16 +172,16 @@
             this.tb_save_emp.Text = "Save";
             this.tb_save_emp.UseVisualStyleBackColor = true;
             // 
-            // bt_Menu_emp
+            // bt_order_emp
             // 
-            this.bt_Menu_emp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bt_Menu_emp.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_Menu_emp.Location = new System.Drawing.Point(294, 45);
-            this.bt_Menu_emp.Name = "bt_Menu_emp";
-            this.bt_Menu_emp.Size = new System.Drawing.Size(75, 60);
-            this.bt_Menu_emp.TabIndex = 15;
-            this.bt_Menu_emp.Text = "Menu";
-            this.bt_Menu_emp.UseVisualStyleBackColor = false;
+            this.bt_order_emp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bt_order_emp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_order_emp.Location = new System.Drawing.Point(294, 45);
+            this.bt_order_emp.Name = "bt_order_emp";
+            this.bt_order_emp.Size = new System.Drawing.Size(75, 60);
+            this.bt_order_emp.TabIndex = 15;
+            this.bt_order_emp.Text = "Orders";
+            this.bt_order_emp.UseVisualStyleBackColor = false;
             // 
             // mySqlCommand1
             // 
@@ -210,14 +212,38 @@
             this.bt_drink_emp.Text = "Drink";
             this.bt_drink_emp.UseVisualStyleBackColor = false;
             // 
+            // bt_mat
+            // 
+            this.bt_mat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bt_mat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_mat.Location = new System.Drawing.Point(456, 45);
+            this.bt_mat.Name = "bt_mat";
+            this.bt_mat.Size = new System.Drawing.Size(75, 60);
+            this.bt_mat.TabIndex = 20;
+            this.bt_mat.Text = "Material";
+            this.bt_mat.UseVisualStyleBackColor = false;
+            // 
+            // bt_topping_emp
+            // 
+            this.bt_topping_emp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bt_topping_emp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_topping_emp.Location = new System.Drawing.Point(537, 45);
+            this.bt_topping_emp.Name = "bt_topping_emp";
+            this.bt_topping_emp.Size = new System.Drawing.Size(75, 60);
+            this.bt_topping_emp.TabIndex = 25;
+            this.bt_topping_emp.Text = "Topping";
+            this.bt_topping_emp.UseVisualStyleBackColor = false;
+            // 
             // Employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(997, 570);
+            this.Controls.Add(this.bt_topping_emp);
+            this.Controls.Add(this.bt_mat);
             this.Controls.Add(this.bt_drink_emp);
             this.Controls.Add(this.cb_sex);
-            this.Controls.Add(this.bt_Menu_emp);
+            this.Controls.Add(this.bt_order_emp);
             this.Controls.Add(this.tb_save_emp);
             this.Controls.Add(this.bt_delete_emp);
             this.Controls.Add(this.bt_edit_emp);
@@ -257,10 +283,12 @@
         private System.Windows.Forms.Button bt_edit_emp;
         private System.Windows.Forms.Button bt_delete_emp;
         private System.Windows.Forms.Button tb_save_emp;
-        private System.Windows.Forms.Button bt_Menu_emp;
+        private System.Windows.Forms.Button bt_order_emp;
         private MySql.Data.MySqlClient.MySqlCommand mySqlCommand1;
         private System.Windows.Forms.ComboBox cb_sex;
         private System.Windows.Forms.Button bt_drink_emp;
+        private System.Windows.Forms.Button bt_mat;
+        private System.Windows.Forms.Button bt_topping_emp;
     }
 }
 

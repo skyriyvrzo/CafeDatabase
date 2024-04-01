@@ -41,9 +41,13 @@
             this.bt_Edit_Drink = new System.Windows.Forms.Button();
             this.bt_delete_drink = new System.Windows.Forms.Button();
             this.bt_save_Drink = new System.Windows.Forms.Button();
-            this.bt_Menu_or = new System.Windows.Forms.Button();
             this.bt_orders_drink = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.bt_mat = new System.Windows.Forms.Button();
+            this.bt_emp = new System.Windows.Forms.Button();
+            this.l_matid = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.bt_topping_drink = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -160,17 +164,6 @@
             this.bt_save_Drink.Text = "Save";
             this.bt_save_Drink.UseVisualStyleBackColor = true;
             // 
-            // bt_Menu_or
-            // 
-            this.bt_Menu_or.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bt_Menu_or.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_Menu_or.Location = new System.Drawing.Point(455, 86);
-            this.bt_Menu_or.Name = "bt_Menu_or";
-            this.bt_Menu_or.Size = new System.Drawing.Size(75, 60);
-            this.bt_Menu_or.TabIndex = 17;
-            this.bt_Menu_or.Text = "Menu";
-            this.bt_Menu_or.UseVisualStyleBackColor = false;
-            // 
             // bt_orders_drink
             // 
             this.bt_orders_drink.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -191,14 +184,68 @@
             this.comboBox1.Size = new System.Drawing.Size(100, 21);
             this.comboBox1.TabIndex = 19;
             // 
+            // bt_mat
+            // 
+            this.bt_mat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bt_mat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_mat.Location = new System.Drawing.Point(654, 86);
+            this.bt_mat.Name = "bt_mat";
+            this.bt_mat.Size = new System.Drawing.Size(75, 60);
+            this.bt_mat.TabIndex = 20;
+            this.bt_mat.Text = "Material";
+            this.bt_mat.UseVisualStyleBackColor = false;
+            // 
+            // bt_emp
+            // 
+            this.bt_emp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bt_emp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_emp.Location = new System.Drawing.Point(455, 86);
+            this.bt_emp.Name = "bt_emp";
+            this.bt_emp.Size = new System.Drawing.Size(75, 60);
+            this.bt_emp.TabIndex = 21;
+            this.bt_emp.Text = "Employee";
+            this.bt_emp.UseVisualStyleBackColor = false;
+            // 
+            // l_matid
+            // 
+            this.l_matid.AutoSize = true;
+            this.l_matid.Location = new System.Drawing.Point(49, 110);
+            this.l_matid.Name = "l_matid";
+            this.l_matid.Size = new System.Drawing.Size(55, 13);
+            this.l_matid.TabIndex = 22;
+            this.l_matid.Text = "MaterialID";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(111, 102);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(100, 21);
+            this.comboBox2.TabIndex = 23;
+            // 
+            // bt_topping_drink
+            // 
+            this.bt_topping_drink.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bt_topping_drink.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_topping_drink.Location = new System.Drawing.Point(746, 86);
+            this.bt_topping_drink.Name = "bt_topping_drink";
+            this.bt_topping_drink.Size = new System.Drawing.Size(75, 60);
+            this.bt_topping_drink.TabIndex = 25;
+            this.bt_topping_drink.Text = "Topping";
+            this.bt_topping_drink.UseVisualStyleBackColor = false;
+            // 
             // Drink
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(997, 570);
+            this.Controls.Add(this.bt_topping_drink);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.l_matid);
+            this.Controls.Add(this.bt_emp);
+            this.Controls.Add(this.bt_mat);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.bt_orders_drink);
-            this.Controls.Add(this.bt_Menu_or);
             this.Controls.Add(this.bt_save_Drink);
             this.Controls.Add(this.bt_delete_drink);
             this.Controls.Add(this.bt_Edit_Drink);
@@ -235,8 +282,12 @@
         private System.Windows.Forms.Button bt_Edit_Drink;
         private System.Windows.Forms.Button bt_delete_drink;
         private System.Windows.Forms.Button bt_save_Drink;
-        private System.Windows.Forms.Button bt_Menu_or;
         private System.Windows.Forms.Button bt_orders_drink;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button bt_mat;
+        private System.Windows.Forms.Button bt_emp;
+        private System.Windows.Forms.Label l_matid;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Button bt_topping_drink;
     }
 }
