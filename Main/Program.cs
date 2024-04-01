@@ -6,15 +6,16 @@ namespace Main
 {
     internal static class Program
     {
-        public static Logger logger = Logger.GetLogger("./logs/", true, true, true);
+        public static Logger logger = Logger.GetLogger("logs", true, true, true);
 
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        public static void Main()
         {
-            logger.Log(Level.INFO, typeof(Main) + " Loaded");
+
+            logger.Log(Level.INFO, "Loading " + typeof(Main));
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
