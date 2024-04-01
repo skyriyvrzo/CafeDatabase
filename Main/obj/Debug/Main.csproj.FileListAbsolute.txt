@@ -1,0 +1,9 @@
+E:\Github\CafeDatabase\Main\bin\Debug\Main.exe.config
+E:\Github\CafeDatabase\Main\bin\Debug\Main.exe
+E:\Github\CafeDatabase\Main\bin\Debug\Main.pdb
+E:\Github\CafeDatabase\Main\obj\Debug\Main.csproj.AssemblyReference.cache
+E:\Github\CafeDatabase\Main\obj\Debug\Main.Properties.Resources.resources
+E:\Github\CafeDatabase\Main\obj\Debug\Main.csproj.GenerateResource.cache
+E:\Github\CafeDatabase\Main\obj\Debug\Main.csproj.CoreCompileInputs.cache
+E:\Github\CafeDatabase\Main\obj\Debug\Main.exe
+E:\Github\CafeDatabase\Main\obj\Debug\Main.pdb
