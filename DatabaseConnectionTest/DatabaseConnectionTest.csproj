@@ -108,6 +108,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="SQL\cafe_db_rc.sql" />
+    <Content Include="SQL\cafe_db_release.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
