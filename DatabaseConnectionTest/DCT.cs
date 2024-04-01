@@ -52,7 +52,7 @@ namespace DatabaseConnectinoTest
         public override void Run()
         {
             Database database = new Database();
-            string query = "insert into employees (Emp_Id, Emp_FirstName, Emp_LastName, Emp_Sex, Emp_Salary) values ('55555', 'TH', 'LK', 'M', '99999')";
+            string query = "insert into employees (EMPLOYEE_ID, FIRST_NAME, LAST_NAME, SEX, SALARY) values ('55555', 'TH', 'LK', 'M', '99999')";
             
             if(database.ConnectDatabase())
             {
@@ -78,7 +78,7 @@ namespace DatabaseConnectinoTest
         public override void Run()
         {
             Database database = new Database();
-            string query = $"insert into orders (Order_Id, Order_Date, Emp_Id) values ('465456', '{DateTime.Now.ToString("yyyy-MM-dd h:mm:ss.fffff")}', '55555')";
+            string query = $"insert into `order` (ORDER_ID, ORDER_DATE, EMPLOYEE_ID) values ('465456', '{DateTime.Now.ToString("yyyy-MM-dd h:mm:ss.fffff")}', '55555')";
 
             if (database.ConnectDatabase())
             {
@@ -105,7 +105,7 @@ namespace DatabaseConnectinoTest
         public override void Run()
         {
             Database database = new Database();
-            string query = "insert into drinks (Drink_Id, Drink_Name, Drink_Price, Drink_Status) values ('25164', 'iuenfekwjfew', '50', '1')";
+            string query = "insert into drink (DRINK_ID, DRINK_NAME, DRINK_PRICE, DRINK_STATUS) values ('25164', 'iuenfekwjfew', '50', '1')";
 
             if (database.ConnectDatabase())
             {
@@ -132,7 +132,7 @@ namespace DatabaseConnectinoTest
         public override void Run()
         {
             Database database = new Database();
-            string query = "insert into materials (Material_Id, Material_Name) values ('784', 'we8fbjdsf')";
+            string query = "insert into material (MATERIAL_ID, MATERIAL_NAME) values ('784', 'we8fbjdsf')";
 
             if (database.ConnectDatabase())
             {
@@ -159,7 +159,7 @@ namespace DatabaseConnectinoTest
         public override void Run()
         {
             Database database = new Database();
-            string query = "insert into toppings (Topping_Id, Topping_Name, Topping_Price) values ('710', '9qwjoknmlkg', '2000')";
+            string query = "insert into topping (TOPPING_ID, TOPPING_NAME, TOPPING_PRICE) values ('710', '9qwjoknmlkg', '2000')";
 
             if (database.ConnectDatabase())
             {
@@ -186,7 +186,7 @@ namespace DatabaseConnectinoTest
         public override void Run()
         {
             Database database = new Database();
-            string query = "insert into orders_detail (Order_Id, Drink_Id, Topping_Id, Quantity) values ('465456', '25164', '710', '5')";
+            string query = "insert into order_detail (ORDER_ID, DRINK_ID, TOPPING_ID, QUANTITY) values ('465456', '25164', '710', '5')";
 
             if (database.ConnectDatabase())
             {
@@ -213,7 +213,7 @@ namespace DatabaseConnectinoTest
         public override void Run()
         {
             Database database = new Database();
-            string query = "insert into material_of_drink (Drink_Id, Material_Id) values ('25164', '784')";
+            string query = "insert into material_of_drink (DRINK_ID, MATERIAL_ID) values ('25164', '784')";
 
             if (database.ConnectDatabase())
             {

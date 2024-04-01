@@ -10,7 +10,7 @@ namespace DatabaseConnectinoTest
 
         static readonly string conString = "datasource=sql.cafeempty.net;" +
             "port=3307;" +
-            "database=cafe_db_rc;" +
+            "database=cafe_db;" +
             "username=root;" +
             "password=;";
         public MySqlConnection connection = new MySqlConnection(conString);
