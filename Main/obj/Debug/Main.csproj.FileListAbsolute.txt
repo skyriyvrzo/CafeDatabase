@@ -42,4 +42,4 @@ E:\Github\CafeDatabase\Main\bin\Debug\System.Numerics.Vectors.xml
 E:\Github\CafeDatabase\Main\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 E:\Github\CafeDatabase\Main\bin\Debug\System.Threading.Tasks.Extensions.xml
 E:\Github\CafeDatabase\Main\obj\Debug\Main.csproj.Up2Date
-E:\Github\CafeDatabase\Main\obj\Debug\Main.Main.resources
+E:\Github\CafeDatabase\Main\obj\Debug\Main.Employee.resources
