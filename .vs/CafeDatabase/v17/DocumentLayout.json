@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\Github\\CafeDatabase\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|e:\\github\\cafedatabase\\main\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|solutionrelative:main\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94D75CF4-2CF8-420D-80D9-71F5569C28F7}|DatabaseConnectionTest\\DatabaseConnectionTest.csproj|e:\\github\\cafedatabase\\databaseconnectiontest\\dct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94D75CF4-2CF8-420D-80D9-71F5569C28F7}|DatabaseConnectionTest\\DatabaseConnectionTest.csproj|solutionrelative:databaseconnectiontest\\dct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,34 +9,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DCT.cs",
-              "DocumentMoniker": "E:\\Github\\CafeDatabase\\DatabaseConnectionTest\\DCT.cs",
-              "RelativeDocumentMoniker": "DatabaseConnectionTest\\DCT.cs",
-              "ToolTip": "E:\\Github\\CafeDatabase\\DatabaseConnectionTest\\DCT.cs",
-              "RelativeToolTip": "DatabaseConnectionTest\\DCT.cs",
-              "ViewState": "AQIAAEoAAAAAAAAAAADwv2sAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T03:30:21.364Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Main.cs [Design]",
-              "DocumentMoniker": "E:\\Github\\CafeDatabase\\Main\\Main.cs",
-              "RelativeDocumentMoniker": "Main\\Main.cs",
-              "ToolTip": "E:\\Github\\CafeDatabase\\Main\\Main.cs [Design]",
-              "RelativeToolTip": "Main\\Main.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T06:42:57.181Z",
-              "EditorCaption": " [Design]"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
