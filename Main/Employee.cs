@@ -12,11 +12,6 @@ namespace Main
             Program.logger.Log(Level.INFO, typeof(Employee) + " Loaded");
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void comboBox1_SelectedIndexChanged(object sender, System.EventArgs e)
         {
 
