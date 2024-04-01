@@ -38,5 +38,14 @@
         {
 
         }
+
+        /*
+         * Move to Mene(Menu.cs) display
+         * 
+         * @param
+         */
+        internal static void onClickMenu() { 
+        
+        }
     }
 }

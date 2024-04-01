@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "E:\\Github\\CafeDatabase\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|E:\\Github\\CafeDatabase\\main\\event\\employeeevent\\employeebuttonclickevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|solutionrelative:main\\event\\employeeevent\\employeebuttonclickevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|e:\\github\\cafedatabase\\main\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|solutionrelative:main\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|e:\\github\\cafedatabase\\main\\event\\employeeevent\\employeestartupevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|E:\\Github\\CafeDatabase\\main\\event\\employeeevent\\employeestartupevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|solutionrelative:main\\event\\employeeevent\\employeestartupevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|e:\\github\\cafedatabase\\main\\event\\employeeevent\\employeebuttonclickevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|solutionrelative:main\\event\\employeeevent\\employeebuttonclickevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,34 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EmployeeStartupEvent.cs",
-              "DocumentMoniker": "E:\\Github\\CafeDatabase\\Main\\Event\\EmployeeEvent\\EmployeeStartupEvent.cs",
-              "RelativeDocumentMoniker": "Main\\Event\\EmployeeEvent\\EmployeeStartupEvent.cs",
-              "ToolTip": "E:\\Github\\CafeDatabase\\Main\\Event\\EmployeeEvent\\EmployeeStartupEvent.cs",
-              "RelativeToolTip": "Main\\Event\\EmployeeEvent\\EmployeeStartupEvent.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T08:43:46.862Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EmployeeButtonClickEvent.cs",
-              "DocumentMoniker": "E:\\Github\\CafeDatabase\\Main\\Event\\EmployeeEvent\\EmployeeButtonClickEvent.cs",
-              "RelativeDocumentMoniker": "Main\\Event\\EmployeeEvent\\EmployeeButtonClickEvent.cs",
-              "ToolTip": "E:\\Github\\CafeDatabase\\Main\\Event\\EmployeeEvent\\EmployeeButtonClickEvent.cs",
-              "RelativeToolTip": "Main\\Event\\EmployeeEvent\\EmployeeButtonClickEvent.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAowAQAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T08:40:26.608Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -64,7 +38,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmployeeStartupEvent.cs",
+              "DocumentMoniker": "E:\\Github\\CafeDatabase\\Main\\Event\\EmployeeEvent\\EmployeeStartupEvent.cs",
+              "RelativeDocumentMoniker": "Main\\Event\\EmployeeEvent\\EmployeeStartupEvent.cs",
+              "ToolTip": "E:\\Github\\CafeDatabase\\Main\\Event\\EmployeeEvent\\EmployeeStartupEvent.cs",
+              "RelativeToolTip": "Main\\Event\\EmployeeEvent\\EmployeeStartupEvent.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T08:43:46.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "EmployeeButtonClickEvent.cs",
+              "DocumentMoniker": "E:\\Github\\CafeDatabase\\Main\\Event\\EmployeeEvent\\EmployeeButtonClickEvent.cs",
+              "RelativeDocumentMoniker": "Main\\Event\\EmployeeEvent\\EmployeeButtonClickEvent.cs",
+              "ToolTip": "E:\\Github\\CafeDatabase\\Main\\Event\\EmployeeEvent\\EmployeeButtonClickEvent.cs",
+              "RelativeToolTip": "Main\\Event\\EmployeeEvent\\EmployeeButtonClickEvent.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAowCwAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T08:40:26.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Employee.cs [Design]",
               "DocumentMoniker": "E:\\Github\\CafeDatabase\\Main\\Employee.cs",
               "RelativeDocumentMoniker": "Main\\Employee.cs",
