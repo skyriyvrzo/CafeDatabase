@@ -1,6 +1,6 @@
 ﻿namespace Main
 {
-    partial class Main
+    partial class Employee
     {
         /// <summary>
         /// Required designer variable.
@@ -33,7 +33,6 @@
             this.tb_fname = new System.Windows.Forms.TextBox();
             this.tb_lname = new System.Windows.Forms.TextBox();
             this.tb_salary = new System.Windows.Forms.TextBox();
-            this.tb_sex = new System.Windows.Forms.TextBox();
             this.l_emp_id = new System.Windows.Forms.Label();
             this.l_fname = new System.Windows.Forms.Label();
             this.l_lname = new System.Windows.Forms.Label();
@@ -43,13 +42,16 @@
             this.bt_edit = new System.Windows.Forms.Button();
             this.bt_delete = new System.Windows.Forms.Button();
             this.tb_save = new System.Windows.Forms.Button();
+            this.bt_Menu = new System.Windows.Forms.Button();
+            this.mySqlCommand1 = new MySql.Data.MySqlClient.MySqlCommand();
+            this.cb_sex = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(39, 190);
+            this.dataGridView1.Location = new System.Drawing.Point(31, 202);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(913, 356);
             this.dataGridView1.TabIndex = 0;
@@ -82,13 +84,6 @@
             this.tb_salary.Size = new System.Drawing.Size(100, 20);
             this.tb_salary.TabIndex = 4;
             // 
-            // tb_sex
-            // 
-            this.tb_sex.Location = new System.Drawing.Point(119, 141);
-            this.tb_sex.Name = "tb_sex";
-            this.tb_sex.Size = new System.Drawing.Size(100, 20);
-            this.tb_sex.TabIndex = 5;
-            // 
             // l_emp_id
             // 
             this.l_emp_id.AutoSize = true;
@@ -97,7 +92,6 @@
             this.l_emp_id.Size = new System.Drawing.Size(64, 13);
             this.l_emp_id.TabIndex = 6;
             this.l_emp_id.Text = "EmployeeID";
-            //this.l_emp_id.Click += new System.EventHandler(this.label1_Click);
             // 
             // l_fname
             // 
@@ -137,6 +131,7 @@
             // 
             // bt_add
             // 
+            this.bt_add.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bt_add.Location = new System.Drawing.Point(294, 16);
             this.bt_add.Name = "bt_add";
             this.bt_add.Size = new System.Drawing.Size(75, 23);
@@ -146,6 +141,7 @@
             // 
             // bt_edit
             // 
+            this.bt_edit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bt_edit.Location = new System.Drawing.Point(375, 16);
             this.bt_edit.Name = "bt_edit";
             this.bt_edit.Size = new System.Drawing.Size(75, 23);
@@ -155,6 +151,7 @@
             // 
             // bt_delete
             // 
+            this.bt_delete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bt_delete.Location = new System.Drawing.Point(456, 16);
             this.bt_delete.Name = "bt_delete";
             this.bt_delete.Size = new System.Drawing.Size(75, 23);
@@ -164,6 +161,7 @@
             // 
             // tb_save
             // 
+            this.tb_save.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tb_save.Location = new System.Drawing.Point(537, 16);
             this.tb_save.Name = "tb_save";
             this.tb_save.Size = new System.Drawing.Size(75, 23);
@@ -171,11 +169,42 @@
             this.tb_save.Text = "Save";
             this.tb_save.UseVisualStyleBackColor = true;
             // 
-            // Main
+            // bt_Menu
+            // 
+            this.bt_Menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bt_Menu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_Menu.Location = new System.Drawing.Point(294, 45);
+            this.bt_Menu.Name = "bt_Menu";
+            this.bt_Menu.Size = new System.Drawing.Size(75, 60);
+            this.bt_Menu.TabIndex = 15;
+            this.bt_Menu.Text = "Menu";
+            this.bt_Menu.UseVisualStyleBackColor = false;
+            // 
+            // mySqlCommand1
+            // 
+            this.mySqlCommand1.CacheAge = 0;
+            this.mySqlCommand1.Connection = null;
+            this.mySqlCommand1.EnableCaching = false;
+            this.mySqlCommand1.Transaction = null;
+            // 
+            // cb_sex
+            // 
+            this.cb_sex.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cb_sex.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_sex.FormattingEnabled = true;
+            this.cb_sex.Location = new System.Drawing.Point(119, 141);
+            this.cb_sex.Name = "cb_sex";
+            this.cb_sex.Size = new System.Drawing.Size(100, 21);
+            this.cb_sex.TabIndex = 16;
+            this.cb_sex.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // Employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(997, 570);
+            this.Controls.Add(this.cb_sex);
+            this.Controls.Add(this.bt_Menu);
             this.Controls.Add(this.tb_save);
             this.Controls.Add(this.bt_delete);
             this.Controls.Add(this.bt_edit);
@@ -185,13 +214,12 @@
             this.Controls.Add(this.l_lname);
             this.Controls.Add(this.l_fname);
             this.Controls.Add(this.l_emp_id);
-            this.Controls.Add(this.tb_sex);
             this.Controls.Add(this.tb_salary);
             this.Controls.Add(this.tb_lname);
             this.Controls.Add(this.tb_fname);
             this.Controls.Add(this.tb_empid);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "Main";
+            this.Name = "Employee";
             this.Text = "Cafe/Employee";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -206,7 +234,6 @@
         private System.Windows.Forms.TextBox tb_fname;
         private System.Windows.Forms.TextBox tb_lname;
         private System.Windows.Forms.TextBox tb_salary;
-        private System.Windows.Forms.TextBox tb_sex;
         private System.Windows.Forms.Label l_emp_id;
         private System.Windows.Forms.Label l_fname;
         private System.Windows.Forms.Label l_lname;
@@ -216,6 +243,9 @@
         private System.Windows.Forms.Button bt_edit;
         private System.Windows.Forms.Button bt_delete;
         private System.Windows.Forms.Button tb_save;
+        private System.Windows.Forms.Button bt_Menu;
+        private MySql.Data.MySqlClient.MySqlCommand mySqlCommand1;
+        private System.Windows.Forms.ComboBox cb_sex;
     }
 }
 

@@ -15,11 +15,11 @@ namespace Main
         public static void Main()
         {
 
-            logger.Log(Level.INFO, "Loading " + typeof(Main));
+            logger.Log(Level.INFO, "Loading " + typeof(Employee));
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Main());
+            Application.Run(new Employee());
         }
     }
 }

@@ -43,3 +43,12 @@ E:\Github\CafeDatabase\Main\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 E:\Github\CafeDatabase\Main\bin\Debug\System.Threading.Tasks.Extensions.xml
 E:\Github\CafeDatabase\Main\obj\Debug\Main.csproj.Up2Date
 E:\Github\CafeDatabase\Main\obj\Debug\Main.Main.resources
+D:\Gidhub\CafeDatabase\Main\obj\Debug\Main.csproj.AssemblyReference.cache
+D:\Gidhub\CafeDatabase\Main\obj\Debug\Main.csproj.SuggestedBindingRedirects.cache
+D:\Gidhub\CafeDatabase\Main\obj\Debug\Main.Employee.resources
+D:\Gidhub\CafeDatabase\Main\obj\Debug\Main.Menu.resources
+D:\Gidhub\CafeDatabase\Main\obj\Debug\Main.Properties.Resources.resources
+D:\Gidhub\CafeDatabase\Main\obj\Debug\Main.csproj.GenerateResource.cache
+D:\Gidhub\CafeDatabase\Main\obj\Debug\Main.csproj.CoreCompileInputs.cache
+D:\Gidhub\CafeDatabase\Main\obj\Debug\Main.exe
+D:\Gidhub\CafeDatabase\Main\obj\Debug\Main.pdb
