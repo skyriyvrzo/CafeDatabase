@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "E:\\Github\\CafeDatabase\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|e:\\github\\cafedatabase\\main\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|solutionrelative:main\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|e:\\github\\cafedatabase\\main\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|solutionrelative:main\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|e:\\github\\cafedatabase\\main\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|solutionrelative:main\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|e:\\github\\cafedatabase\\main\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|solutionrelative:main\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|e:\\github\\cafedatabase\\main\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|solutionrelative:main\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|e:\\github\\cafedatabase\\main\\main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|solutionrelative:main\\main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,63 +34,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Main.cs",
-              "DocumentMoniker": "E:\\Github\\CafeDatabase\\Main\\Main.cs",
-              "RelativeDocumentMoniker": "Main\\Main.cs",
-              "ToolTip": "E:\\Github\\CafeDatabase\\Main\\Main.cs",
-              "RelativeToolTip": "Main\\Main.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "Main.Designer.cs",
+              "DocumentMoniker": "E:\\Github\\CafeDatabase\\Main\\Main.Designer.cs",
+              "RelativeDocumentMoniker": "Main\\Main.Designer.cs",
+              "ToolTip": "E:\\Github\\CafeDatabase\\Main\\Main.Designer.cs",
+              "RelativeToolTip": "Main\\Main.Designer.cs",
+              "ViewState": "AQIAAIEAAAAAAAAAAAAowGMAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T07:53:19.03Z",
+              "WhenOpened": "2024-04-01T07:57:21.972Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Main.cs [Design]",
               "DocumentMoniker": "E:\\Github\\CafeDatabase\\Main\\Main.cs",
               "RelativeDocumentMoniker": "Main\\Main.cs",
               "ToolTip": "E:\\Github\\CafeDatabase\\Main\\Main.cs [Design]",
               "RelativeToolTip": "Main\\Main.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T07:53:07.366Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Form3.cs [Design]",
-              "DocumentMoniker": "E:\\Github\\CafeDatabase\\Main\\Form3.cs",
-              "RelativeDocumentMoniker": "Main\\Form3.cs",
-              "ToolTip": "E:\\Github\\CafeDatabase\\Main\\Form3.cs [Design]",
-              "RelativeToolTip": "Main\\Form3.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T07:53:01.942Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Form2.cs [Design]",
-              "DocumentMoniker": "E:\\Github\\CafeDatabase\\Main\\Form2.cs",
-              "RelativeDocumentMoniker": "Main\\Form2.cs",
-              "ToolTip": "E:\\Github\\CafeDatabase\\Main\\Form2.cs [Design]",
-              "RelativeToolTip": "Main\\Form2.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T07:52:57.7Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "E:\\Github\\CafeDatabase\\Main\\Form1.cs",
-              "RelativeDocumentMoniker": "Main\\Form1.cs",
-              "ToolTip": "E:\\Github\\CafeDatabase\\Main\\Form1.cs [Design]",
-              "RelativeToolTip": "Main\\Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T07:52:29.463Z",
+              "WhenOpened": "2024-04-01T07:57:04.774Z",
               "EditorCaption": " [Design]"
             }
           ]

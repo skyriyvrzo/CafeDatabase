@@ -97,7 +97,7 @@
             this.l_emp_id.Size = new System.Drawing.Size(64, 13);
             this.l_emp_id.TabIndex = 6;
             this.l_emp_id.Text = "EmployeeID";
-            this.l_emp_id.Click += new System.EventHandler(this.label1_Click);
+            //this.l_emp_id.Click += new System.EventHandler(this.label1_Click);
             // 
             // l_fname
             // 
