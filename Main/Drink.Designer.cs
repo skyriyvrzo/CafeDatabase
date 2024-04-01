@@ -269,25 +269,25 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label l_drinkid;
-        private System.Windows.Forms.Label l_drinkname;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label l_drinkstatus;
-        private System.Windows.Forms.Label l_drinkprice;
-        private System.Windows.Forms.Button bt_add_Drink;
-        private System.Windows.Forms.Button bt_Edit_Drink;
-        private System.Windows.Forms.Button bt_delete_drink;
-        private System.Windows.Forms.Button bt_save_Drink;
-        private System.Windows.Forms.Button bt_orders_drink;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button bt_mat;
-        private System.Windows.Forms.Button bt_emp;
-        private System.Windows.Forms.Label l_matid;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Button bt_topping_drink;
+        internal System.Windows.Forms.DataGridView dataGridView1;
+        internal System.Windows.Forms.TextBox textBox1;
+        internal System.Windows.Forms.TextBox textBox3;
+        internal System.Windows.Forms.TextBox textBox4;
+        internal System.Windows.Forms.Label l_drinkid;
+        internal System.Windows.Forms.Label l_drinkname;
+        internal System.Windows.Forms.Label label3;
+        internal System.Windows.Forms.Label l_drinkstatus;
+        internal System.Windows.Forms.Label l_drinkprice;
+        internal System.Windows.Forms.Button bt_add_Drink;
+        internal System.Windows.Forms.Button bt_Edit_Drink;
+        internal System.Windows.Forms.Button bt_delete_drink;
+        internal System.Windows.Forms.Button bt_save_Drink;
+        internal System.Windows.Forms.Button bt_orders_drink;
+        internal System.Windows.Forms.ComboBox comboBox1;
+        internal System.Windows.Forms.Button bt_mat;
+        internal System.Windows.Forms.Button bt_emp;
+        internal System.Windows.Forms.Label l_matid;
+        internal System.Windows.Forms.ComboBox comboBox2;
+        internal System.Windows.Forms.Button bt_topping_drink;
     }
 }

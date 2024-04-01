@@ -197,18 +197,18 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label l_material_Material;
-        private System.Windows.Forms.Label l_Materialname_Material;
-        private System.Windows.Forms.TextBox tb_matid;
-        private System.Windows.Forms.TextBox tb_matname;
-        private System.Windows.Forms.Button bt_add_Material;
-        private System.Windows.Forms.Button bt_Edit_Material;
-        private System.Windows.Forms.Button bt_delete_Material;
-        private System.Windows.Forms.Button bt_save_Material;
-        private System.Windows.Forms.Button bt_mat;
-        private System.Windows.Forms.Button bt_drink_od;
-        private System.Windows.Forms.Button bt_emp;
-        private System.Windows.Forms.Button bt_topping_mat;
+        internal System.Windows.Forms.DataGridView dataGridView1;
+        internal System.Windows.Forms.Label l_material_Material;
+        internal System.Windows.Forms.Label l_Materialname_Material;
+        internal System.Windows.Forms.TextBox tb_matid;
+        internal System.Windows.Forms.TextBox tb_matname;
+        internal System.Windows.Forms.Button bt_add_Material;
+        internal System.Windows.Forms.Button bt_Edit_Material;
+        internal System.Windows.Forms.Button bt_delete_Material;
+        internal System.Windows.Forms.Button bt_save_Material;
+        internal System.Windows.Forms.Button bt_mat;
+        internal System.Windows.Forms.Button bt_drink_od;
+        internal System.Windows.Forms.Button bt_emp;
+        internal System.Windows.Forms.Button bt_topping_mat;
     }
 }

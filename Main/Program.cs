@@ -15,7 +15,7 @@ namespace Main
         public static void Main()
         {
 
-            logger.Log(Level.INFO, "Loading " + typeof(Employee));
+            logger.Log(Level.INFO, "Loading " + typeof(Program));
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

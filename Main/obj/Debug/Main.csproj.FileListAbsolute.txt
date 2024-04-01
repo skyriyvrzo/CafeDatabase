@@ -92,3 +92,7 @@ D:\Gidhub\CafeDatabase\Main\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\Gidhub\CafeDatabase\Main\obj\Debug\Main.Drink.resources
 D:\Gidhub\CafeDatabase\Main\obj\Debug\Main.OrdersDetail.resources
 D:\Gidhub\CafeDatabase\Main\obj\Debug\Main.csproj.CopyComplete
+E:\Github\CafeDatabase\Main\obj\Debug\Main.Drink.resources
+E:\Github\CafeDatabase\Main\obj\Debug\Main.Topping.resources
+E:\Github\CafeDatabase\Main\obj\Debug\Main.Material.resources
+E:\Github\CafeDatabase\Main\obj\Debug\Main.OrdersDetail.resources

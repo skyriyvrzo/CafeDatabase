@@ -90,34 +90,34 @@
             // l_emp_id
             // 
             this.l_emp_id.AutoSize = true;
-            this.l_emp_id.Location = new System.Drawing.Point(49, 26);
+            this.l_emp_id.Location = new System.Drawing.Point(46, 26);
             this.l_emp_id.Name = "l_emp_id";
-            this.l_emp_id.Size = new System.Drawing.Size(64, 13);
+            this.l_emp_id.Size = new System.Drawing.Size(67, 13);
             this.l_emp_id.TabIndex = 6;
-            this.l_emp_id.Text = "EmployeeID";
+            this.l_emp_id.Text = "Employee ID";
             // 
             // l_fname
             // 
             this.l_fname.AutoSize = true;
-            this.l_fname.Location = new System.Drawing.Point(49, 56);
+            this.l_fname.Location = new System.Drawing.Point(46, 59);
             this.l_fname.Name = "l_fname";
-            this.l_fname.Size = new System.Drawing.Size(54, 13);
+            this.l_fname.Size = new System.Drawing.Size(57, 13);
             this.l_fname.TabIndex = 7;
-            this.l_fname.Text = "FirstName";
+            this.l_fname.Text = "First Name";
             // 
             // l_lname
             // 
             this.l_lname.AutoSize = true;
-            this.l_lname.Location = new System.Drawing.Point(49, 85);
+            this.l_lname.Location = new System.Drawing.Point(46, 88);
             this.l_lname.Name = "l_lname";
-            this.l_lname.Size = new System.Drawing.Size(55, 13);
+            this.l_lname.Size = new System.Drawing.Size(58, 13);
             this.l_lname.TabIndex = 8;
-            this.l_lname.Text = "LastName";
+            this.l_lname.Text = "Last Name";
             // 
             // l_sex
             // 
             this.l_sex.AutoSize = true;
-            this.l_sex.Location = new System.Drawing.Point(57, 141);
+            this.l_sex.Location = new System.Drawing.Point(46, 149);
             this.l_sex.Name = "l_sex";
             this.l_sex.Size = new System.Drawing.Size(25, 13);
             this.l_sex.TabIndex = 9;
@@ -126,7 +126,7 @@
             // l_salary
             // 
             this.l_salary.AutoSize = true;
-            this.l_salary.Location = new System.Drawing.Point(57, 115);
+            this.l_salary.Location = new System.Drawing.Point(46, 118);
             this.l_salary.Name = "l_salary";
             this.l_salary.Size = new System.Drawing.Size(36, 13);
             this.l_salary.TabIndex = 10;
@@ -141,6 +141,7 @@
             this.bt_add_emp.TabIndex = 11;
             this.bt_add_emp.Text = "Add";
             this.bt_add_emp.UseVisualStyleBackColor = true;
+            this.bt_add_emp.Click += new System.EventHandler(this.bt_add_emp_Click);
             // 
             // bt_edit_emp
             // 
@@ -199,7 +200,6 @@
             this.cb_sex.Name = "cb_sex";
             this.cb_sex.Size = new System.Drawing.Size(100, 21);
             this.cb_sex.TabIndex = 5;
-            this.cb_sex.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // bt_drink_emp
             // 
@@ -238,6 +238,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(997, 570);
             this.Controls.Add(this.bt_topping_emp);
             this.Controls.Add(this.bt_mat);
@@ -258,9 +259,10 @@
             this.Controls.Add(this.tb_fname);
             this.Controls.Add(this.tb_empid);
             this.Controls.Add(this.dataGridView1);
-            this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Name = "Employee";
             this.Text = "Cafe/Employee";
+            this.Load += new System.EventHandler(this.Employee_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -269,26 +271,26 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox tb_empid;
-        private System.Windows.Forms.TextBox tb_fname;
-        private System.Windows.Forms.TextBox tb_lname;
-        private System.Windows.Forms.TextBox tb_salary;
-        private System.Windows.Forms.Label l_emp_id;
-        private System.Windows.Forms.Label l_fname;
-        private System.Windows.Forms.Label l_lname;
-        private System.Windows.Forms.Label l_sex;
-        private System.Windows.Forms.Label l_salary;
-        private System.Windows.Forms.Button bt_add_emp;
-        private System.Windows.Forms.Button bt_edit_emp;
-        private System.Windows.Forms.Button bt_delete_emp;
-        private System.Windows.Forms.Button tb_save_emp;
-        private System.Windows.Forms.Button bt_order_emp;
-        private MySql.Data.MySqlClient.MySqlCommand mySqlCommand1;
-        private System.Windows.Forms.ComboBox cb_sex;
-        private System.Windows.Forms.Button bt_drink_emp;
-        private System.Windows.Forms.Button bt_mat;
-        private System.Windows.Forms.Button bt_topping_emp;
+        internal System.Windows.Forms.DataGridView dataGridView1;
+        internal System.Windows.Forms.TextBox tb_empid;
+        internal System.Windows.Forms.TextBox tb_fname;
+        internal System.Windows.Forms.TextBox tb_lname;
+        internal System.Windows.Forms.TextBox tb_salary;
+        internal System.Windows.Forms.Label l_emp_id;
+        internal System.Windows.Forms.Label l_fname;
+        internal System.Windows.Forms.Label l_lname;
+        internal System.Windows.Forms.Label l_sex;
+        internal System.Windows.Forms.Label l_salary;
+        internal System.Windows.Forms.Button bt_add_emp;
+        internal System.Windows.Forms.Button bt_edit_emp;
+        internal System.Windows.Forms.Button bt_delete_emp;
+        internal System.Windows.Forms.Button tb_save_emp;
+        internal System.Windows.Forms.Button bt_order_emp;
+        internal MySql.Data.MySqlClient.MySqlCommand mySqlCommand1;
+        internal System.Windows.Forms.ComboBox cb_sex;
+        internal System.Windows.Forms.Button bt_drink_emp;
+        internal System.Windows.Forms.Button bt_mat;
+        internal System.Windows.Forms.Button bt_topping_emp;
     }
 }
 

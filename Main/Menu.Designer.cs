@@ -198,19 +198,19 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox tb_orderid;
-        private System.Windows.Forms.TextBox bt_orderdate;
-        private System.Windows.Forms.TextBox tb_empid_or;
-        private System.Windows.Forms.Label l_order_id;
-        private System.Windows.Forms.Label l_Order_date;
-        private System.Windows.Forms.Label l_empid;
-        private MySql.Data.MySqlClient.MySqlDataAdapter mySqlDataAdapter1;
-        private System.Windows.Forms.Button bt_add_or;
-        private System.Windows.Forms.Button bt_edit_or;
-        private System.Windows.Forms.Button bt_delete_or;
-        private System.Windows.Forms.Button bt_save_or;
-        private System.Windows.Forms.Button bt_Menu_or;
-        private System.Windows.Forms.Button bt_drink_or;
+        internal System.Windows.Forms.DataGridView dataGridView1;
+        internal System.Windows.Forms.TextBox tb_orderid;
+        internal System.Windows.Forms.TextBox bt_orderdate;
+        internal System.Windows.Forms.TextBox tb_empid_or;
+        internal System.Windows.Forms.Label l_order_id;
+        internal System.Windows.Forms.Label l_Order_date;
+        internal System.Windows.Forms.Label l_empid;
+        internal MySql.Data.MySqlClient.MySqlDataAdapter mySqlDataAdapter1;
+        internal System.Windows.Forms.Button bt_add_or;
+        internal System.Windows.Forms.Button bt_edit_or;
+        internal System.Windows.Forms.Button bt_delete_or;
+        internal System.Windows.Forms.Button bt_save_or;
+        internal System.Windows.Forms.Button bt_Menu_or;
+        internal System.Windows.Forms.Button bt_drink_or;
     }
 }

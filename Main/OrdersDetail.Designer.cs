@@ -258,25 +258,25 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label l_orderid_od;
-        private System.Windows.Forms.TextBox tb_orderid_od;
-        private System.Windows.Forms.TextBox tb_quantity_od;
-        private System.Windows.Forms.TextBox tb_drinkid_od;
-        private System.Windows.Forms.TextBox tb_topoing_od;
-        private System.Windows.Forms.Label l_topping;
-        private System.Windows.Forms.Label l_drinkid_od;
-        private System.Windows.Forms.Label l_quantity;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.Button bt_add_od;
-        private System.Windows.Forms.Button bt_edit_;
-        private System.Windows.Forms.Button bt_delete_od;
-        private System.Windows.Forms.Button bt_save_od;
-        private System.Windows.Forms.Label l_empid_od;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button bt_drink_od;
-        private System.Windows.Forms.Button bt_mat;
-        private System.Windows.Forms.Button bt_emp;
-        private System.Windows.Forms.Button bt_topping_od;
+        internal System.Windows.Forms.DataGridView dataGridView1;
+        internal System.Windows.Forms.Label l_orderid_od;
+        internal System.Windows.Forms.TextBox tb_orderid_od;
+        internal System.Windows.Forms.TextBox tb_quantity_od;
+        internal System.Windows.Forms.TextBox tb_drinkid_od;
+        internal System.Windows.Forms.TextBox tb_topoing_od;
+        internal System.Windows.Forms.Label l_topping;
+        internal System.Windows.Forms.Label l_drinkid_od;
+        internal System.Windows.Forms.Label l_quantity;
+        internal System.ComponentModel.BackgroundWorker backgroundWorker1;
+        internal System.Windows.Forms.Button bt_add_od;
+        internal System.Windows.Forms.Button bt_edit_;
+        internal System.Windows.Forms.Button bt_delete_od;
+        internal System.Windows.Forms.Button bt_save_od;
+        internal System.Windows.Forms.Label l_empid_od;
+        internal System.Windows.Forms.ComboBox comboBox1;
+        internal System.Windows.Forms.Button bt_drink_od;
+        internal System.Windows.Forms.Button bt_mat;
+        internal System.Windows.Forms.Button bt_emp;
+        internal System.Windows.Forms.Button bt_topping_od;
     }
 }
