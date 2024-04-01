@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CSharp.Util.Logging;
 using System.Windows.Forms;
 
 namespace Main
@@ -15,6 +8,8 @@ namespace Main
         public Main()
         {
             InitializeComponent();
+
+            Program.logger.Log(Level.INFO, typeof(Main) + " Loaded");
         }
 
         private void label1_Click(object sender, EventArgs e)
