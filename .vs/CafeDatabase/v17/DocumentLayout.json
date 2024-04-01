@@ -3,11 +3,23 @@
   "WorkspaceRootPath": "E:\\Github\\CafeDatabase\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|E:\\Github\\CafeDatabase\\main\\event\\employeeevent\\employeebuttonclickevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|e:\\github\\cafedatabase\\main\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|solutionrelative:main\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|e:\\github\\cafedatabase\\main\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|solutionrelative:main\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|e:\\github\\cafedatabase\\main\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|solutionrelative:main\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|e:\\github\\cafedatabase\\main\\event\\employeeevent\\employeebuttonclickevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|solutionrelative:main\\event\\employeeevent\\employeebuttonclickevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|e:\\github\\cafedatabase\\main\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|E:\\Github\\CafeDatabase\\main\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|solutionrelative:main\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -22,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,7 +50,43 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form3.cs [Design]",
+              "DocumentMoniker": "E:\\Github\\CafeDatabase\\Main\\Form3.cs",
+              "RelativeDocumentMoniker": "Main\\Form3.cs",
+              "ToolTip": "E:\\Github\\CafeDatabase\\Main\\Form3.cs [Design]",
+              "RelativeToolTip": "Main\\Form3.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T08:56:49.604Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form2.cs [Design]",
+              "DocumentMoniker": "E:\\Github\\CafeDatabase\\Main\\Form2.cs",
+              "RelativeDocumentMoniker": "Main\\Form2.cs",
+              "ToolTip": "E:\\Github\\CafeDatabase\\Main\\Form2.cs [Design]",
+              "RelativeToolTip": "Main\\Form2.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T08:56:46.146Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "E:\\Github\\CafeDatabase\\Main\\Form1.cs",
+              "RelativeDocumentMoniker": "Main\\Form1.cs",
+              "ToolTip": "E:\\Github\\CafeDatabase\\Main\\Form1.cs [Design]",
+              "RelativeToolTip": "Main\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T08:56:42.474Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "EmployeeStartupEvent.cs",
               "DocumentMoniker": "E:\\Github\\CafeDatabase\\Main\\Event\\EmployeeEvent\\EmployeeStartupEvent.cs",
               "RelativeDocumentMoniker": "Main\\Event\\EmployeeEvent\\EmployeeStartupEvent.cs",
@@ -46,12 +94,11 @@
               "RelativeToolTip": "Main\\Event\\EmployeeEvent\\EmployeeStartupEvent.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T08:43:46.862Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-01T08:43:46.862Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "EmployeeButtonClickEvent.cs",
               "DocumentMoniker": "E:\\Github\\CafeDatabase\\Main\\Event\\EmployeeEvent\\EmployeeButtonClickEvent.cs",
               "RelativeDocumentMoniker": "Main\\Event\\EmployeeEvent\\EmployeeButtonClickEvent.cs",
@@ -64,15 +111,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Employee.cs [Design]",
               "DocumentMoniker": "E:\\Github\\CafeDatabase\\Main\\Employee.cs",
               "RelativeDocumentMoniker": "Main\\Employee.cs",
               "ToolTip": "E:\\Github\\CafeDatabase\\Main\\Employee.cs [Design]",
               "RelativeToolTip": "Main\\Employee.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T08:28:27.311Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-01T08:28:27.311Z"
             }
           ]
         }
