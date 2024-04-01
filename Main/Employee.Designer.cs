@@ -196,7 +196,7 @@
             this.cb_sex.Location = new System.Drawing.Point(119, 141);
             this.cb_sex.Name = "cb_sex";
             this.cb_sex.Size = new System.Drawing.Size(100, 21);
-            this.cb_sex.TabIndex = 16;
+            this.cb_sex.TabIndex = 5;
             this.cb_sex.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // bt_drink_emp
