@@ -12,35 +12,39 @@ namespace Main.Event.EmployeeEvent
          * run when program startup
          * used to call all methods in this class.
          * 
-         * @param {@e Employee} for set properties of component
+         * @param {@e Employee} to set properties of component
          */
         internal static void load(Employee e)
         {
-            onStartup(e);
-            registerItemsInComboBox(e);
-            registerDataGridView(e);
+            try
+            {
+                onStartup(e);
+                registerItemsInComboBox(e);
+                registerDataGridView(e);
 
-            Program.logger.Log(Level.INFO, nameof(EmployeeStartupEvent) + " Loaded");
+                Program.logger.Log(Level.INFO, nameof(EmployeeStartupEvent) + " Loaded");
+            }catch(System.Exception e1)
+            {
+                Program.logger.Log(Level.ERROR, nameof(load), nameof(EmployeeStartupEvent) + "/" + e1.GetType().Name, e1.Message);
+            }
         }
 
         /*
-         * disable edit mode for textbox and combobox
+         * disable edit mode dataGridView
          * 
-         * @param {@e Employee} for set properties of component
+         * @param {@e Employee} to set properties of component
          */
         private static void onStartup(Employee e)
         {
-            e.tb_empid.Enabled = false;
-            e.tb_fname.Enabled = false;
-            e.tb_lname.Enabled = false;
-            e.tb_salary.Enabled = false;
-            e.cb_sex.Enabled = false;
+            e.tb_empid.Focus();
+            e.dataGridView1.Enabled = false;
+            e.dataGridView1.ReadOnly = true;
         }
 
         /*
-         * add items into combobox
+         * add items into comboBox
          * 
-         * @param {@e Employee} for set properties of component
+         * @param {@e Employee} to set properties of component
          */
         private static void registerItemsInComboBox(Employee e)
         {
@@ -49,15 +53,16 @@ namespace Main.Event.EmployeeEvent
         }
 
         /*
-         * fill data from database(table=employee) into dataGridview
+         * fill data from database(table=employees) into dataGridView
          * 
-         * @param {@e Employee} for set properties of component
+         * @param {@e Employee} to set properties of component
          */
-        private static void registerDataGridView(Employee e)
+        internal static void registerDataGridView(Employee e)
         {
+            Database database = new Database();
+            
             try
             {
-                Database database = new Database();
 
                 if (database.ConnectDatabase())
                 {
@@ -72,12 +77,15 @@ namespace Main.Event.EmployeeEvent
                     adapter.Fill(dataTable);
 
                     e.dataGridView1.DataSource = dataTable;
+
+                    database.DisconnectDatabase();
                 }
 
 
             }catch(System.Exception e1)
             {
-                Program.logger.Log(Level.ERROR, nameof(registerDataGridView), nameof(EmployeeStartupEvent), e1.Message);
+                Program.logger.Log(Level.ERROR, nameof(registerDataGridView), nameof(EmployeeStartupEvent) + "/" + e1.GetType().Name, e1.Message);
+                database.DisconnectDatabase();
             }
         }
     }

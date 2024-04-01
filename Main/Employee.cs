@@ -24,5 +24,20 @@ namespace Main
         {
             Event.EmployeeEvent.EmployeeButtonClickEvent.onClickAdd(this);
         }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Event.EmployeeEvent.EmployeeCellClickEvent.onCellClick(this, e);
+        }
+
+        private void bt_edit_emp_Click(object sender, System.EventArgs e)
+        {
+            Event.EmployeeEvent.EmployeeButtonClickEvent.onClickEdit(this);
+        }
+
+        private void bt_delete_emp_Click(object sender, System.EventArgs e)
+        {
+            Event.EmployeeEvent.EmployeeButtonClickEvent.onClickDelete(this);
+        }
     }
 }

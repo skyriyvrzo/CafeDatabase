@@ -58,6 +58,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(913, 356);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // tb_empid
             // 
@@ -152,6 +153,7 @@
             this.bt_edit_emp.TabIndex = 12;
             this.bt_edit_emp.Text = "Edit";
             this.bt_edit_emp.UseVisualStyleBackColor = true;
+            this.bt_edit_emp.Click += new System.EventHandler(this.bt_edit_emp_Click);
             // 
             // bt_delete_emp
             // 
@@ -162,6 +164,7 @@
             this.bt_delete_emp.TabIndex = 13;
             this.bt_delete_emp.Text = "Delete";
             this.bt_delete_emp.UseVisualStyleBackColor = true;
+            this.bt_delete_emp.Click += new System.EventHandler(this.bt_delete_emp_Click);
             // 
             // tb_save_emp
             // 

@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "E:\\Github\\CafeDatabase\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|e:\\github\\cafedatabase\\main\\event\\employeeevent\\employeestartupevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|solutionrelative:main\\event\\employeeevent\\employeestartupevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|e:\\github\\cafedatabase\\main\\event\\employeeevent\\employeebuttonclickevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|solutionrelative:main\\event\\employeeevent\\employeebuttonclickevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|e:\\github\\cafedatabase\\main\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|solutionrelative:main\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|e:\\github\\cafedatabase\\main\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|solutionrelative:main\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|e:\\github\\cafedatabase\\main\\utils\\reference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|solutionrelative:main\\utils\\reference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,45 +18,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "EmployeeButtonClickEvent.cs",
-              "DocumentMoniker": "E:\\Github\\CafeDatabase\\Main\\Event\\EmployeeEvent\\EmployeeButtonClickEvent.cs",
-              "RelativeDocumentMoniker": "Main\\Event\\EmployeeEvent\\EmployeeButtonClickEvent.cs",
-              "ToolTip": "E:\\Github\\CafeDatabase\\Main\\Event\\EmployeeEvent\\EmployeeButtonClickEvent.cs",
-              "RelativeToolTip": "Main\\Event\\EmployeeEvent\\EmployeeButtonClickEvent.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Title": "Reference.cs",
+              "DocumentMoniker": "E:\\Github\\CafeDatabase\\Main\\Utils\\Reference.cs",
+              "RelativeDocumentMoniker": "Main\\Utils\\Reference.cs",
+              "ToolTip": "E:\\Github\\CafeDatabase\\Main\\Utils\\Reference.cs",
+              "RelativeToolTip": "Main\\Utils\\Reference.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAsAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T10:47:11.726Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EmployeeStartupEvent.cs",
-              "DocumentMoniker": "E:\\Github\\CafeDatabase\\Main\\Event\\EmployeeEvent\\EmployeeStartupEvent.cs",
-              "RelativeDocumentMoniker": "Main\\Event\\EmployeeEvent\\EmployeeStartupEvent.cs",
-              "ToolTip": "E:\\Github\\CafeDatabase\\Main\\Event\\EmployeeEvent\\EmployeeStartupEvent.cs",
-              "RelativeToolTip": "Main\\Event\\EmployeeEvent\\EmployeeStartupEvent.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAQwBQAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T10:39:09.328Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "E:\\Github\\CafeDatabase\\Main\\Employee.cs",
-              "RelativeDocumentMoniker": "Main\\Employee.cs",
-              "ToolTip": "E:\\Github\\CafeDatabase\\Main\\Employee.cs",
-              "RelativeToolTip": "Main\\Employee.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T10:38:37.024Z",
+              "WhenOpened": "2024-04-01T13:46:17.195Z",
               "EditorCaption": ""
             },
             {
@@ -81,15 +47,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\Github\\CafeDatabase\\Main\\Program.cs",
-              "RelativeDocumentMoniker": "Main\\Program.cs",
-              "ToolTip": "E:\\Github\\CafeDatabase\\Main\\Program.cs",
-              "RelativeToolTip": "Main\\Program.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABUAAAAoAAAA",
+              "DocumentIndex": 0,
+              "Title": "EmployeeButtonClickEvent.cs",
+              "DocumentMoniker": "E:\\Github\\CafeDatabase\\Main\\Event\\EmployeeEvent\\EmployeeButtonClickEvent.cs",
+              "RelativeDocumentMoniker": "Main\\Event\\EmployeeEvent\\EmployeeButtonClickEvent.cs",
+              "ToolTip": "E:\\Github\\CafeDatabase\\Main\\Event\\EmployeeEvent\\EmployeeButtonClickEvent.cs",
+              "RelativeToolTip": "Main\\Event\\EmployeeEvent\\EmployeeButtonClickEvent.cs",
+              "ViewState": "AQIAAJAAAAAAAAAAAAAwwH8AAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T10:38:35.481Z",
+              "WhenOpened": "2024-04-01T13:45:22.358Z",
               "EditorCaption": ""
             }
           ]
