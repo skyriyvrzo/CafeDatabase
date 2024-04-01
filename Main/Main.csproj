@@ -105,6 +105,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database\Database.cs" />
+    <Compile Include="Event\EmployeeEvent\EmployeeButtonClickEvent.cs" />
+    <Compile Include="Event\EmployeeEvent\EmployeeStartupEvent.cs" />
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
