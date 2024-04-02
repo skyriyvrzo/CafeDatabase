@@ -10,7 +10,7 @@ using System.Windows.Forms;
 namespace Main.Events.OrderEvent
 {
 #pragma warning disable IDE1006
-    internal class OrderButtonClickEvent
+    internal sealed class OrderButtonClickEvent
     {
         internal static void onClickAdd(OrdersDetail o)
         {
@@ -101,6 +101,7 @@ namespace Main.Events.OrderEvent
                 if (o.tb_orderid_od.Text == "")
                 {
                     MessageBox.Show("Please select the order you want to delete.", Reference.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
                 }
                 else if (MessageBox.Show("Are you sure you want to delete?", Reference.Warning, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {

@@ -32,13 +32,13 @@
             this.l_toppingid = new System.Windows.Forms.Label();
             this.l_toppingname = new System.Windows.Forms.Label();
             this.l_toppingprice = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.bt_add_Material = new System.Windows.Forms.Button();
-            this.bt_Edit_Material = new System.Windows.Forms.Button();
-            this.bt_delete_Material = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.tb_tp_id = new System.Windows.Forms.TextBox();
+            this.tb_tp_name = new System.Windows.Forms.TextBox();
+            this.tb_tp_price = new System.Windows.Forms.TextBox();
+            this.bt_add = new System.Windows.Forms.Button();
+            this.bt_Edit = new System.Windows.Forms.Button();
+            this.bt_delete = new System.Windows.Forms.Button();
+            this.bt_save = new System.Windows.Forms.Button();
             this.bt_order_emp = new System.Windows.Forms.Button();
             this.bt_drink_emp = new System.Windows.Forms.Button();
             this.bt_mat = new System.Windows.Forms.Button();
@@ -53,6 +53,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(913, 356);
             this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // l_toppingid
             // 
@@ -81,66 +82,70 @@
             this.l_toppingprice.TabIndex = 4;
             this.l_toppingprice.Text = "ToppingPrice";
             // 
-            // textBox1
+            // tb_tp_id
             // 
-            this.textBox1.Location = new System.Drawing.Point(105, 24);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 5;
+            this.tb_tp_id.Location = new System.Drawing.Point(105, 24);
+            this.tb_tp_id.Name = "tb_tp_id";
+            this.tb_tp_id.Size = new System.Drawing.Size(100, 20);
+            this.tb_tp_id.TabIndex = 5;
             // 
-            // textBox2
+            // tb_tp_name
             // 
-            this.textBox2.Location = new System.Drawing.Point(105, 59);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 6;
+            this.tb_tp_name.Location = new System.Drawing.Point(105, 59);
+            this.tb_tp_name.Name = "tb_tp_name";
+            this.tb_tp_name.Size = new System.Drawing.Size(100, 20);
+            this.tb_tp_name.TabIndex = 6;
             // 
-            // textBox3
+            // tb_tp_price
             // 
-            this.textBox3.Location = new System.Drawing.Point(105, 92);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 7;
+            this.tb_tp_price.Location = new System.Drawing.Point(105, 92);
+            this.tb_tp_price.Name = "tb_tp_price";
+            this.tb_tp_price.Size = new System.Drawing.Size(100, 20);
+            this.tb_tp_price.TabIndex = 7;
             // 
-            // bt_add_Material
+            // bt_add
             // 
-            this.bt_add_Material.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_add_Material.Location = new System.Drawing.Point(297, 45);
-            this.bt_add_Material.Name = "bt_add_Material";
-            this.bt_add_Material.Size = new System.Drawing.Size(79, 47);
-            this.bt_add_Material.TabIndex = 12;
-            this.bt_add_Material.Text = "Add";
-            this.bt_add_Material.UseVisualStyleBackColor = true;
+            this.bt_add.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_add.Location = new System.Drawing.Point(297, 45);
+            this.bt_add.Name = "bt_add";
+            this.bt_add.Size = new System.Drawing.Size(79, 47);
+            this.bt_add.TabIndex = 12;
+            this.bt_add.Text = "Add";
+            this.bt_add.UseVisualStyleBackColor = true;
+            this.bt_add.Click += new System.EventHandler(this.bt_add_Click);
             // 
-            // bt_Edit_Material
+            // bt_Edit
             // 
-            this.bt_Edit_Material.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_Edit_Material.Location = new System.Drawing.Point(382, 45);
-            this.bt_Edit_Material.Name = "bt_Edit_Material";
-            this.bt_Edit_Material.Size = new System.Drawing.Size(79, 47);
-            this.bt_Edit_Material.TabIndex = 13;
-            this.bt_Edit_Material.Text = "Edit";
-            this.bt_Edit_Material.UseVisualStyleBackColor = true;
+            this.bt_Edit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_Edit.Location = new System.Drawing.Point(382, 45);
+            this.bt_Edit.Name = "bt_Edit";
+            this.bt_Edit.Size = new System.Drawing.Size(79, 47);
+            this.bt_Edit.TabIndex = 13;
+            this.bt_Edit.Text = "Edit";
+            this.bt_Edit.UseVisualStyleBackColor = true;
+            this.bt_Edit.Click += new System.EventHandler(this.bt_Edit_Click);
             // 
-            // bt_delete_Material
+            // bt_delete
             // 
-            this.bt_delete_Material.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_delete_Material.Location = new System.Drawing.Point(467, 45);
-            this.bt_delete_Material.Name = "bt_delete_Material";
-            this.bt_delete_Material.Size = new System.Drawing.Size(79, 47);
-            this.bt_delete_Material.TabIndex = 14;
-            this.bt_delete_Material.Text = "Delete";
-            this.bt_delete_Material.UseVisualStyleBackColor = true;
+            this.bt_delete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_delete.Location = new System.Drawing.Point(467, 45);
+            this.bt_delete.Name = "bt_delete";
+            this.bt_delete.Size = new System.Drawing.Size(79, 47);
+            this.bt_delete.TabIndex = 14;
+            this.bt_delete.Text = "Delete";
+            this.bt_delete.UseVisualStyleBackColor = true;
+            this.bt_delete.Click += new System.EventHandler(this.bt_delete_Click);
             // 
-            // button1
+            // bt_save
             // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Location = new System.Drawing.Point(552, 45);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(79, 47);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Delete";
-            this.button1.UseVisualStyleBackColor = true;
+            this.bt_save.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_save.Location = new System.Drawing.Point(552, 45);
+            this.bt_save.Name = "bt_save";
+            this.bt_save.Size = new System.Drawing.Size(79, 47);
+            this.bt_save.TabIndex = 15;
+            this.bt_save.Text = "Save";
+            this.bt_save.UseVisualStyleBackColor = true;
+            this.bt_save.Click += new System.EventHandler(this.bt_save_Click);
             // 
             // bt_order_emp
             // 
@@ -195,13 +200,13 @@
             this.Controls.Add(this.bt_mat);
             this.Controls.Add(this.bt_drink_emp);
             this.Controls.Add(this.bt_order_emp);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.bt_delete_Material);
-            this.Controls.Add(this.bt_Edit_Material);
-            this.Controls.Add(this.bt_add_Material);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.bt_save);
+            this.Controls.Add(this.bt_delete);
+            this.Controls.Add(this.bt_Edit);
+            this.Controls.Add(this.bt_add);
+            this.Controls.Add(this.tb_tp_price);
+            this.Controls.Add(this.tb_tp_name);
+            this.Controls.Add(this.tb_tp_id);
             this.Controls.Add(this.l_toppingprice);
             this.Controls.Add(this.l_toppingname);
             this.Controls.Add(this.l_toppingid);
@@ -211,6 +216,7 @@
             this.Name = "Topping";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cafe/Topping";
+            this.Load += new System.EventHandler(this.Topping_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -223,13 +229,13 @@
         internal System.Windows.Forms.Label l_toppingid;
         internal System.Windows.Forms.Label l_toppingname;
         internal System.Windows.Forms.Label l_toppingprice;
-        internal System.Windows.Forms.TextBox textBox1;
-        internal System.Windows.Forms.TextBox textBox2;
-        internal System.Windows.Forms.TextBox textBox3;
-        internal System.Windows.Forms.Button bt_add_Material;
-        internal System.Windows.Forms.Button bt_Edit_Material;
-        internal System.Windows.Forms.Button bt_delete_Material;
-        internal System.Windows.Forms.Button button1;
+        internal System.Windows.Forms.TextBox tb_tp_id;
+        internal System.Windows.Forms.TextBox tb_tp_name;
+        internal System.Windows.Forms.TextBox tb_tp_price;
+        internal System.Windows.Forms.Button bt_add;
+        internal System.Windows.Forms.Button bt_Edit;
+        internal System.Windows.Forms.Button bt_delete;
+        internal System.Windows.Forms.Button bt_save;
         internal System.Windows.Forms.Button bt_order_emp;
         internal System.Windows.Forms.Button bt_drink_emp;
         internal System.Windows.Forms.Button bt_mat;

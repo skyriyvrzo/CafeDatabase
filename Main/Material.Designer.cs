@@ -51,24 +51,25 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(913, 356);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // l_material_Material
             // 
             this.l_material_Material.AutoSize = true;
-            this.l_material_Material.Location = new System.Drawing.Point(75, 37);
+            this.l_material_Material.Location = new System.Drawing.Point(75, 33);
             this.l_material_Material.Name = "l_material_Material";
-            this.l_material_Material.Size = new System.Drawing.Size(55, 13);
+            this.l_material_Material.Size = new System.Drawing.Size(58, 13);
             this.l_material_Material.TabIndex = 1;
-            this.l_material_Material.Text = "MaterialID";
+            this.l_material_Material.Text = "Material ID";
             // 
             // l_Materialname_Material
             // 
             this.l_Materialname_Material.AutoSize = true;
-            this.l_Materialname_Material.Location = new System.Drawing.Point(75, 90);
+            this.l_Materialname_Material.Location = new System.Drawing.Point(75, 86);
             this.l_Materialname_Material.Name = "l_Materialname_Material";
-            this.l_Materialname_Material.Size = new System.Drawing.Size(72, 13);
+            this.l_Materialname_Material.Size = new System.Drawing.Size(35, 13);
             this.l_Materialname_Material.TabIndex = 2;
-            this.l_Materialname_Material.Text = "MaterialName";
+            this.l_Materialname_Material.Text = "Name";
             // 
             // tb_matid
             // 
@@ -83,7 +84,6 @@
             this.tb_matname.Name = "tb_matname";
             this.tb_matname.Size = new System.Drawing.Size(100, 20);
             this.tb_matname.TabIndex = 4;
-            this.tb_matname.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // bt_add_Material
             // 
@@ -94,6 +94,7 @@
             this.bt_add_Material.TabIndex = 11;
             this.bt_add_Material.Text = "Add";
             this.bt_add_Material.UseVisualStyleBackColor = true;
+            this.bt_add_Material.Click += new System.EventHandler(this.bt_add_Material_Click);
             // 
             // bt_Edit_Material
             // 
@@ -104,6 +105,7 @@
             this.bt_Edit_Material.TabIndex = 12;
             this.bt_Edit_Material.Text = "Edit";
             this.bt_Edit_Material.UseVisualStyleBackColor = true;
+            this.bt_Edit_Material.Click += new System.EventHandler(this.bt_Edit_Material_Click);
             // 
             // bt_delete_Material
             // 
@@ -114,6 +116,7 @@
             this.bt_delete_Material.TabIndex = 13;
             this.bt_delete_Material.Text = "Delete";
             this.bt_delete_Material.UseVisualStyleBackColor = true;
+            this.bt_delete_Material.Click += new System.EventHandler(this.bt_delete_Material_Click);
             // 
             // bt_save_Material
             // 
@@ -124,6 +127,7 @@
             this.bt_save_Material.TabIndex = 14;
             this.bt_save_Material.Text = "Save";
             this.bt_save_Material.UseVisualStyleBackColor = true;
+            this.bt_save_Material.Click += new System.EventHandler(this.bt_save_Material_Click);
             // 
             // bt_mat
             // 
@@ -192,6 +196,7 @@
             this.Name = "Material";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cafe/Material";
+            this.Load += new System.EventHandler(this.Material_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

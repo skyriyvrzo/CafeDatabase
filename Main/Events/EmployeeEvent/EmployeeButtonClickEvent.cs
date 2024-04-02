@@ -125,6 +125,7 @@ namespace Main.Events.EmployeeEvent
                 if(e.tb_empid.Text == "")
                 {
                     MessageBox.Show("Please select the employee you want to delete.", Reference.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
                 }else if(MessageBox.Show("Are you sure you want to delete?", Reference.Warning, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     if (database.ConnectDatabase())

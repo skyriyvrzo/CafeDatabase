@@ -1553,3 +1553,223 @@ Parameter name: index
 [15:12:30] [INFO] : registerDataGridView Loaded
 [15:12:30] [INFO] : EmployeeStartupEvent Loaded
 [15:12:30] [INFO] : Employee_Load Loaded
+[15:16:08] [INFO] : ---------------------------------------------------------------------------------------
+[15:16:08] [INFO] : Loading Main.Program
+[15:16:08] [INFO] : Employee Loaded
+[15:16:08] [INFO] : onStartup Loaded
+[15:16:08] [INFO] : registerItemsInComboBox Loaded
+[15:16:09] [INFO] : registerDataGridView Successfully added item
+[15:16:09] [INFO] : registerDataGridView Loaded
+[15:16:09] [INFO] : EmployeeStartupEvent Loaded
+[15:16:09] [INFO] : Employee_Load Loaded
+[15:16:13] [INFO] : onStartup Loaded
+[15:16:13] [INFO] : registerItemsInComboBox Loaded
+[15:16:13] [INFO] : registerDataGridView Successfully added item
+[15:16:13] [INFO] : registerDataGridView Loaded
+[15:16:13] [INFO] : OrderStartupEvent Loaded
+[15:16:22] [INFO] : ---------------------------------------------------------------------------------------
+[15:16:22] [INFO] : Loading Main.Program
+[15:16:22] [INFO] : Employee Loaded
+[15:16:22] [INFO] : onStartup Loaded
+[15:16:22] [INFO] : registerItemsInComboBox Loaded
+[15:16:23] [INFO] : registerDataGridView Successfully added item
+[15:16:23] [INFO] : registerDataGridView Loaded
+[15:16:23] [INFO] : EmployeeStartupEvent Loaded
+[15:16:23] [INFO] : Employee_Load Loaded
+[15:56:42] [INFO] : ---------------------------------------------------------------------------------------
+[15:56:42] [INFO] : Loading Main.Program
+[15:56:42] [INFO] : Employee Loaded
+[15:56:42] [INFO] : onStartup Loaded
+[15:56:42] [INFO] : registerItemsInComboBox Loaded
+[15:56:43] [INFO] : registerDataGridView Successfully added item
+[15:56:43] [INFO] : registerDataGridView Loaded
+[15:56:43] [INFO] : EmployeeStartupEvent Loaded
+[15:56:43] [INFO] : Employee_Load Loaded
+[15:57:00] [INFO] : ---------------------------------------------------------------------------------------
+[15:57:00] [INFO] : Loading Main.Program
+[15:57:00] [INFO] : Employee Loaded
+[15:57:00] [INFO] : onStartup Loaded
+[15:57:00] [INFO] : registerItemsInComboBox Loaded
+[15:57:01] [INFO] : registerDataGridView Successfully added item
+[15:57:01] [INFO] : registerDataGridView Loaded
+[15:57:01] [INFO] : EmployeeStartupEvent Loaded
+[15:57:01] [INFO] : Employee_Load Loaded
+[15:58:55] [INFO] : ---------------------------------------------------------------------------------------
+[15:58:55] [INFO] : Loading Main.Program
+[15:58:55] [INFO] : Employee Loaded
+[15:58:55] [INFO] : onStartup Loaded
+[15:58:55] [INFO] : registerItemsInComboBox Loaded
+[15:58:56] [INFO] : registerDataGridView Successfully added item
+[15:58:56] [INFO] : registerDataGridView Loaded
+[15:58:56] [INFO] : EmployeeStartupEvent Loaded
+[15:58:56] [INFO] : Employee_Load Loaded
+[16:05:52] [INFO] : ---------------------------------------------------------------------------------------
+[16:05:52] [INFO] : Loading Main.Program
+[16:05:52] [INFO] : Employee Loaded
+[16:05:52] [INFO] : onStartup Loaded
+[16:05:52] [INFO] : registerItemsInComboBox Loaded
+[16:05:53] [INFO] : registerDataGridView Successfully added item
+[16:05:53] [INFO] : registerDataGridView Loaded
+[16:05:53] [INFO] : EmployeeStartupEvent Loaded
+[16:05:53] [INFO] : Employee_Load Loaded
+[16:05:56] [INFO] : onStartup Loaded
+[16:05:56] [INFO] : registerDataGridView Successfully added item
+[16:05:56] [INFO] : registerDataGridView Loaded
+[16:05:56] [INFO] : MaterialStartupEvent Loaded
+[16:07:14] [INFO] : ---------------------------------------------------------------------------------------
+[16:07:14] [INFO] : Loading Main.Program
+[16:07:14] [INFO] : Employee Loaded
+[16:07:14] [INFO] : onStartup Loaded
+[16:07:14] [INFO] : registerItemsInComboBox Loaded
+[16:07:15] [INFO] : registerDataGridView Successfully added item
+[16:07:15] [INFO] : registerDataGridView Loaded
+[16:07:15] [INFO] : EmployeeStartupEvent Loaded
+[16:07:15] [INFO] : Employee_Load Loaded
+[16:07:16] [INFO] : onStartup Loaded
+[16:07:16] [INFO] : registerDataGridView Successfully added item
+[16:07:16] [INFO] : registerDataGridView Loaded
+[16:07:16] [INFO] : MaterialStartupEvent Loaded
+[16:21:06] [INFO] : ---------------------------------------------------------------------------------------
+[16:21:06] [INFO] : Loading Main.Program
+[16:21:06] [INFO] : Employee Loaded
+[16:21:06] [INFO] : onStartup Loaded
+[16:21:06] [INFO] : registerItemsInComboBox Loaded
+[16:21:07] [INFO] : registerDataGridView Successfully added item
+[16:21:07] [INFO] : registerDataGridView Loaded
+[16:21:07] [INFO] : EmployeeStartupEvent Loaded
+[16:21:07] [INFO] : Employee_Load Loaded
+[16:21:08] [INFO] : onStartup Loaded
+[16:21:08] [INFO] : registerDataGridView Successfully added item
+[16:21:08] [INFO] : registerDataGridView Loaded
+[16:21:08] [INFO] : MaterialStartupEvent Loaded
+[16:21:27] [INFO] : registerDataGridView Successfully added item
+[16:21:27] [INFO] : registerDataGridView Loaded
+[16:21:53] [onClickAdd/ERROR] (MaterialButtonClickEvent/MySqlException) : Duplicate entry '784' for key 'PRIMARY'
+[16:22:08] [INFO] : registerDataGridView Successfully added item
+[16:22:08] [INFO] : registerDataGridView Loaded
+[16:22:15] [INFO] : registerDataGridView Successfully added item
+[16:22:15] [INFO] : registerDataGridView Loaded
+[16:22:30] [INFO] : registerDataGridView Successfully added item
+[16:22:30] [INFO] : registerDataGridView Loaded
+[16:26:42] [INFO] : ---------------------------------------------------------------------------------------
+[16:26:42] [INFO] : Loading Main.Program
+[16:26:42] [INFO] : Employee Loaded
+[16:26:42] [INFO] : onStartup Loaded
+[16:26:42] [INFO] : registerItemsInComboBox Loaded
+[16:26:43] [INFO] : registerDataGridView Successfully added item
+[16:26:43] [INFO] : registerDataGridView Loaded
+[16:26:43] [INFO] : EmployeeStartupEvent Loaded
+[16:26:43] [INFO] : Employee_Load Loaded
+[16:26:44] [INFO] : onStartup Loaded
+[16:26:45] [INFO] : registerDataGridView Successfully added item
+[16:26:45] [INFO] : registerDataGridView Loaded
+[16:26:45] [INFO] : MaterialStartupEvent Loaded
+[16:27:34] [INFO] : ---------------------------------------------------------------------------------------
+[16:27:34] [INFO] : Loading Main.Program
+[16:27:34] [INFO] : Employee Loaded
+[16:27:34] [INFO] : onStartup Loaded
+[16:27:34] [INFO] : registerItemsInComboBox Loaded
+[16:27:35] [INFO] : ---------------------------------------------------------------------------------------
+[16:27:35] [INFO] : Loading Main.Program
+[16:27:35] [INFO] : Employee Loaded
+[16:27:35] [INFO] : onStartup Loaded
+[16:27:35] [INFO] : registerDataGridView Successfully added item
+[16:27:35] [INFO] : registerDataGridView Loaded
+[16:27:35] [INFO] : EmployeeStartupEvent Loaded
+[16:27:35] [INFO] : Employee_Load Loaded
+[16:27:35] [INFO] : registerItemsInComboBox Loaded
+[16:27:37] [INFO] : registerDataGridView Successfully added item
+[16:27:37] [INFO] : registerDataGridView Loaded
+[16:27:37] [INFO] : EmployeeStartupEvent Loaded
+[16:27:37] [INFO] : Employee_Load Loaded
+[16:27:40] [INFO] : ---------------------------------------------------------------------------------------
+[16:27:40] [INFO] : Loading Main.Program
+[16:27:40] [INFO] : Employee Loaded
+[16:27:40] [INFO] : onStartup Loaded
+[16:27:40] [INFO] : registerItemsInComboBox Loaded
+[16:27:41] [INFO] : registerDataGridView Successfully added item
+[16:27:41] [INFO] : registerDataGridView Loaded
+[16:27:41] [INFO] : EmployeeStartupEvent Loaded
+[16:27:41] [INFO] : Employee_Load Loaded
+[16:27:42] [INFO] : onStartup Loaded
+[16:27:42] [INFO] : registerDataGridView Successfully added item
+[16:27:42] [INFO] : registerDataGridView Loaded
+[16:27:42] [INFO] : MaterialStartupEvent Loaded
+[16:27:52] [INFO] : registerDataGridView Successfully added item
+[16:27:52] [INFO] : registerDataGridView Loaded
+[16:28:49] [INFO] : ---------------------------------------------------------------------------------------
+[16:28:49] [INFO] : Loading Main.Program
+[16:28:49] [INFO] : Employee Loaded
+[16:28:49] [INFO] : onStartup Loaded
+[16:28:49] [INFO] : registerItemsInComboBox Loaded
+[16:28:51] [INFO] : registerDataGridView Successfully added item
+[16:28:51] [INFO] : registerDataGridView Loaded
+[16:28:51] [INFO] : EmployeeStartupEvent Loaded
+[16:28:51] [INFO] : Employee_Load Loaded
+[16:53:40] [INFO] : ---------------------------------------------------------------------------------------
+[16:53:40] [INFO] : Loading Main.Program
+[16:53:40] [INFO] : Employee Loaded
+[16:53:40] [INFO] : onStartup Loaded
+[16:53:40] [INFO] : registerItemsInComboBox Loaded
+[16:53:41] [INFO] : registerDataGridView Successfully added item
+[16:53:41] [INFO] : registerDataGridView Loaded
+[16:53:41] [INFO] : EmployeeStartupEvent Loaded
+[16:53:41] [INFO] : Employee_Load Loaded
+[16:54:26] [INFO] : ---------------------------------------------------------------------------------------
+[16:54:26] [INFO] : Loading Main.Program
+[16:54:26] [INFO] : Employee Loaded
+[16:54:26] [INFO] : onStartup Loaded
+[16:54:26] [INFO] : registerItemsInComboBox Loaded
+[16:54:27] [INFO] : registerDataGridView Successfully added item
+[16:54:27] [INFO] : registerDataGridView Loaded
+[16:54:27] [INFO] : EmployeeStartupEvent Loaded
+[16:54:27] [INFO] : Employee_Load Loaded
+[16:54:53] [INFO] : ---------------------------------------------------------------------------------------
+[16:54:53] [INFO] : Loading Main.Program
+[16:54:53] [INFO] : Employee Loaded
+[16:54:53] [INFO] : onStartup Loaded
+[16:54:53] [INFO] : registerItemsInComboBox Loaded
+[16:54:54] [INFO] : registerDataGridView Successfully added item
+[16:54:54] [INFO] : registerDataGridView Loaded
+[16:54:54] [INFO] : EmployeeStartupEvent Loaded
+[16:54:54] [INFO] : Employee_Load Loaded
+[16:56:12] [INFO] : ---------------------------------------------------------------------------------------
+[16:56:12] [INFO] : Loading Main.Program
+[16:56:12] [INFO] : Employee Loaded
+[16:56:12] [INFO] : onStartup Loaded
+[16:56:12] [INFO] : registerItemsInComboBox Loaded
+[16:56:13] [INFO] : registerDataGridView Successfully added item
+[16:56:13] [INFO] : registerDataGridView Loaded
+[16:56:13] [INFO] : EmployeeStartupEvent Loaded
+[16:56:13] [INFO] : Employee_Load Loaded
+[16:56:14] [INFO] : onStartup Loaded
+[16:56:14] [INFO] : registerDataGridView Successfully added item
+[16:56:14] [INFO] : registerDataGridView Loaded
+[16:56:14] [INFO] : ToppingStartupEvent Loaded
+[16:56:35] [INFO] : registerDataGridView Successfully added item
+[16:56:35] [INFO] : registerDataGridView Loaded
+[16:57:57] [INFO] : ---------------------------------------------------------------------------------------
+[16:57:57] [INFO] : Loading Main.Program
+[16:57:57] [INFO] : Employee Loaded
+[16:57:57] [INFO] : onStartup Loaded
+[16:57:57] [INFO] : registerItemsInComboBox Loaded
+[16:57:58] [INFO] : registerDataGridView Successfully added item
+[16:57:58] [INFO] : registerDataGridView Loaded
+[16:57:58] [INFO] : EmployeeStartupEvent Loaded
+[16:57:58] [INFO] : Employee_Load Loaded
+[16:57:59] [INFO] : onStartup Loaded
+[16:57:59] [INFO] : registerDataGridView Successfully added item
+[16:57:59] [INFO] : registerDataGridView Loaded
+[16:57:59] [INFO] : ToppingStartupEvent Loaded
+[16:58:08] [INFO] : registerDataGridView Successfully added item
+[16:58:08] [INFO] : registerDataGridView Loaded
+[16:58:26] [INFO] : registerDataGridView Successfully added item
+[16:58:26] [INFO] : registerDataGridView Loaded
+[16:58:35] [INFO] : registerDataGridView Successfully added item
+[16:58:35] [INFO] : registerDataGridView Loaded
+[16:59:22] [INFO] : registerDataGridView Successfully added item
+[16:59:22] [INFO] : registerDataGridView Loaded
+[16:59:29] [INFO] : registerDataGridView Successfully added item
+[16:59:29] [INFO] : registerDataGridView Loaded
+[16:59:38] [INFO] : registerDataGridView Successfully added item
+[16:59:38] [INFO] : registerDataGridView Loaded

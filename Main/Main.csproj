@@ -108,11 +108,17 @@
     <Compile Include="Events\EmployeeEvent\EmployeeButtonClickEvent.cs" />
     <Compile Include="Events\EmployeeEvent\EmployeeCellClickEvent.cs" />
     <Compile Include="Events\EmployeeEvent\EmployeeStartupEvent.cs" />
+    <Compile Include="Events\MaterialEvent\MaterialButtonClickEvent.cs" />
+    <Compile Include="Events\MaterialEvent\MaterialCellClickEvent.cs" />
+    <Compile Include="Events\MaterialEvent\MaterialStartupEvent.cs" />
     <Compile Include="Events\OrderEvent\OrderCellClickEvent.cs" />
     <Compile Include="Events\OrderEvent\OrderButtonClickEvent.cs" />
     <Compile Include="Events\OrderEvent\OrderStartupEvent.cs" />
     <Compile Include="Events\ScreenChangeEvent\Reset.cs" />
     <Compile Include="Events\ScreenChangeEvent\ScreenButtonClickEvent.cs" />
+    <Compile Include="Events\ToppingEvent\ToppingButtonClickEvent.cs" />
+    <Compile Include="Events\ToppingEvent\ToppingCellClickEvent.cs" />
+    <Compile Include="Events\ToppingEvent\ToppingStartupEvent.cs" />
     <Compile Include="Material.cs">
       <SubType>Form</SubType>
     </Compile>

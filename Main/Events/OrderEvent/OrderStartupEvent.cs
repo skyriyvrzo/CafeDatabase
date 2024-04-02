@@ -9,7 +9,7 @@ using System.Windows.Forms;
 namespace Main.Events.OrderEvent
 {
 #pragma warning disable IDE1006
-    internal class OrderStartupEvent
+    internal sealed class OrderStartupEvent
     {
         internal static void load(OrdersDetail o)
         {
@@ -24,9 +24,9 @@ namespace Main.Events.OrderEvent
             {
                 Program.logger.Log(Level.ERROR, nameof(load), nameof(OrderStartupEvent) + "/" + e.GetType().Name, e.Message);
             }
-}
+        }
 
-        internal static void onStartup(OrdersDetail o)
+        private static void onStartup(OrdersDetail o)
         {
             o.cb_drink_id.Focus();
             o.dataGridView1.ReadOnly = true;
@@ -35,7 +35,7 @@ namespace Main.Events.OrderEvent
             Program.logger.Log(Level.INFO, nameof(onStartup) + " Loaded");
         }
 
-        internal static void registerItemsInComboBox(OrdersDetail o)
+        private static void registerItemsInComboBox(OrdersDetail o)
         {
             Database database = new Database();
 

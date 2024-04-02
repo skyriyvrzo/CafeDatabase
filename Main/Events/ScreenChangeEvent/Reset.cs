@@ -1,5 +1,7 @@
 ﻿using Main.Events.EmployeeEvent;
+using Main.Events.MaterialEvent;
 using Main.Events.OrderEvent;
+using Main.Events.ToppingEvent;
 
 namespace Main.Events.ScreenChangeEvent
 {
@@ -15,6 +17,8 @@ namespace Main.Events.ScreenChangeEvent
         {
             EmployeeButtonClickEvent.editButtonIsEnable = false;
             OrderButtonClickEvent.editButtonIsEnable = false;
+            MaterialButtonClickEvent.editButtonIsEnable = false;
+            ToppingButtonClickEvent.editButtonIsEnable = false;
         }
     }
 }
