@@ -20,5 +20,6 @@
         internal static Drink drink;
         internal static Material material;
         internal static Topping topping;
+        internal static MaterialofDrink materialofDrink;
     }
 }

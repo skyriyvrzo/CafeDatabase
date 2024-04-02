@@ -1,6 +1,7 @@
 ﻿using CSharp.Util.Logging;
 using Main.Events.OrderEvent;
 using Main.Events.ScreenChangeEvent;
+using Main.Utils;
 using MySql.Data.MySqlClient;
 using System.Data;
 using System.Windows.Forms;
@@ -55,8 +56,16 @@ namespace Main.Events.EmployeeEvent
          */
         private static void registerItemsInComboBox(Employee e)
         {
-            e.cb_sex.Items.Add("Male");
-            e.cb_sex.Items.Add("Female");
+            ComboBoxItem m = new ComboBoxItem();
+            m.Text = "Male";
+            m.Value = "M";
+
+            ComboBoxItem f = new ComboBoxItem();
+            f.Text = "Female";
+            f.Value = "F";
+
+            e.cb_sex.Items.Add(m);
+            e.cb_sex.Items.Add(f);
 
             Program.logger.Log(Level.INFO, nameof(registerItemsInComboBox) + " Loaded");
         }

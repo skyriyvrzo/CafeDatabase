@@ -28,7 +28,7 @@ namespace Main.Events.EmployeeEvent
 
                 if (database.ConnectDatabase())
                 {
-                    if(e.tb_empid.Text == "" || e.tb_fname.Text == "" || e.tb_lname.Text == "" || e.tb_salary.Text == "" || e.cb_sex.SelectedItem == null)
+                    if(e.tb_empid.Text == "" || e.tb_fname.Text == "" || e.tb_lname.Text == "" || e.tb_salary.Text == "" || (e.cb_sex.SelectedItem as ComboBoxItem).Value.ToString() == null)
                     {
                         MessageBox.Show("Please fill in complete information.", Reference.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
@@ -39,14 +39,13 @@ namespace Main.Events.EmployeeEvent
                         return;
                     }
 
-                    char sex = e.cb_sex.SelectedItem.ToString() == "Male" ? 'M' : 'F';
                     string query = "insert into `employees` (EMPLOYEE_ID, FIRST_NAME, LAST_NAME, SALARY, SEX) " +
                         "values(" +
                         $"'{e.tb_empid.Text}' ," +
                         $"'{e.tb_fname.Text}' ," +
                         $"'{e.tb_lname.Text}' ," +
                         $"'{e.tb_salary.Text}' ," +
-                        $"'{sex}')";
+                        $"'{(e.cb_sex.SelectedItem as ComboBoxItem).Value}')";
 
                     MySqlCommand command = new MySqlCommand(query, database.connection);
 

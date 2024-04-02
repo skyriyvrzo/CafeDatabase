@@ -47,5 +47,12 @@ namespace Main.Events.ScreenChangeEvent
             Reference.topping = new Topping();
             Reference.topping.Show();
         }
+
+        internal static void onClickMaterialofDrink(Form f)
+        {
+            f.Hide();
+            Reference.materialofDrink = new MaterialofDrink();
+            Reference.materialofDrink.Show();
+        }
     }
 }

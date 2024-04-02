@@ -1,25 +1,26 @@
 ﻿using CSharp.Util.Logging;
+using Main.Events.MaterialEvent;
 using Main.Utils;
 using MySql.Data.MySqlClient;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Main.Events.MaterialEvent
+namespace Main.Events.MaterialofDrinkEvent
 {
 #pragma warning disable IDE1006
-    internal sealed class MaterialButtonClickEvent
+    internal class MaterialofDrinkButtonClickEvent
     {
         /*
-         * insert new data into database(table=material)
+         * insert new data into database(table=materialofdrink)
          * 
          * if textBox is empty, will displays the message box warning and returns it.
          * and material id are not numbers, a message box warning will be displayed and returned.
          * 
-         * @param {@m Material} to set properties of component
+         * @param {@mod Material} to set properties of component
          */
 
-        internal static void onClickAdd(Material m)
+        internal static void onClickAdd(MaterialofDrink mod)
         {
             Database database = new Database();
 
@@ -28,43 +29,37 @@ namespace Main.Events.MaterialEvent
 
                 if (database.ConnectDatabase())
                 {
-                    if (m.tb_matid.Text == "" || m.tb_matname.Text == "")
+                    if (mod.cb_drink.SelectedValue == null || mod.cb_material.SelectedValue == null)
                     {
                         MessageBox.Show("Please fill in complete information.", Reference.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
-                    else if (!int.TryParse(m.tb_matid.Text, out int result))
-                    {
-                        MessageBox.Show("Material ID must be numbers only.", Reference.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        return;
-                    }
+                    //Console.WriteLine(mod.cb_drink.SelectedValue);
+                    //Console.WriteLine(mod.cb_material.SelectedValue);
 
-                    string query = "insert into `material` (MATERIAL_ID, MATERIAL_NAME) " +
-                        "values(" +
-                        $"'{m.tb_matid.Text}' ," +
-                        $"'{m.tb_matname.Text}')";
+                    string query = $"INSERT INTO `material_of_drink` (`DRINK_ID`, `MATERIAL_ID`) VALUES ('{mod.cb_drink.SelectedValue}', '{mod.cb_material.SelectedValue}')";
 
                     int row = new MySqlCommand(query, database.connection).ExecuteNonQuery();
 
                     if (row > 0)
                     {
                         MessageBox.Show("Add successfully", Reference.Information, MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        MaterialStartupEvent.registerDataGridView(m);
+                        MaterialofDrinkStartupEvent.registerDataGridView(mod);
                     }
 
-                    clearTextBox(m);
+                    clearTextBox(mod);
                     database.DisconnectDatabase();
                 }
 
             }
             catch (MySqlException e1)
             {
-                Program.logger.Log(Level.ERROR, nameof(onClickAdd), nameof(MaterialButtonClickEvent) + "/" + e1.GetType().Name, e1.Message);
+                Program.logger.Log(Level.ERROR, nameof(onClickAdd), nameof(MaterialofDrinkStartupEvent) + "/" + e1.GetType().Name, e1.Message);
                 database.DisconnectDatabase();
 
                 if (e1.Message.Contains("Duplicate"))
                 {
-                    MessageBox.Show("ID: `" + m.tb_matid.Text + "` looks like a duplicate.", Reference.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("ID: `" + mod.cb_drink.SelectedValue + "/" + mod.cb_material.SelectedValue + "` looks like a duplicate.", Reference.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
@@ -72,7 +67,7 @@ namespace Main.Events.MaterialEvent
             }
             catch (System.Exception e1)
             {
-                Program.logger.Log(Level.ERROR, nameof(onClickAdd), nameof(MaterialButtonClickEvent) + "/" + e1.GetType().Name, e1.Message);
+                Program.logger.Log(Level.ERROR, nameof(onClickAdd), nameof(MaterialofDrinkStartupEvent) + "/" + e1.GetType().Name, e1.Message);
                 database.DisconnectDatabase();
                 MessageBox.Show(e1.Message, Reference.Error, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -80,27 +75,25 @@ namespace Main.Events.MaterialEvent
 
         /*
          * change button color.
-         * lock textBox(Employee ID)
+         * lock comboBox(Drink ID)
          * 
-         * @param {@e Employee} to set properties of component
+         * @param {@mod MaterialofDrink} to set properties of component
          */
         internal static bool editButtonIsEnable = false;
-        internal static void onClickEdit(Material m)
+        internal static void onClickEdit(MaterialofDrink mod)
         {
             if (editButtonIsEnable == false)
             {
                 editButtonIsEnable = true;
-                //e.dataGridView1.Enabled = true;
-                m.tb_matid.Enabled = false;
-                m.bt_Edit_Material.BackColor = Color.FromArgb(138, 226, 52);
+                mod.cb_drink.Enabled = false;
+                mod.bt_edit.BackColor = Color.FromArgb(138, 226, 52);
             }
             else
             {
                 editButtonIsEnable = false;
-                //e.dataGridView1.Enabled = false;
-                m.tb_matid.Enabled = true;
-                m.dataGridView1.ClearSelection();
-                m.bt_Edit_Material.BackColor = Color.White;
+                mod.cb_drink.Enabled = true;
+                mod.dataGridView1.ClearSelection();
+                mod.bt_edit.BackColor = Color.White;
             }
         }
 
@@ -109,33 +102,33 @@ namespace Main.Events.MaterialEvent
          *
          * Show MessageBox confirm when pressing delete button
          * 
-         * @param {@e Employee} to set properties of component
+         * @param {@mod MaterialofDrink} to set properties of component
          */
-        internal static void onClickDelete(Material m)
+        internal static void onClickDelete(MaterialofDrink mod)
         {
             Database database = new Database();
 
             try
             {
-                if (m.tb_matid.Text == "")
+                if (mod.cb_drink.SelectedValue == null || mod.cb_material.SelectedValue == null)
                 {
-                    MessageBox.Show("Please select the material you want to delete.", Reference.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Please select the value you want to delete.", Reference.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 else if (MessageBox.Show("Are you sure you want to delete?", Reference.Warning, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     if (database.ConnectDatabase())
                     {
-                        string query = $"delete from `material` where MATERIAL_ID = '{m.tb_matid.Text}'";
+                        string query = $"delete from `material_of_drink` where (DRINK_ID, MATERIAL_ID)= '({mod.cb_drink.SelectedValue}, {mod.cb_material.SelectedValue})'";
                         int row = new MySqlCommand(query, database.connection).ExecuteNonQuery();
 
-                        if(row > 0)
+                        if (row > 0)
                         {
                             MessageBox.Show("Delete successfully", Reference.Information, MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
 
-                        clearTextBox(m);
-                        MaterialStartupEvent.registerDataGridView(m);
+                        clearTextBox(mod);
+                        MaterialofDrinkStartupEvent.registerDataGridView(mod);
                         database.DisconnectDatabase();
                     }
                 }
@@ -152,7 +145,7 @@ namespace Main.Events.MaterialEvent
             }
             catch (System.Exception e1)
             {
-                Program.logger.Log(Level.ERROR, nameof(onClickDelete), nameof(MaterialButtonClickEvent) + "/" + e1.GetType().Name, e1.Message);
+                Program.logger.Log(Level.ERROR, nameof(onClickDelete), nameof(MaterialofDrinkStartupEvent) + "/" + e1.GetType().Name, e1.Message);
                 database.DisconnectDatabase();
             }
         }
@@ -160,49 +153,43 @@ namespace Main.Events.MaterialEvent
         /*
          * Save data into database after editing
          * 
-         * @param {@e Employee} to set properties of component
+         * @param {@mod MaterialofDrink} to set properties of component
          */
-        internal static void onClickSave(Material m)
+        internal static void onClickSave(MaterialofDrink mod)
         {
             Database database = new Database();
 
             try
             {
 
-                if (m.tb_matid.Text == "" || m.tb_matname.Text == "")
+                if (mod.cb_drink.SelectedValue == null || mod.cb_material.SelectedValue == null)
                 {
                     MessageBox.Show("Please fill in complete information.", Reference.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-                else if (!int.TryParse(m.tb_matid.Text, out int result))
-                {
-                    MessageBox.Show("Material ID must be numbers only.", Reference.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
                 if (database.ConnectDatabase())
                 {
 
-                    string query = "update `material` set " +
-                        $"MATERIAL_NAME = '{m.tb_matname.Text}' " +
-                        $"where MATERIAL_ID = {m.tb_matid.Text}";
+                    string oldMaterial = mod.cb_material.SelectedValue.ToString();
+                    string query = $"update `material_of_drink` set MATERIAL_ID = {mod.cb_drink.SelectedValue} where (DRINK_ID, MATERIAL_ID) = ({mod.cb_drink.SelectedValue}, {oldMaterial})";
 
                     int row = new MySqlCommand(query, database.connection).ExecuteNonQuery();
 
                     if (row > 0)
                     {
                         MessageBox.Show("Your changes have been successfully saved!", Reference.Information, MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        MaterialStartupEvent.registerDataGridView(m);
+                        MaterialofDrinkStartupEvent.registerDataGridView(mod);
                     }
 
-                    clearTextBox(m);
+                    clearTextBox(mod);
                     database.DisconnectDatabase();
                 }
 
             }
             catch (Exception e1)
             {
-                Program.logger.Log(Level.ERROR, nameof(onClickSave), nameof(MaterialButtonClickEvent) + "/" + e1.GetType().Name, e1.Message);
+                Program.logger.Log(Level.ERROR, nameof(onClickSave), nameof(MaterialofDrinkStartupEvent) + "/" + e1.GetType().Name, e1.Message);
                 database.DisconnectDatabase();
             }
         }
@@ -210,12 +197,12 @@ namespace Main.Events.MaterialEvent
         /*
          * clear values in textBox
          *
-         * @param {@e Employee} to set properties of component
+         * @param {@mod MaterialofDrink} to set properties of component
          */
-        private static void clearTextBox(Material m)
+        private static void clearTextBox(MaterialofDrink mod)
         {
-            m.tb_matid.Clear();
-            m.tb_matname.Clear();
+            mod.cb_drink.SelectedItem = null;
+            mod.cb_material.SelectedItem = null;
         }
     }
 }

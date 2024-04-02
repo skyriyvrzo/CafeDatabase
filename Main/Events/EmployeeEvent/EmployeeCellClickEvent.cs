@@ -32,7 +32,8 @@ namespace Main.Events.EmployeeEvent
                     e.tb_fname.Text = e.dataGridView1.Rows[ce.RowIndex].Cells["FIRST_NAME"].Value.ToString();
                     e.tb_lname.Text = e.dataGridView1.Rows[ce.RowIndex].Cells["LAST_NAME"].Value.ToString();
                     e.tb_salary.Text = e.dataGridView1.Rows[ce.RowIndex].Cells["SALARY"].Value.ToString();
-                    e.cb_sex.SelectedItem = e.dataGridView1.Rows[ce.RowIndex].Cells["SEX"].Value.ToString() == "M" ? "Male" : "Female";
+                    Console.WriteLine(e.dataGridView1.Rows[ce.RowIndex].Cells["SEX"].Value.ToString());
+                    e.cb_sex.SelectedIndex = e.dataGridView1.Rows[ce.RowIndex].Cells["SEX"].Value.ToString() == "M" ? 0 : 1;
                 }
             }catch (Exception e1)
             {

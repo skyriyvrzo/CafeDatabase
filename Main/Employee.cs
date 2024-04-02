@@ -64,5 +64,10 @@ namespace Main
         {
             Main.Events.ScreenChangeEvent.ScreenButtonClickEvent.onClickTopping(this);
         }
+
+        private void bt_mod_Click(object sender, System.EventArgs e)
+        {
+            Main.Events.ScreenChangeEvent.ScreenButtonClickEvent.onClickMaterialofDrink(this);
+        }
     }
 }
