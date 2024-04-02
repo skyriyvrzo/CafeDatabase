@@ -115,7 +115,11 @@
     <Compile Include="Events\MaterialEvent\MaterialCellClickEvent.cs" />
     <Compile Include="Events\MaterialEvent\MaterialStartupEvent.cs" />
     <Compile Include="Events\MaterialofDrinkEvent\MaterialofDrinkButtonClickEvent.cs" />
+    <Compile Include="Events\MaterialofDrinkEvent\MaterialofDrinkCellClickEvent.cs" />
     <Compile Include="Events\MaterialofDrinkEvent\MaterialofDrinkStartupEvent.cs" />
+    <Compile Include="Events\OrderDetailEvent\OrderDetailButtonClickEvent.cs" />
+    <Compile Include="Events\OrderDetailEvent\OrderDetailCellClickEvent.cs" />
+    <Compile Include="Events\OrderDetailEvent\OrderDetailStartupEvent.cs" />
     <Compile Include="Events\OrderEvent\OrderCellClickEvent.cs" />
     <Compile Include="Events\OrderEvent\OrderButtonClickEvent.cs" />
     <Compile Include="Events\OrderEvent\OrderStartupEvent.cs" />
@@ -136,6 +140,12 @@
     <Compile Include="MaterialofDrink.Designer.cs">
       <DependentUpon>MaterialofDrink.cs</DependentUpon>
     </Compile>
+    <Compile Include="OrderDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderDetail.Designer.cs">
+      <DependentUpon>OrderDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="Topping.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,11 +158,11 @@
     <Compile Include="Drink.Designer.cs">
       <DependentUpon>Drink.cs</DependentUpon>
     </Compile>
-    <Compile Include="OrdersDetail.cs">
+    <Compile Include="Order.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="OrdersDetail.Designer.cs">
-      <DependentUpon>OrdersDetail.cs</DependentUpon>
+    <Compile Include="Order.Designer.cs">
+      <DependentUpon>Order.cs</DependentUpon>
     </Compile>
     <Compile Include="Employee.cs">
       <SubType>Form</SubType>
@@ -173,14 +183,17 @@
     <EmbeddedResource Include="MaterialofDrink.resx">
       <DependentUpon>MaterialofDrink.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="OrderDetail.resx">
+      <DependentUpon>OrderDetail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Topping.resx">
       <DependentUpon>Topping.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Material.resx">
       <DependentUpon>Material.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="OrdersDetail.resx">
-      <DependentUpon>OrdersDetail.cs</DependentUpon>
+    <EmbeddedResource Include="Order.resx">
+      <DependentUpon>Order.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

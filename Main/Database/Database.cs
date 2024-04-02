@@ -8,8 +8,8 @@ namespace Main
     {
         private Logger logger = Logger.GetLogger("connection_log", true, true, true);
 
-        static readonly string conString = "datasource=sql.cafeempty.net;" +
-            "port=3307;" +
+        static readonly string conString = "datasource=localhost;" +
+            "port=3306;" +
             "database=cafe_db;" +
             "username=root;" +
             "password=;";

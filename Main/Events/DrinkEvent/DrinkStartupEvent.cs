@@ -4,6 +4,7 @@ using Main.Utils;
 using MySql.Data.MySqlClient;
 using System.Collections.Generic;
 using System.Data;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace Main.Events.DrinkEvent
@@ -17,7 +18,10 @@ namespace Main.Events.DrinkEvent
             {
                 onStartup(d);
                 registerItemsInComboBox(d);
-                registerDataGridView(d);
+
+                Thread thread = new Thread(() => registerDataGridView(d));
+                thread.Start();
+
                 Program.logger.Log(Level.INFO, nameof(DrinkStartupEvent) + " Loaded");
             }
             catch (System.Exception e)
@@ -38,11 +42,11 @@ namespace Main.Events.DrinkEvent
         private static void registerItemsInComboBox(Drink d)
         {
             ComboBoxItem item1 = new ComboBoxItem();
-            item1.Text = "โสด";
+            item1.Text = "ยังไม่พร้อมขาย";
             item1.Value = 0;
 
             ComboBoxItem item2 = new ComboBoxItem();
-            item2.Text = "มีแฟนแล้ว";
+            item2.Text = "พร้อมขาย";
             item2.Value = 1;
 
             d.cb_status.Items.Add(item1);

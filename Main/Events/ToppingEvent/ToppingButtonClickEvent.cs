@@ -177,7 +177,7 @@ namespace Main.Events.ToppingEvent
                     MessageBox.Show("Please fill in complete information.", Reference.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-                else if (!int.TryParse(t.tb_tp_id.Text, out int result) && !int.TryParse(t.tb_tp_price.Text, out int result1))
+                else if (!int.TryParse(t.tb_tp_id.Text, out int result) || !int.TryParse(t.tb_tp_price.Text, out int result1))
                 {
                     MessageBox.Show("Topping ID and price must be numbers only.", Reference.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;

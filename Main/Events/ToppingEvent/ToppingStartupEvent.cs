@@ -2,6 +2,7 @@
 using Main.Events.ScreenChangeEvent;
 using MySql.Data.MySqlClient;
 using System.Data;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace Main.Events.ToppingEvent
@@ -14,7 +15,9 @@ namespace Main.Events.ToppingEvent
             try
             {
                 onStartup(t);
-                registerDataGridView(t);
+                Thread thread = new Thread(() => registerDataGridView(t));
+                thread.Start();
+
                 Program.logger.Log(Level.INFO, nameof(ToppingStartupEvent) + " Loaded");
             }
             catch (System.Exception e)

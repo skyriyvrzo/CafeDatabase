@@ -18,7 +18,7 @@ namespace Main.Events.DrinkEvent
 
             try
             {
-                if (d.tb_drink_id.Text == "" || d.tb_name.Text == "" || d.tb_price.Text == "" || (d.cb_status.SelectedItem as ComboBoxItem).Value.ToString() == null)
+                if (d.tb_drink_id.Text == "" || d.tb_name.Text == "" || d.tb_price.Text == "" || d.cb_status.SelectedItem == null)
                 {
                     MessageBox.Show("Please fill in complete information.", Reference.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
@@ -35,7 +35,7 @@ namespace Main.Events.DrinkEvent
                         $"('{d.tb_drink_id.Text}', " +
                         $"'{d.tb_name.Text}', " +
                         $"'{d.tb_price.Text}', " +
-                        $"'{(d.cb_status.SelectedItem as ComboBoxItem).Value.ToString()}')";
+                        $"'{(d.cb_status.SelectedItem as ComboBoxItem).Value}')";
                     int row = new MySqlCommand(query, database.connection).ExecuteNonQuery();
 
                     if (row > 0)
@@ -108,7 +108,7 @@ namespace Main.Events.DrinkEvent
                 {
                     if (database.ConnectDatabase())
                     {
-                        string query = $"delete from `drink` where ORDER_ID = '{d.tb_drink_id.Text}'";
+                        string query = $"delete from `drink` where DRINK_ID = '{d.tb_drink_id.Text}'";
                         int row = new MySqlCommand(query, database.connection).ExecuteNonQuery();
 
                         if (row > 0)
@@ -148,7 +148,7 @@ namespace Main.Events.DrinkEvent
             try
             {
 
-                if (d.tb_drink_id.Text == "" || d.tb_name.Text == "" || d.tb_price.Text == "" || d.cb_status.SelectedValue == null)
+                if (d.tb_drink_id.Text == "" || d.tb_name.Text == "" || d.tb_price.Text == "" || d.cb_status.SelectedItem == null)
                 {
                     MessageBox.Show("Please fill in complete information.", Reference.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
@@ -162,9 +162,9 @@ namespace Main.Events.DrinkEvent
                 if (database.ConnectDatabase())
                 {
                     string query = "update `drink` set " +
-                        $"DRINK_NAME '{d.tb_name.Text}', " +
-                        $"DRINK_PRICE '{d.tb_price.Text}', " +
-                        $"DRINK_STATUS '{d.cb_status.SelectedValue}'" +
+                        $"DRINK_NAME = '{d.tb_name.Text}', " +
+                        $"DRINK_PRICE = '{d.tb_price.Text}', " +
+                        $"DRINK_STATUS = '{(d.cb_status.SelectedItem as ComboBoxItem).Value}'" +
                         $"where DRINK_ID = {d.tb_drink_id.Text}";
                     int row = new MySqlCommand(query, database.connection).ExecuteNonQuery();
 
@@ -196,7 +196,7 @@ namespace Main.Events.DrinkEvent
             d.tb_drink_id.Clear();
             d.tb_name.Clear();
             d.tb_price.Clear();
-            d.cb_status.SelectedValue = null;
+            d.cb_status.SelectedItem = null;
         }
     }
 }

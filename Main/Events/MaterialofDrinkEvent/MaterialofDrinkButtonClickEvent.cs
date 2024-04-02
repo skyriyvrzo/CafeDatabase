@@ -155,6 +155,8 @@ namespace Main.Events.MaterialofDrinkEvent
          * 
          * @param {@mod MaterialofDrink} to set properties of component
          */
+
+        internal static string materialOldValue;
         internal static void onClickSave(MaterialofDrink mod)
         {
             Database database = new Database();
@@ -171,8 +173,7 @@ namespace Main.Events.MaterialofDrinkEvent
                 if (database.ConnectDatabase())
                 {
 
-                    string oldMaterial = mod.cb_material.SelectedValue.ToString();
-                    string query = $"update `material_of_drink` set MATERIAL_ID = {mod.cb_drink.SelectedValue} where (DRINK_ID, MATERIAL_ID) = ({mod.cb_drink.SelectedValue}, {oldMaterial})";
+                    string query = $"update `material_of_drink` set MATERIAL_ID = {mod.cb_material.SelectedValue} where (DRINK_ID, MATERIAL_ID) = ({mod.cb_drink.SelectedValue}, {materialOldValue})";
 
                     int row = new MySqlCommand(query, database.connection).ExecuteNonQuery();
 
@@ -181,6 +182,13 @@ namespace Main.Events.MaterialofDrinkEvent
                         MessageBox.Show("Your changes have been successfully saved!", Reference.Information, MessageBoxButtons.OK, MessageBoxIcon.Information);
                         MaterialofDrinkStartupEvent.registerDataGridView(mod);
                     }
+                    /*else
+                    {
+                        Console.WriteLine(row);
+                        Console.WriteLine("DRINK ID: " + mod.cb_drink.SelectedValue);
+                        Console.WriteLine("OLD: " + materialOldValue);
+                        Console.WriteLine("NEW: " + mod.cb_material.SelectedValue);
+                    }*/
 
                     clearTextBox(mod);
                     database.DisconnectDatabase();

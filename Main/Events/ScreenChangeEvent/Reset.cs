@@ -2,6 +2,7 @@
 using Main.Events.EmployeeEvent;
 using Main.Events.MaterialEvent;
 using Main.Events.MaterialofDrinkEvent;
+using Main.Events.OrderDetailEvent;
 using Main.Events.OrderEvent;
 using Main.Events.ToppingEvent;
 
@@ -23,6 +24,7 @@ namespace Main.Events.ScreenChangeEvent
             ToppingButtonClickEvent.editButtonIsEnable = false;
             DrinkButtonClickEvent.editButtonIsEnable = false;
             MaterialofDrinkButtonClickEvent.editButtonIsEnable = false;
+            OrderDetailButtonClickEvent.editButtonIsEnable = false;
         }
     }
 }

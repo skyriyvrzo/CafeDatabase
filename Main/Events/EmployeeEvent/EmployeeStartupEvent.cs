@@ -4,6 +4,8 @@ using Main.Events.ScreenChangeEvent;
 using Main.Utils;
 using MySql.Data.MySqlClient;
 using System.Data;
+using System.Diagnostics;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace Main.Events.EmployeeEvent
@@ -24,7 +26,9 @@ namespace Main.Events.EmployeeEvent
             {
                 onStartup(e);
                 registerItemsInComboBox(e);
-                registerDataGridView(e);
+
+                Thread thread = new Thread(() => registerDataGridView(e));
+                thread.Start();
 
                 Program.logger.Log(Level.INFO, nameof(EmployeeStartupEvent) + " Loaded");
             }catch(System.Exception e1)

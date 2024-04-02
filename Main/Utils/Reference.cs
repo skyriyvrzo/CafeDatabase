@@ -16,10 +16,11 @@
          */
 
         internal static Employee employee;
-        internal static OrdersDetail ordersDetail;
+        internal static Order order;
         internal static Drink drink;
         internal static Material material;
         internal static Topping topping;
         internal static MaterialofDrink materialofDrink;
+        internal static OrderDetail orderDetail;
     }
 }

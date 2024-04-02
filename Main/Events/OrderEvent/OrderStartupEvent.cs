@@ -1,9 +1,8 @@
 ﻿using CSharp.Util.Logging;
-using Main.Events.EmployeeEvent;
 using Main.Events.ScreenChangeEvent;
 using MySql.Data.MySqlClient;
 using System.Data;
-using System.Net.Http.Headers;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace Main.Events.OrderEvent
@@ -11,13 +10,16 @@ namespace Main.Events.OrderEvent
 #pragma warning disable IDE1006
     internal sealed class OrderStartupEvent
     {
-        internal static void load(OrdersDetail o)
+        internal static void load(Order o)
         {
             try
             {
                 onStartup(o);
-                registerItemsInComboBox(o);
-                registerDataGridView(o);
+                Thread thread1 = new Thread(() => registerItemsInComboBox(o));
+                Thread thread2 = new Thread(() => registerDataGridView(o));
+                thread1.Start();
+                thread2.Start();
+
                 Program.logger.Log(Level.INFO, nameof(OrderStartupEvent) + " Loaded");
             }
             catch (System.Exception e)
@@ -26,16 +28,16 @@ namespace Main.Events.OrderEvent
             }
         }
 
-        private static void onStartup(OrdersDetail o)
+        private static void onStartup(Order o)
         {
-            o.cb_drink_id.Focus();
+            o.tb_orderid_od.Focus();
             o.dataGridView1.ReadOnly = true;
 
             ResetEvent.reset();
             Program.logger.Log(Level.INFO, nameof(onStartup) + " Loaded");
         }
 
-        private static void registerItemsInComboBox(OrdersDetail o)
+        private static void registerItemsInComboBox(Order o)
         {
             Database database = new Database();
 
@@ -56,34 +58,6 @@ namespace Main.Events.OrderEvent
                             o.cb_emp.SelectedItem = null;
                         }
                     }
-
-                    query = "select DRINK_ID, DRINK_NAME, Concat(DRINK_NAME, Concat(' (', Concat(DRINK_ID, ')'))) as Name from `drink`";
-                    using(MySqlCommand command = new MySqlCommand(query, database.connection))
-                    {
-                        using(MySqlDataAdapter adapter = new MySqlDataAdapter(command))
-                        {
-                            DataTable dataTable = new DataTable();
-                            adapter.Fill(dataTable);
-                            o.cb_drink_id.DataSource = dataTable;
-                            o.cb_drink_id.DisplayMember = "Name";
-                            o.cb_drink_id.ValueMember = "DRINK_ID";
-                            o.cb_drink_id.SelectedItem = null;
-                        }
-                    }
-
-                    query = "select TOPPING_ID, TOPPING_NAME, Concat(TOPPING_NAME, Concat(' (', Concat(TOPPING_ID, ')'))) as Name from `topping`";
-                    using (MySqlCommand command = new MySqlCommand(query, database.connection))
-                    {
-                        using (MySqlDataAdapter adapter = new MySqlDataAdapter(command))
-                        {
-                            DataTable dataTable = new DataTable();
-                            adapter.Fill(dataTable);
-                            o.cb_topping_id.DataSource = dataTable;
-                            o.cb_topping_id.DisplayMember = "Name";
-                            o.cb_topping_id.ValueMember = "TOPPING_ID";
-                            o.cb_topping_id.SelectedItem = null;
-                        }
-                    }
                     database.DisconnectDatabase();
                 }
                 Program.logger.Log(Level.INFO, nameof(registerItemsInComboBox) + " Loaded");
@@ -95,7 +69,7 @@ namespace Main.Events.OrderEvent
 
         }
 
-        internal static void registerDataGridView(OrdersDetail o)
+        internal static void registerDataGridView(Order o)
         {
             Database database = new Database();
 
@@ -103,7 +77,7 @@ namespace Main.Events.OrderEvent
             {
                 if (database.ConnectDatabase())
                 {
-                    string query = "SELECT o.ORDER_ID, od.DRINK_ID, od.TOPPING_ID, od.QUANTITY, o.ORDER_DATE, o.EMPLOYEE_ID from `order` o join `order_detail` od where o.ORDER_ID = od.ORDER_ID";
+                    string query = "select * from `order`";
 
                     using (MySqlCommand command = new MySqlCommand(query, database.connection))
                     {

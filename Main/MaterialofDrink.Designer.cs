@@ -171,6 +171,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(973, 335);
             this.dataGridView1.TabIndex = 29;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // MaterialofDrink
             // 
@@ -193,6 +194,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "MaterialofDrink";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cafe/MaterialofDrink";
             this.Load += new System.EventHandler(this.MaterialofDrink_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

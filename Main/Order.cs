@@ -11,11 +11,15 @@ using System.Windows.Forms;
 namespace Main
 {
 #pragma warning disable IDE1006
-    public partial class OrdersDetail : Form
+    public partial class Order : Form
     {
-        public OrdersDetail()
+        public Order()
         {
             InitializeComponent();
+        }
+        private void OrdersDetail_Load(object sender, EventArgs e)
+        {
+            Main.Events.OrderEvent.OrderStartupEvent.load(this);
         }
 
         protected override void OnFormClosing(FormClosingEventArgs e)
@@ -35,10 +39,6 @@ namespace Main
             Main.Events.ScreenChangeEvent.ScreenButtonClickEvent.onClickEmployee(this);
         }
 
-        private void OrdersDetail_Load(object sender, EventArgs e)
-        {
-            Main.Events.OrderEvent.OrderStartupEvent.load(this);
-        }
 
         private void bt_add_od_Click(object sender, EventArgs e)
         {

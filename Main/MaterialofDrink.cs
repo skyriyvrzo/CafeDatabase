@@ -41,5 +41,10 @@ namespace Main
         {
             Main.Events.MaterialofDrinkEvent.MaterialofDrinkButtonClickEvent.onClickSave(this);
         }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Main.Events.MaterialofDrinkEvent.MaterialofDrinkCellClickEvent.onCellClick(this, e);
+        }
     }
 }

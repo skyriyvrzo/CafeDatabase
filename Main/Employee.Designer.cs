@@ -49,6 +49,7 @@
             this.bt_mat = new System.Windows.Forms.Button();
             this.bt_topping_emp = new System.Windows.Forms.Button();
             this.bt_mod = new System.Windows.Forms.Button();
+            this.bt_od = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -255,12 +256,25 @@
             this.bt_mod.UseVisualStyleBackColor = false;
             this.bt_mod.Click += new System.EventHandler(this.bt_mod_Click);
             // 
+            // bt_od
+            // 
+            this.bt_od.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bt_od.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_od.Location = new System.Drawing.Point(878, 102);
+            this.bt_od.Name = "bt_od";
+            this.bt_od.Size = new System.Drawing.Size(75, 60);
+            this.bt_od.TabIndex = 27;
+            this.bt_od.Text = "OD";
+            this.bt_od.UseVisualStyleBackColor = false;
+            this.bt_od.Click += new System.EventHandler(this.bt_od_Click);
+            // 
             // Employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(997, 570);
+            this.Controls.Add(this.bt_od);
             this.Controls.Add(this.bt_mod);
             this.Controls.Add(this.bt_topping_emp);
             this.Controls.Add(this.bt_mat);
@@ -317,6 +331,7 @@
         internal System.Windows.Forms.Button bt_mat;
         internal System.Windows.Forms.Button bt_topping_emp;
         internal System.Windows.Forms.Button bt_mod;
+        internal System.Windows.Forms.Button bt_od;
     }
 }
 

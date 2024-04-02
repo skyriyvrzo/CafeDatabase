@@ -8,6 +8,7 @@ using System.Data;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -21,8 +22,11 @@ namespace Main.Events.MaterialofDrinkEvent
             try
             {
                 onStartup(mod);
-                registerItemsInComboBox(mod);
-                registerDataGridView(mod);
+                Thread thread1 = new Thread(() => registerItemsInComboBox(mod));
+                Thread thread2 = new Thread(() => registerDataGridView(mod));
+                thread1.Start();
+                thread2.Start();
+
                 Program.logger.Log(Level.INFO, nameof(MaterialofDrinkStartupEvent) + " Loaded");
             }
             catch (System.Exception e)

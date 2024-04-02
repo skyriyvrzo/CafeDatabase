@@ -1,4 +1,5 @@
 ﻿using Main.Utils;
+using System.Runtime.CompilerServices;
 using System.Windows.Forms;
 
 namespace Main.Events.ScreenChangeEvent
@@ -23,8 +24,8 @@ namespace Main.Events.ScreenChangeEvent
         internal static void onClickOrder(Form f)
         {
             f.Hide();
-            Reference.ordersDetail = new OrdersDetail();
-            Reference.ordersDetail.Show();
+            Reference.order = new Order();
+            Reference.order.Show();
         }
 
         internal static void onClickDrink(Form f)
@@ -53,6 +54,13 @@ namespace Main.Events.ScreenChangeEvent
             f.Hide();
             Reference.materialofDrink = new MaterialofDrink();
             Reference.materialofDrink.Show();
+        }
+
+        internal static void onClickOrderDetail(Form f)
+        {
+            f.Hide();
+            Reference.orderDetail = new OrderDetail();
+            Reference.orderDetail.Show();
         }
     }
 }

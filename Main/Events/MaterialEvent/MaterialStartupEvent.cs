@@ -3,6 +3,7 @@ using Main.Events.OrderEvent;
 using Main.Events.ScreenChangeEvent;
 using MySql.Data.MySqlClient;
 using System.Data;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace Main.Events.MaterialEvent
@@ -15,7 +16,10 @@ namespace Main.Events.MaterialEvent
             try
             {
                 onStartup(m);
-                registerDataGridView(m);
+
+                Thread thread = new Thread(() => registerDataGridView(m));
+                thread.Start();
+
                 Program.logger.Log(Level.INFO, nameof(MaterialStartupEvent) + " Loaded");
             }
             catch (System.Exception e)

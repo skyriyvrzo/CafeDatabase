@@ -69,5 +69,10 @@ namespace Main
         {
             Main.Events.ScreenChangeEvent.ScreenButtonClickEvent.onClickMaterialofDrink(this);
         }
+
+        private void bt_od_Click(object sender, System.EventArgs e)
+        {
+            Main.Events.ScreenChangeEvent.ScreenButtonClickEvent.onClickOrderDetail(this);
+        }
     }
 }
