@@ -10,6 +10,7 @@ namespace Main.Event.EmployeeEvent
 
         /*
          * show content of the clicked cell
+         * if {@editButtonIsEnable Boolean} is false, it will not populate the textBox.
          * 
          * @param {@e Employee} to set properties of component
          * @param {@ce DataGridViewCellEventArgs} to get the RowIndex of the clicked cell
@@ -24,6 +25,8 @@ namespace Main.Event.EmployeeEvent
                 }
                 else
                 {
+                    if(EmployeeButtonClickEvent.editButtonIsEnable == false) { return; }
+
                     e.tb_empid.Text = e.dataGridView1.Rows[ce.RowIndex].Cells["EMPLOYEE_ID"].Value.ToString();
                     e.tb_fname.Text = e.dataGridView1.Rows[ce.RowIndex].Cells["FIRST_NAME"].Value.ToString();
                     e.tb_lname.Text = e.dataGridView1.Rows[ce.RowIndex].Cells["LAST_NAME"].Value.ToString();

@@ -6,7 +6,7 @@ namespace Main
 {
     public sealed class Database
     {
-        private Logger logger = Logger.GetLogger("connection_log", false, false , true);
+        private Logger logger = Logger.GetLogger("connection_log", true, true, true);
 
         static readonly string conString = "datasource=sql.cafeempty.net;" +
             "port=3307;" +
@@ -20,12 +20,12 @@ namespace Main
             try
             {
                 connection.Open();
-                logger.Log(Level.INFO, "Client", nameof(Database), "Connected");
+                logger.Log(Level.INFO, "Client", connection.DataSource, "Connected");
                 return true;
             }
             catch (Exception ex)
             {
-                logger.Log(Level.ERROR, "Client", nameof(Database), ex.Message);
+                logger.Log(Level.WARNING, "Client", connection.DataSource, ex.Message);
                 return false;
             }
         }
@@ -35,12 +35,12 @@ namespace Main
             try
             {
                 connection.Close();
-                logger.Log(Level.INFO, "Client", nameof(Database), "Disconnected");
+                logger.Log(Level.INFO, "Client", connection.DataSource, "Disconnected");
                 return true;
             }
             catch (Exception ex)
             {
-                logger.Log(Level.ERROR, "Client", nameof(Database), ex.Message);
+                logger.Log(Level.WARNING, "Client", connection.DataSource, ex.Message);
                 return false;
             }
         }

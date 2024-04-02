@@ -3,7 +3,6 @@ using Main.Utils;
 using MySql.Data.MySqlClient;
 using System;
 using System.Drawing;
-using System.Security.Cryptography;
 using System.Windows.Forms;
 
 namespace Main.Event.EmployeeEvent
@@ -58,6 +57,7 @@ namespace Main.Event.EmployeeEvent
                         EmployeeStartupEvent.registerDataGridView(e);
                     }
 
+                    clearTextBox(e);
                     database.DisconnectDatabase();
                 }
 
@@ -84,23 +84,24 @@ namespace Main.Event.EmployeeEvent
         }
 
         /*
-         * can click inside a cell
+         * change button color.
          * 
          * @param {@e Employee} to set properties of component
          */
-        private static bool editButtonIsEnable = false;
+        internal static bool editButtonIsEnable = false;
         internal static void onClickEdit(Employee e)
         {
             if (editButtonIsEnable == false)
             {
                 editButtonIsEnable = true;
-                e.dataGridView1.Enabled = true;
+                //e.dataGridView1.Enabled = true;
                 e.bt_edit_emp.BackColor = Color.FromArgb(138, 226, 52);
             }
             else
             {
                 editButtonIsEnable = false;
-                e.dataGridView1.Enabled = false;
+                //e.dataGridView1.Enabled = false;
+                e.dataGridView1.ClearSelection();
                 e.bt_edit_emp.BackColor = Color.White;
             }
         }
@@ -109,6 +110,8 @@ namespace Main.Event.EmployeeEvent
          * Delete data from table.
          *
          * Show MessageBox confirm when pressing delete button
+         * 
+         * @param {@e Employee} to set properties of component
          */
         internal static void onClickDelete(Employee e)
         {
@@ -128,11 +131,24 @@ namespace Main.Event.EmployeeEvent
                         command.ExecuteNonQuery();
 
                         MessageBox.Show("Delete successfully", Reference.Information, MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        clearTextBox(e);
                         EmployeeStartupEvent.registerDataGridView(e);
                         database.DisconnectDatabase();
                     }
                 }
-            }catch(System.Exception e1)
+            }
+            catch(MySqlException e1)
+            {
+                if(e1.Message.Contains("Cannot delete or update a parent row"))
+                {
+                    MessageBox.Show("Cannot delete or update a parent row", Reference.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                throw new Exception(e1.Message);
+            }
+            catch(System.Exception e1)
             {
                 Program.logger.Log(Level.ERROR, nameof(onClickDelete), nameof(EmployeeButtonClickEvent) + "/" + e1.GetType().Name, e1.Message);
                 database.DisconnectDatabase();
@@ -141,6 +157,8 @@ namespace Main.Event.EmployeeEvent
 
         /*
          * Save data into database after editing
+         * 
+         * @param {@e Employee} to set properties of component
          */
         internal static void onClickSave()
         {
@@ -150,10 +168,25 @@ namespace Main.Event.EmployeeEvent
         /*
          * Move to Mene(Menu.cs) display
          * 
-         * @param
+         * @param {@e Employee} to set properties of component
          */
         internal static void onClickMenu() { 
         
+        }
+
+
+        /*
+         * clear values in textBox
+         *
+         * @param {@e Employee} to set properties of component
+         */
+        internal static void clearTextBox(Employee e)
+        {
+            e.tb_empid.Clear();
+            e.tb_fname.Clear();
+            e.tb_lname.Clear();
+            e.tb_salary.Clear();
+            e.cb_sex.SelectedItem = null;
         }
     }
 }

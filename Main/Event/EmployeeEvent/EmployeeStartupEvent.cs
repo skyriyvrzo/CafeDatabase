@@ -1,6 +1,7 @@
 ﻿using CSharp.Util.Logging;
 using MySql.Data.MySqlClient;
 using System.Data;
+using System.Windows.Forms;
 
 namespace Main.Event.EmployeeEvent
 {
@@ -30,14 +31,14 @@ namespace Main.Event.EmployeeEvent
         }
 
         /*
-         * disable edit mode dataGridView
+         * set dataGridView to read-only
          * 
          * @param {@e Employee} to set properties of component
          */
         private static void onStartup(Employee e)
         {
             e.tb_empid.Focus();
-            e.dataGridView1.Enabled = false;
+            //e.dataGridView1.Enabled = false;
             e.dataGridView1.ReadOnly = true;
         }
 
@@ -68,21 +69,25 @@ namespace Main.Event.EmployeeEvent
                 {
                     string query = "select * from `employees`";
 
-                    MySqlCommand command = new MySqlCommand(query, database.connection);
-
-                    MySqlDataAdapter adapter = new MySqlDataAdapter();
-                    adapter.SelectCommand = command;
-
-                    DataTable dataTable = new DataTable();
-                    adapter.Fill(dataTable);
-
-                    e.dataGridView1.DataSource = dataTable;
-
+                    using (MySqlCommand command = new MySqlCommand(query, database.connection))
+                    {
+                        using (MySqlDataAdapter adapter = new MySqlDataAdapter(command))
+                        {
+                            DataTable dataTable = new DataTable();
+                            adapter.Fill(dataTable);
+                            e.dataGridView1.DataSource = dataTable;
+                        }
+                    }
                     database.DisconnectDatabase();
                 }
 
-
-            }catch(System.Exception e1)
+                e.dataGridView1.ClearSelection();
+                /*
+                 * Resize the table to fit the data grid view
+                 */
+                e.dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            }
+            catch(System.Exception e1)
             {
                 Program.logger.Log(Level.ERROR, nameof(registerDataGridView), nameof(EmployeeStartupEvent) + "/" + e1.GetType().Name, e1.Message);
                 database.DisconnectDatabase();
