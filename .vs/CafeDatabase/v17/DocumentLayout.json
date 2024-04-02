@@ -1,7 +1,28 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\Github\\CafeDatabase\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|e:\\github\\cafedatabase\\main\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|solutionrelative:main\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|e:\\github\\cafedatabase\\main\\drink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|solutionrelative:main\\drink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|e:\\github\\cafedatabase\\main\\events\\orderevent\\orderstartupevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|solutionrelative:main\\events\\orderevent\\orderstartupevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|e:\\github\\cafedatabase\\main\\events\\orderevent\\orderbuttonclickevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|solutionrelative:main\\events\\orderevent\\orderbuttonclickevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|e:\\github\\cafedatabase\\main\\ordersdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|solutionrelative:main\\ordersdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +43,68 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Orders.cs [Design]",
+              "DocumentMoniker": "E:\\Github\\CafeDatabase\\Main\\Orders.cs",
+              "RelativeDocumentMoniker": "Main\\Orders.cs",
+              "ToolTip": "E:\\Github\\CafeDatabase\\Main\\Orders.cs [Design]",
+              "RelativeToolTip": "Main\\Orders.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T08:14:11.024Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Drink.cs [Design]",
+              "DocumentMoniker": "E:\\Github\\CafeDatabase\\Main\\Drink.cs",
+              "RelativeDocumentMoniker": "Main\\Drink.cs",
+              "ToolTip": "E:\\Github\\CafeDatabase\\Main\\Drink.cs [Design]",
+              "RelativeToolTip": "Main\\Drink.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T08:12:34.605Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrdersDetail.cs [Design]",
+              "DocumentMoniker": "E:\\Github\\CafeDatabase\\Main\\OrdersDetail.cs",
+              "RelativeDocumentMoniker": "Main\\OrdersDetail.cs",
+              "ToolTip": "E:\\Github\\CafeDatabase\\Main\\OrdersDetail.cs [Design]",
+              "RelativeToolTip": "Main\\OrdersDetail.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T08:08:00.544Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderStartupEvent.cs",
+              "DocumentMoniker": "E:\\Github\\CafeDatabase\\Main\\Events\\OrderEvent\\OrderStartupEvent.cs",
+              "RelativeDocumentMoniker": "Main\\Events\\OrderEvent\\OrderStartupEvent.cs",
+              "ToolTip": "E:\\Github\\CafeDatabase\\Main\\Events\\OrderEvent\\OrderStartupEvent.cs",
+              "RelativeToolTip": "Main\\Events\\OrderEvent\\OrderStartupEvent.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwBIAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T08:06:34.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderButtonClickEvent.cs",
+              "DocumentMoniker": "E:\\Github\\CafeDatabase\\Main\\Events\\OrderEvent\\OrderButtonClickEvent.cs",
+              "RelativeDocumentMoniker": "Main\\Events\\OrderEvent\\OrderButtonClickEvent.cs",
+              "ToolTip": "E:\\Github\\CafeDatabase\\Main\\Events\\OrderEvent\\OrderButtonClickEvent.cs",
+              "RelativeToolTip": "Main\\Events\\OrderEvent\\OrderButtonClickEvent.cs",
+              "ViewState": "AQIAAF8AAAAAAAAAAAAwwGwAAACaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T07:54:17.097Z",
+              "EditorCaption": ""
             }
           ]
         }

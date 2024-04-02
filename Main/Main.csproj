@@ -105,9 +105,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database\Database.cs" />
-    <Compile Include="Event\EmployeeEvent\EmployeeButtonClickEvent.cs" />
-    <Compile Include="Event\EmployeeEvent\EmployeeCellClickEvent.cs" />
-    <Compile Include="Event\EmployeeEvent\EmployeeStartupEvent.cs" />
+    <Compile Include="Events\EmployeeEvent\EmployeeButtonClickEvent.cs" />
+    <Compile Include="Events\EmployeeEvent\EmployeeCellClickEvent.cs" />
+    <Compile Include="Events\EmployeeEvent\EmployeeStartupEvent.cs" />
+    <Compile Include="Events\OrderEvent\OrderCellClickEvent.cs" />
+    <Compile Include="Events\OrderEvent\OrderButtonClickEvent.cs" />
+    <Compile Include="Events\OrderEvent\OrderStartupEvent.cs" />
+    <Compile Include="Events\ScreenChangeEvent\Reset.cs" />
+    <Compile Include="Events\ScreenChangeEvent\ScreenButtonClickEvent.cs" />
     <Compile Include="Material.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,11 +125,11 @@
     <Compile Include="Topping.Designer.cs">
       <DependentUpon>Topping.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menu.cs">
+    <Compile Include="Orders.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu.Designer.cs">
-      <DependentUpon>Menu.cs</DependentUpon>
+    <Compile Include="Orders.Designer.cs">
+      <DependentUpon>Orders.cs</DependentUpon>
     </Compile>
     <Compile Include="Drink.cs">
       <SubType>Form</SubType>
@@ -159,8 +164,8 @@
     <EmbeddedResource Include="Material.resx">
       <DependentUpon>Material.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menu.resx">
-      <DependentUpon>Menu.cs</DependentUpon>
+    <EmbeddedResource Include="Orders.resx">
+      <DependentUpon>Orders.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OrdersDetail.resx">
       <DependentUpon>OrdersDetail.cs</DependentUpon>

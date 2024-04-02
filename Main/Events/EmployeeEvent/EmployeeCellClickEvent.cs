@@ -1,11 +1,12 @@
 ﻿using CSharp.Util.Logging;
+using Main.Utils;
 using System;
 using System.Windows.Forms;
 
-namespace Main.Event.EmployeeEvent
+namespace Main.Events.EmployeeEvent
 {
 #pragma warning disable IDE1006
-    internal class EmployeeCellClickEvent
+    internal sealed class OrderCellClickEvent
     {
 
         /*
@@ -21,7 +22,7 @@ namespace Main.Event.EmployeeEvent
             {
                 if (e.dataGridView1.Rows[ce.RowIndex].Cells["EMPLOYEE_ID"].Value.ToString() == "")
                 {
-                    MessageBox.Show("Please select a row with data.", "Cafe", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Please select a row with data.", Reference.Warning, MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
@@ -35,7 +36,7 @@ namespace Main.Event.EmployeeEvent
                 }
             }catch (Exception e1)
             {
-                Program.logger.Log(Level.ERROR, nameof(onCellClick), nameof(EmployeeCellClickEvent), e1.Message);
+                Program.logger.Log(Level.ERROR, nameof(onCellClick), nameof(OrderCellClickEvent), e1.Message);
             }
         }
     }

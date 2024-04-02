@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Main.Utils;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,13 @@ namespace Main
         public Drink()
         {
             InitializeComponent();
+        }
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+
+            Application.Exit();
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Main
 {
-    partial class Menu
+    partial class Orders
     {
         /// <summary>
         /// Required designer variable.
@@ -188,7 +188,10 @@
             this.Controls.Add(this.bt_orderdate);
             this.Controls.Add(this.tb_orderid);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cafe/Orders";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

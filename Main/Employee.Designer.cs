@@ -175,6 +175,7 @@
             this.tb_save_emp.TabIndex = 14;
             this.tb_save_emp.Text = "Save";
             this.tb_save_emp.UseVisualStyleBackColor = true;
+            this.tb_save_emp.Click += new System.EventHandler(this.tb_save_emp_Click);
             // 
             // bt_order_emp
             // 
@@ -186,6 +187,7 @@
             this.bt_order_emp.TabIndex = 15;
             this.bt_order_emp.Text = "Orders";
             this.bt_order_emp.UseVisualStyleBackColor = false;
+            this.bt_order_emp.Click += new System.EventHandler(this.bt_order_emp_Click);
             // 
             // mySqlCommand1
             // 
@@ -214,6 +216,7 @@
             this.bt_drink_emp.TabIndex = 18;
             this.bt_drink_emp.Text = "Drink";
             this.bt_drink_emp.UseVisualStyleBackColor = false;
+            this.bt_drink_emp.Click += new System.EventHandler(this.bt_drink_emp_Click);
             // 
             // bt_mat
             // 
@@ -225,6 +228,7 @@
             this.bt_mat.TabIndex = 20;
             this.bt_mat.Text = "Material";
             this.bt_mat.UseVisualStyleBackColor = false;
+            this.bt_mat.Click += new System.EventHandler(this.bt_mat_Click);
             // 
             // bt_topping_emp
             // 
@@ -236,6 +240,7 @@
             this.bt_topping_emp.TabIndex = 25;
             this.bt_topping_emp.Text = "Topping";
             this.bt_topping_emp.UseVisualStyleBackColor = false;
+            this.bt_topping_emp.Click += new System.EventHandler(this.bt_topping_emp_Click);
             // 
             // Employee
             // 
@@ -263,7 +268,10 @@
             this.Controls.Add(this.tb_empid);
             this.Controls.Add(this.dataGridView1);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Employee";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cafe/Employee";
             this.Load += new System.EventHandler(this.Employee_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

@@ -5,10 +5,10 @@ using System;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Main.Event.EmployeeEvent
+namespace Main.Events.EmployeeEvent
 {
 #pragma warning disable IDE1006
-    internal class EmployeeButtonClickEvent
+    internal sealed class EmployeeButtonClickEvent
     {
         /*
          * insert new data into database(table=employees)
@@ -85,6 +85,7 @@ namespace Main.Event.EmployeeEvent
 
         /*
          * change button color.
+         * lock textBox(Employee ID)
          * 
          * @param {@e Employee} to set properties of component
          */
@@ -95,12 +96,14 @@ namespace Main.Event.EmployeeEvent
             {
                 editButtonIsEnable = true;
                 //e.dataGridView1.Enabled = true;
+                e.tb_empid.Enabled = false;
                 e.bt_edit_emp.BackColor = Color.FromArgb(138, 226, 52);
             }
             else
             {
                 editButtonIsEnable = false;
                 //e.dataGridView1.Enabled = false;
+                e.tb_empid.Enabled = true;
                 e.dataGridView1.ClearSelection();
                 e.bt_edit_emp.BackColor = Color.White;
             }
@@ -160,27 +163,62 @@ namespace Main.Event.EmployeeEvent
          * 
          * @param {@e Employee} to set properties of component
          */
-        internal static void onClickSave()
+        internal static void onClickSave(Employee e)
         {
+            Database database = new Database();
 
+            try
+            {
+
+                if (e.tb_empid.Text == "" || e.tb_fname.Text == "" || e.tb_lname.Text == "" || e.tb_salary.Text == "" || e.cb_sex.SelectedItem == null)
+                {
+                    MessageBox.Show("Please fill in complete information.", Reference.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                else if (!int.TryParse(e.tb_empid.Text, out int result) || !int.TryParse(e.tb_salary.Text, out int result1))
+                {
+                    MessageBox.Show("Employee ID and salary must be numbers only.", Reference.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (database.ConnectDatabase())
+                {
+
+                    char sex = e.cb_sex.SelectedItem.ToString() == "Male" ? 'M' : 'F';
+                    string query = "update `employees` set " +
+                        $"FIRST_NAME = '{e.tb_fname.Text}', " +
+                        $"LAST_NAME = '{e.tb_lname.Text}', " +
+                        $"SALARY = '{e.tb_salary.Text}', " +
+                        $"SEX = '{sex}' " +
+                        $"where EMPLOYEE_ID = {e.tb_empid.Text}";
+
+                    MySqlCommand command = new MySqlCommand(query, database.connection);
+
+                    int row = command.ExecuteNonQuery();
+                    if (row > 0)
+                    {
+                        MessageBox.Show("Your changes have been successfully saved!", Reference.Information, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        EmployeeStartupEvent.registerDataGridView(e);
+                    }
+
+                    clearTextBox(e);
+                    database.DisconnectDatabase();
+                }
+
+            }
+            catch (Exception e1)
+            {
+                Program.logger.Log(Level.ERROR, nameof(onClickSave), nameof(EmployeeButtonClickEvent) + "/" + e1.GetType().Name, e1.Message);
+                database.DisconnectDatabase();
+            }
         }
-
-        /*
-         * Move to Mene(Menu.cs) display
-         * 
-         * @param {@e Employee} to set properties of component
-         */
-        internal static void onClickMenu() { 
-        
-        }
-
 
         /*
          * clear values in textBox
          *
          * @param {@e Employee} to set properties of component
          */
-        internal static void clearTextBox(Employee e)
+        private static void clearTextBox(Employee e)
         {
             e.tb_empid.Clear();
             e.tb_fname.Clear();

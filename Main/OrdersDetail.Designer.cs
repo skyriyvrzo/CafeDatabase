@@ -30,10 +30,7 @@
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.l_orderid_od = new System.Windows.Forms.Label();
-            this.tb_orderid_od = new System.Windows.Forms.TextBox();
             this.tb_quantity_od = new System.Windows.Forms.TextBox();
-            this.tb_drinkid_od = new System.Windows.Forms.TextBox();
-            this.tb_topoing_od = new System.Windows.Forms.TextBox();
             this.l_topping = new System.Windows.Forms.Label();
             this.l_drinkid_od = new System.Windows.Forms.Label();
             this.l_quantity = new System.Windows.Forms.Label();
@@ -43,11 +40,14 @@
             this.bt_delete_od = new System.Windows.Forms.Button();
             this.bt_save_od = new System.Windows.Forms.Button();
             this.l_empid_od = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cb_emp = new System.Windows.Forms.ComboBox();
             this.bt_drink_od = new System.Windows.Forms.Button();
             this.bt_mat = new System.Windows.Forms.Button();
             this.bt_emp = new System.Windows.Forms.Button();
             this.bt_topping_od = new System.Windows.Forms.Button();
+            this.tb_orderid_od = new System.Windows.Forms.TextBox();
+            this.cb_drink_id = new System.Windows.Forms.ComboBox();
+            this.cb_topping_id = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,66 +58,46 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(913, 356);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // l_orderid_od
             // 
             this.l_orderid_od.AutoSize = true;
-            this.l_orderid_od.Location = new System.Drawing.Point(49, 34);
+            this.l_orderid_od.Location = new System.Drawing.Point(25, 37);
             this.l_orderid_od.Name = "l_orderid_od";
-            this.l_orderid_od.Size = new System.Drawing.Size(44, 13);
+            this.l_orderid_od.Size = new System.Drawing.Size(47, 13);
             this.l_orderid_od.TabIndex = 1;
-            this.l_orderid_od.Text = "OrderID";
-            // 
-            // tb_orderid_od
-            // 
-            this.tb_orderid_od.Location = new System.Drawing.Point(112, 34);
-            this.tb_orderid_od.Name = "tb_orderid_od";
-            this.tb_orderid_od.Size = new System.Drawing.Size(100, 20);
-            this.tb_orderid_od.TabIndex = 2;
+            this.l_orderid_od.Text = "Order ID";
             // 
             // tb_quantity_od
             // 
-            this.tb_quantity_od.Location = new System.Drawing.Point(362, 80);
+            this.tb_quantity_od.Location = new System.Drawing.Point(316, 77);
             this.tb_quantity_od.Name = "tb_quantity_od";
-            this.tb_quantity_od.Size = new System.Drawing.Size(100, 20);
+            this.tb_quantity_od.Size = new System.Drawing.Size(162, 20);
             this.tb_quantity_od.TabIndex = 3;
-            // 
-            // tb_drinkid_od
-            // 
-            this.tb_drinkid_od.Location = new System.Drawing.Point(112, 80);
-            this.tb_drinkid_od.Name = "tb_drinkid_od";
-            this.tb_drinkid_od.Size = new System.Drawing.Size(100, 20);
-            this.tb_drinkid_od.TabIndex = 4;
-            // 
-            // tb_topoing_od
-            // 
-            this.tb_topoing_od.Location = new System.Drawing.Point(362, 34);
-            this.tb_topoing_od.Name = "tb_topoing_od";
-            this.tb_topoing_od.Size = new System.Drawing.Size(100, 20);
-            this.tb_topoing_od.TabIndex = 5;
             // 
             // l_topping
             // 
             this.l_topping.AutoSize = true;
-            this.l_topping.Location = new System.Drawing.Point(267, 34);
+            this.l_topping.Location = new System.Drawing.Point(264, 38);
             this.l_topping.Name = "l_topping";
-            this.l_topping.Size = new System.Drawing.Size(47, 13);
+            this.l_topping.Size = new System.Drawing.Size(46, 13);
             this.l_topping.TabIndex = 6;
-            this.l_topping.Text = "TopPing";
+            this.l_topping.Text = "Topping";
             // 
             // l_drinkid_od
             // 
             this.l_drinkid_od.AutoSize = true;
-            this.l_drinkid_od.Location = new System.Drawing.Point(49, 80);
+            this.l_drinkid_od.Location = new System.Drawing.Point(26, 83);
             this.l_drinkid_od.Name = "l_drinkid_od";
-            this.l_drinkid_od.Size = new System.Drawing.Size(43, 13);
+            this.l_drinkid_od.Size = new System.Drawing.Size(46, 13);
             this.l_drinkid_od.TabIndex = 7;
-            this.l_drinkid_od.Text = "DrinkID";
+            this.l_drinkid_od.Text = "Drink ID";
             // 
             // l_quantity
             // 
             this.l_quantity.AutoSize = true;
-            this.l_quantity.Location = new System.Drawing.Point(267, 80);
+            this.l_quantity.Location = new System.Drawing.Point(264, 81);
             this.l_quantity.Name = "l_quantity";
             this.l_quantity.Size = new System.Drawing.Size(46, 13);
             this.l_quantity.TabIndex = 8;
@@ -132,6 +112,7 @@
             this.bt_add_od.TabIndex = 11;
             this.bt_add_od.Text = "Add";
             this.bt_add_od.UseVisualStyleBackColor = true;
+            this.bt_add_od.Click += new System.EventHandler(this.bt_add_od_Click);
             // 
             // bt_edit_
             // 
@@ -142,6 +123,7 @@
             this.bt_edit_.TabIndex = 12;
             this.bt_edit_.Text = "Edit";
             this.bt_edit_.UseVisualStyleBackColor = true;
+            this.bt_edit_.Click += new System.EventHandler(this.bt_edit__Click);
             // 
             // bt_delete_od
             // 
@@ -152,6 +134,7 @@
             this.bt_delete_od.TabIndex = 13;
             this.bt_delete_od.Text = "Delete";
             this.bt_delete_od.UseVisualStyleBackColor = true;
+            this.bt_delete_od.Click += new System.EventHandler(this.bt_delete_od_Click);
             // 
             // bt_save_od
             // 
@@ -162,23 +145,25 @@
             this.bt_save_od.TabIndex = 14;
             this.bt_save_od.Text = "Save";
             this.bt_save_od.UseVisualStyleBackColor = true;
+            this.bt_save_od.Click += new System.EventHandler(this.bt_save_od_Click);
             // 
             // l_empid_od
             // 
             this.l_empid_od.AutoSize = true;
-            this.l_empid_od.Location = new System.Drawing.Point(49, 121);
+            this.l_empid_od.Location = new System.Drawing.Point(19, 121);
             this.l_empid_od.Name = "l_empid_od";
-            this.l_empid_od.Size = new System.Drawing.Size(64, 13);
+            this.l_empid_od.Size = new System.Drawing.Size(53, 13);
             this.l_empid_od.TabIndex = 17;
-            this.l_empid_od.Text = "EmployeeID";
+            this.l_empid_od.Text = "Employee";
             // 
-            // comboBox1
+            // cb_emp
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(112, 118);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(100, 21);
-            this.comboBox1.TabIndex = 18;
+            this.cb_emp.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_emp.FormattingEnabled = true;
+            this.cb_emp.Location = new System.Drawing.Point(82, 118);
+            this.cb_emp.Name = "cb_emp";
+            this.cb_emp.Size = new System.Drawing.Size(150, 21);
+            this.cb_emp.TabIndex = 18;
             // 
             // bt_drink_od
             // 
@@ -212,6 +197,7 @@
             this.bt_emp.TabIndex = 22;
             this.bt_emp.Text = "Employee";
             this.bt_emp.UseVisualStyleBackColor = false;
+            this.bt_emp.Click += new System.EventHandler(this.bt_emp_Click);
             // 
             // bt_topping_od
             // 
@@ -224,16 +210,43 @@
             this.bt_topping_od.Text = "Topping";
             this.bt_topping_od.UseVisualStyleBackColor = false;
             // 
+            // tb_orderid_od
+            // 
+            this.tb_orderid_od.Location = new System.Drawing.Point(82, 34);
+            this.tb_orderid_od.Name = "tb_orderid_od";
+            this.tb_orderid_od.Size = new System.Drawing.Size(150, 20);
+            this.tb_orderid_od.TabIndex = 2;
+            // 
+            // cb_drink_id
+            // 
+            this.cb_drink_id.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_drink_id.FormattingEnabled = true;
+            this.cb_drink_id.Location = new System.Drawing.Point(82, 80);
+            this.cb_drink_id.Name = "cb_drink_id";
+            this.cb_drink_id.Size = new System.Drawing.Size(150, 21);
+            this.cb_drink_id.TabIndex = 26;
+            // 
+            // cb_topping_id
+            // 
+            this.cb_topping_id.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_topping_id.FormattingEnabled = true;
+            this.cb_topping_id.Location = new System.Drawing.Point(316, 34);
+            this.cb_topping_id.Name = "cb_topping_id";
+            this.cb_topping_id.Size = new System.Drawing.Size(162, 21);
+            this.cb_topping_id.TabIndex = 27;
+            // 
             // OrdersDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(997, 570);
+            this.Controls.Add(this.cb_topping_id);
+            this.Controls.Add(this.cb_drink_id);
             this.Controls.Add(this.bt_topping_od);
             this.Controls.Add(this.bt_emp);
             this.Controls.Add(this.bt_mat);
             this.Controls.Add(this.bt_drink_od);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cb_emp);
             this.Controls.Add(this.l_empid_od);
             this.Controls.Add(this.bt_save_od);
             this.Controls.Add(this.bt_delete_od);
@@ -242,14 +255,16 @@
             this.Controls.Add(this.l_quantity);
             this.Controls.Add(this.l_drinkid_od);
             this.Controls.Add(this.l_topping);
-            this.Controls.Add(this.tb_topoing_od);
-            this.Controls.Add(this.tb_drinkid_od);
             this.Controls.Add(this.tb_quantity_od);
             this.Controls.Add(this.tb_orderid_od);
             this.Controls.Add(this.l_orderid_od);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "OrdersDetail";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cafe/OrdersDetail";
+            this.Load += new System.EventHandler(this.OrdersDetail_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -260,10 +275,7 @@
 
         internal System.Windows.Forms.DataGridView dataGridView1;
         internal System.Windows.Forms.Label l_orderid_od;
-        internal System.Windows.Forms.TextBox tb_orderid_od;
         internal System.Windows.Forms.TextBox tb_quantity_od;
-        internal System.Windows.Forms.TextBox tb_drinkid_od;
-        internal System.Windows.Forms.TextBox tb_topoing_od;
         internal System.Windows.Forms.Label l_topping;
         internal System.Windows.Forms.Label l_drinkid_od;
         internal System.Windows.Forms.Label l_quantity;
@@ -273,10 +285,13 @@
         internal System.Windows.Forms.Button bt_delete_od;
         internal System.Windows.Forms.Button bt_save_od;
         internal System.Windows.Forms.Label l_empid_od;
-        internal System.Windows.Forms.ComboBox comboBox1;
+        internal System.Windows.Forms.ComboBox cb_emp;
         internal System.Windows.Forms.Button bt_drink_od;
         internal System.Windows.Forms.Button bt_mat;
         internal System.Windows.Forms.Button bt_emp;
         internal System.Windows.Forms.Button bt_topping_od;
+        internal System.Windows.Forms.TextBox tb_orderid_od;
+        internal System.Windows.Forms.ComboBox cb_drink_id;
+        internal System.Windows.Forms.ComboBox cb_topping_id;
     }
 }

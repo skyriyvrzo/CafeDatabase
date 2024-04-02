@@ -83,20 +83,20 @@
             // l_drinkid
             // 
             this.l_drinkid.AutoSize = true;
-            this.l_drinkid.Location = new System.Drawing.Point(48, 15);
+            this.l_drinkid.Location = new System.Drawing.Point(60, 15);
             this.l_drinkid.Name = "l_drinkid";
-            this.l_drinkid.Size = new System.Drawing.Size(43, 13);
+            this.l_drinkid.Size = new System.Drawing.Size(46, 13);
             this.l_drinkid.TabIndex = 6;
-            this.l_drinkid.Text = "DrinkID";
+            this.l_drinkid.Text = "Drink ID";
             // 
             // l_drinkname
             // 
             this.l_drinkname.AutoSize = true;
-            this.l_drinkname.Location = new System.Drawing.Point(220, 15);
+            this.l_drinkname.Location = new System.Drawing.Point(243, 15);
             this.l_drinkname.Name = "l_drinkname";
-            this.l_drinkname.Size = new System.Drawing.Size(60, 13);
+            this.l_drinkname.Size = new System.Drawing.Size(35, 13);
             this.l_drinkname.TabIndex = 7;
-            this.l_drinkname.Text = "DrinkName";
+            this.l_drinkname.Text = "Name";
             // 
             // label3
             // 
@@ -109,20 +109,20 @@
             // l_drinkstatus
             // 
             this.l_drinkstatus.AutoSize = true;
-            this.l_drinkstatus.Location = new System.Drawing.Point(220, 61);
+            this.l_drinkstatus.Location = new System.Drawing.Point(243, 61);
             this.l_drinkstatus.Name = "l_drinkstatus";
-            this.l_drinkstatus.Size = new System.Drawing.Size(62, 13);
+            this.l_drinkstatus.Size = new System.Drawing.Size(37, 13);
             this.l_drinkstatus.TabIndex = 9;
-            this.l_drinkstatus.Text = "DrinkStatus";
+            this.l_drinkstatus.Text = "Status";
             // 
             // l_drinkprice
             // 
             this.l_drinkprice.AutoSize = true;
-            this.l_drinkprice.Location = new System.Drawing.Point(48, 61);
+            this.l_drinkprice.Location = new System.Drawing.Point(60, 58);
             this.l_drinkprice.Name = "l_drinkprice";
-            this.l_drinkprice.Size = new System.Drawing.Size(56, 13);
+            this.l_drinkprice.Size = new System.Drawing.Size(31, 13);
             this.l_drinkprice.TabIndex = 9;
-            this.l_drinkprice.Text = "DrinkPrice";
+            this.l_drinkprice.Text = "Price";
             // 
             // bt_add_Drink
             // 
@@ -209,11 +209,11 @@
             // l_matid
             // 
             this.l_matid.AutoSize = true;
-            this.l_matid.Location = new System.Drawing.Point(49, 110);
+            this.l_matid.Location = new System.Drawing.Point(60, 105);
             this.l_matid.Name = "l_matid";
-            this.l_matid.Size = new System.Drawing.Size(55, 13);
+            this.l_matid.Size = new System.Drawing.Size(44, 13);
             this.l_matid.TabIndex = 22;
-            this.l_matid.Text = "MaterialID";
+            this.l_matid.Text = "Material";
             // 
             // comboBox2
             // 
@@ -259,7 +259,10 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Drink";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cafe/Drink";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace Main
 {
-    public partial class Menu : Form
+    public partial class Orders : Form
     {
-        public Menu()
+        public Orders()
         {
             InitializeComponent();
+        }
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+
+            Application.Exit();
         }
     }
 }
