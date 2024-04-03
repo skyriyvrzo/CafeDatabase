@@ -1767,3 +1767,326 @@
 [09:17:30] [INFO] : registerDataGridView Successfully added item
 [09:17:30] [INFO] : registerDataGridView Loaded
 [09:17:30] [INFO] : registerItemsInComboBox Loaded
+[13:58:38] [INFO] : ---------------------------------------------------------------------------------------
+[13:58:38] [INFO] : Loading Main.Program
+[13:58:38] [INFO] : onStartup Loaded
+[13:58:38] [INFO] : OrderStartupEvent Loaded
+[13:58:39] [INFO] : registerItemsInComboBox Loaded
+[13:58:40] [INFO] : registerDataGridView Successfully added item
+[13:58:40] [INFO] : registerDataGridView Loaded
+[13:58:40] [INFO] : onStartup Loaded
+[13:58:40] [INFO] : registerItemsInComboBox Loaded
+[13:58:40] [INFO] : DrinkStartupEvent Loaded
+[13:58:40] [INFO] : registerDataGridView Successfully added item
+[13:58:40] [INFO] : registerDataGridView Loaded
+[13:58:46] [onClickDelete/WARN] (DrinkButtonClickEvent) : Please select the drink you want to delete.
+[13:58:48] [onClickAdd/WARN] (DrinkButtonClickEvent) : Please fill in complete information.
+[13:59:08] [onClickAdd/INFO] (DrinkButtonClickEvent) : Add successfully
+[13:59:14] [INFO] : registerDataGridView Successfully added item
+[13:59:14] [INFO] : registerDataGridView Loaded
+[13:59:14] [clearTextBox/INFO] (DrinkButtonClickEvent) : Removed item(s) from components
+[14:01:31] [INFO] : ---------------------------------------------------------------------------------------
+[14:01:31] [INFO] : Loading Main.Program
+[14:01:31] [INFO] : onStartup Loaded
+[14:01:31] [INFO] : OrderStartupEvent Loaded
+[14:01:31] [INFO] : registerDataGridView Successfully added item
+[14:01:31] [INFO] : registerDataGridView Loaded
+[14:01:31] [INFO] : registerItemsInComboBox Loaded
+[14:01:32] [INFO] : onStartup Loaded
+[14:01:32] [INFO] : registerItemsInComboBox Loaded
+[14:01:32] [13/INFO] (DrinkStartupEvent) : DrinkStartupEvent Loaded
+[14:01:32] [INFO] : registerDataGridView Successfully added item
+[14:01:32] [INFO] : registerDataGridView Loaded
+[14:01:42] [INFO] : ---------------------------------------------------------------------------------------
+[14:01:42] [INFO] : Loading Main.Program
+[14:01:42] [INFO] : onStartup Loaded
+[14:01:42] [INFO] : OrderStartupEvent Loaded
+[14:01:42] [INFO] : registerDataGridView Successfully added item
+[14:01:42] [INFO] : registerDataGridView Loaded
+[14:01:42] [INFO] : registerItemsInComboBox Loaded
+[14:01:43] [INFO] : onStartup Loaded
+[14:01:43] [INFO] : registerItemsInComboBox Loaded
+[14:01:43] [/INFO] (DrinkStartupEvent) : DrinkStartupEvent Loaded
+[14:01:43] [INFO] : registerDataGridView Successfully added item
+[14:01:43] [INFO] : registerDataGridView Loaded
+[14:02:00] [INFO] : ---------------------------------------------------------------------------------------
+[14:02:00] [INFO] : Loading Main.Program
+[14:02:00] [INFO] : onStartup Loaded
+[14:02:00] [INFO] : OrderStartupEvent Loaded
+[14:02:01] [INFO] : registerDataGridView Successfully added item
+[14:02:01] [INFO] : registerDataGridView Loaded
+[14:02:01] [INFO] : registerItemsInComboBox Loaded
+[14:02:01] [INFO] : onStartup Loaded
+[14:02:01] [INFO] : registerItemsInComboBox Loaded
+[14:02:01] [System.Threading.Thread/INFO] (DrinkStartupEvent) : DrinkStartupEvent Loaded
+[14:02:01] [INFO] : registerDataGridView Successfully added item
+[14:02:01] [INFO] : registerDataGridView Loaded
+[14:02:27] [INFO] : ---------------------------------------------------------------------------------------
+[14:02:27] [INFO] : Loading Main.Program
+[14:02:27] [INFO] : onStartup Loaded
+[14:02:27] [INFO] : OrderStartupEvent Loaded
+[14:02:28] [INFO] : registerDataGridView Successfully added item
+[14:02:28] [INFO] : registerDataGridView Loaded
+[14:02:28] [INFO] : registerItemsInComboBox Loaded
+[14:02:29] [INFO] : onStartup Loaded
+[14:02:29] [INFO] : registerItemsInComboBox Loaded
+[14:02:29] [Running/INFO] (DrinkStartupEvent) : DrinkStartupEvent Loaded
+[14:02:29] [INFO] : registerDataGridView Successfully added item
+[14:02:29] [INFO] : registerDataGridView Loaded
+[14:03:04] [INFO] : ---------------------------------------------------------------------------------------
+[14:03:04] [INFO] : Loading Main.Program
+[14:03:04] [INFO] : onStartup Loaded
+[14:03:04] [INFO] : OrderStartupEvent Loaded
+[14:03:05] [INFO] : registerDataGridView Successfully added item
+[14:03:05] [INFO] : registerDataGridView Loaded
+[14:03:05] [INFO] : registerItemsInComboBox Loaded
+[14:03:09] [INFO] : onStartup Loaded
+[14:03:09] [INFO] : registerItemsInComboBox Loaded
+[14:03:09] [Thread-en-US/INFO] (DrinkStartupEvent) : DrinkStartupEvent Loaded
+[14:03:09] [INFO] : registerDataGridView Successfully added item
+[14:03:09] [INFO] : registerDataGridView Loaded
+[14:03:42] [INFO] : ---------------------------------------------------------------------------------------
+[14:03:42] [INFO] : Loading Main.Program
+[14:03:42] [INFO] : onStartup Loaded
+[14:03:42] [INFO] : OrderStartupEvent Loaded
+[14:03:43] [INFO] : registerItemsInComboBox Loaded
+[14:03:44] [INFO] : registerDataGridView Successfully added item
+[14:03:44] [INFO] : registerDataGridView Loaded
+[14:03:44] [INFO] : onStartup Loaded
+[14:03:44] [INFO] : registerItemsInComboBox Loaded
+[14:03:44] [Thread-11/INFO] (DrinkStartupEvent) : DrinkStartupEvent Loaded
+[14:03:44] [INFO] : registerDataGridView Successfully added item
+[14:03:44] [INFO] : registerDataGridView Loaded
+[14:06:05] [INFO] : ---------------------------------------------------------------------------------------
+[14:06:05] [INFO] : Loading Main.Program
+[14:06:05] [INFO] : onStartup Loaded
+[14:06:05] [INFO] : OrderStartupEvent Loaded
+[14:06:05] [INFO] : registerDataGridView Successfully added item
+[14:06:05] [INFO] : registerDataGridView Loaded
+[14:06:05] [INFO] : registerItemsInComboBox Loaded
+[14:06:08] [onStartup/INFO] (DrinkStartupEvent) : onStartup Loaded
+[14:06:08] [registerItemsInComboBox/INFO] (DrinkStartupEvent) : registerItemsInComboBox Loaded
+[14:06:08] [Thread-13/INFO] (DrinkStartupEvent) : DrinkStartupEvent Loaded
+[14:06:08] [registerDataGridView/INFO] (DrinkStartupEvent) : registerDataGridView Successfully added items
+[14:06:08] [INFO] : registerDataGridView Loaded
+[14:07:24] [INFO] : ---------------------------------------------------------------------------------------
+[14:07:24] [INFO] : Loading Main.Program
+[14:07:24] [INFO] : onStartup Loaded
+[14:07:24] [INFO] : OrderStartupEvent Loaded
+[14:07:25] [INFO] : registerDataGridView Successfully added item
+[14:07:25] [INFO] : registerDataGridView Loaded
+[14:07:25] [INFO] : registerItemsInComboBox Loaded
+[14:07:26] [INFO] : Employee Loaded
+[14:07:27] [INFO] : onStartup Loaded
+[14:07:27] [INFO] : registerItemsInComboBox Loaded
+[14:07:27] [INFO] : EmployeeStartupEvent Loaded
+[14:07:27] [INFO] : Employee_Load Loaded
+[14:07:27] [INFO] : registerDataGridView Successfully added item
+[14:07:27] [INFO] : registerDataGridView Loaded
+[14:08:19] [INFO] : ---------------------------------------------------------------------------------------
+[14:08:19] [INFO] : Loading Main.Program
+[14:08:20] [INFO] : onStartup Loaded
+[14:08:20] [INFO] : OrderStartupEvent Loaded
+[14:08:20] [INFO] : registerItemsInComboBox Loaded
+[14:08:21] [INFO] : registerDataGridView Successfully added item
+[14:08:21] [INFO] : registerDataGridView Loaded
+[14:08:22] [Employee/INFO] (Employee) : Loading...
+[14:08:22] [INFO] : onStartup Loaded
+[14:08:22] [INFO] : registerItemsInComboBox Loaded
+[14:08:22] [INFO] : EmployeeStartupEvent Loaded
+[14:08:22] [Employee_Load/INFO] (Employee) : Loading...
+[14:08:22] [INFO] : registerDataGridView Successfully added item
+[14:08:22] [INFO] : registerDataGridView Loaded
+[14:08:54] [onStartup/INFO] (DrinkStartupEvent) : onStartup Loaded
+[14:08:54] [registerItemsInComboBox/INFO] (DrinkStartupEvent) : registerItemsInComboBox Loaded
+[14:08:54] [Thread-4/INFO] (DrinkStartupEvent) : DrinkStartupEvent Loaded
+[14:08:54] [registerDataGridView/INFO] (DrinkStartupEvent) : Successfully added items
+[14:08:54] [INFO] : registerDataGridView Loaded
+[14:09:46] [INFO] : ---------------------------------------------------------------------------------------
+[14:09:46] [INFO] : Loading Main.Program
+[14:09:46] [INFO] : onStartup Loaded
+[14:09:46] [INFO] : OrderStartupEvent Loaded
+[14:09:47] [INFO] : registerDataGridView Successfully added item
+[14:09:47] [INFO] : registerDataGridView Loaded
+[14:09:47] [INFO] : registerItemsInComboBox Loaded
+[14:09:48] [onStartup/INFO] (DrinkStartupEvent) : onStartup Loaded
+[14:09:48] [registerItemsInComboBox/INFO] (DrinkStartupEvent) : registerItemsInComboBox Loaded
+[14:09:48] [Thread-13/INFO] (DrinkStartupEvent) : DrinkStartupEvent Loaded
+[14:09:48] [registerDataGridView/INFO] (DrinkStartupEvent) : Successfully added items
+[14:09:48] [registerDataGridView/INFO] (DrinkStartupEvent) : Loaded
+[14:23:50] [INFO] : ---------------------------------------------------------------------------------------
+[14:23:50] [INFO] : Loading Main.Program
+[14:23:50] [INFO] : onStartup Loaded
+[14:23:50] [INFO] : OrderStartupEvent Loaded
+[14:23:50] [INFO] : registerDataGridView Successfully added item
+[14:23:50] [INFO] : registerDataGridView Loaded
+[14:23:50] [INFO] : registerItemsInComboBox Loaded
+[14:23:52] [Employee/INFO] (Employee) : Employee Loading...
+[14:23:52] [INFO] : onStartup Loaded
+[14:23:52] [INFO] : registerItemsInComboBox Loaded
+[14:23:52] [load/INFO] (EmployeeStartupEvent) : EmployeeStartupEvent Loaded
+[14:23:52] [Employee_Load/INFO] (Employee) : Employee Loaded
+[14:23:52] [INFO] : registerDataGridView Successfully added item
+[14:23:52] [INFO] : registerDataGridView Loaded
+[14:28:52] [INFO] : ---------------------------------------------------------------------------------------
+[14:28:52] [INFO] : Loading Main.Program
+[14:28:52] [INFO] : onStartup Loaded
+[14:28:52] [INFO] : OrderStartupEvent Loaded
+[14:28:52] [INFO] : registerDataGridView Successfully added item
+[14:28:52] [INFO] : registerDataGridView Loaded
+[14:28:52] [INFO] : registerItemsInComboBox Loaded
+[14:28:53] [INFO] : onStartup Loaded
+[14:28:53] [INFO] : MaterialStartupEvent Loaded
+[14:28:53] [INFO] : registerDataGridView Successfully added item
+[14:28:53] [INFO] : registerDataGridView Loaded
+[14:28:59] [onCellClick/ERROR] (MaterialCellClickEvent/ArgumentOutOfRangeException) : Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+[14:32:16] [INFO] : ---------------------------------------------------------------------------------------
+[14:32:16] [INFO] : Loading Main.Program
+[14:32:16] [INFO] : onStartup Loaded
+[14:32:16] [INFO] : OrderStartupEvent Loaded
+[14:32:16] [INFO] : registerDataGridView Successfully added item
+[14:32:16] [INFO] : registerDataGridView Loaded
+[14:32:17] [INFO] : registerItemsInComboBox Loaded
+[14:32:19] [Material/INFO] (Material) : Material Loading...
+[14:32:19] [onStartup/INFO] (MaterialStartupEvent) : onStartup Loaded
+[14:32:19] [load/INFO] (MaterialStartupEvent) : MaterialStartupEvent Loaded
+[14:32:19] [Material_Load/INFO] (Material) : Material Loaded
+[14:32:19] [registerDataGridView/INFO] (MaterialStartupEvent) : registerDataGridView Successfully added item
+[14:32:19] [registerDataGridView/INFO] (MaterialStartupEvent) : registerDataGridView Loaded
+[14:58:33] [INFO] : ---------------------------------------------------------------------------------------
+[14:58:33] [INFO] : Loading Main.Program
+[14:58:33] [Order/INFO] (Order) : Order Loading...
+[14:58:33] [onStartup/INFO] (OrderStartupEvent) : onStartup Loaded
+[14:58:33] [load/INFO] (OrderStartupEvent) : OrderStartupEvent Loaded
+[14:58:33] [Drink/INFO] (Drink) : Drink Loading...
+[14:58:34] [registerDataGridView/INFO] (OrderStartupEvent) : Successfully added items
+[14:58:34] [registerDataGridView/INFO] (OrderStartupEvent) : registerDataGridView Loaded
+[14:58:34] [registerItemsInComboBox/INFO] (OrderStartupEvent) : registerItemsInComboBox Loaded
+[15:06:42] [INFO] : ---------------------------------------------------------------------------------------
+[15:06:42] [INFO] : Loading Main.Program
+[15:06:42] [Order/INFO] (Order) : Order Loading...
+[15:06:42] [onStartup/INFO] (OrderStartupEvent) : onStartup Loaded
+[15:06:42] [load/INFO] (OrderStartupEvent) : OrderStartupEvent Loaded
+[15:06:42] [Order_Load/INFO] (Order) : Order Loaded
+[15:06:43] [registerDataGridView/INFO] (OrderStartupEvent) : Successfully added items
+[15:06:43] [registerDataGridView/INFO] (OrderStartupEvent) : registerDataGridView Loaded
+[15:07:08] [INFO] : ---------------------------------------------------------------------------------------
+[15:07:08] [INFO] : Loading Main.Program
+[15:07:08] [Order/INFO] (Order) : Order Loading...
+[15:07:08] [onStartup/INFO] (OrderStartupEvent) : onStartup Loaded
+[15:07:08] [load/INFO] (OrderStartupEvent) : OrderStartupEvent Loaded
+[15:07:08] [Order_Load/INFO] (Order) : Order Loaded
+[15:07:08] [registerDataGridView/INFO] (OrderStartupEvent) : Successfully added items
+[15:07:08] [registerDataGridView/INFO] (OrderStartupEvent) : registerDataGridView Loaded
+[15:07:08] [registerItemsInComboBox/INFO] (OrderStartupEvent) : registerItemsInComboBox Loaded
+[15:07:09] [Employee/INFO] (Employee) : Employee Loading...
+[15:07:09] [onStartup/INFO] (EmployeeStartupEvent) : onStartup Loaded
+[15:07:09] [registerItemsInComboBox/INFO] (EmployeeStartupEvent) : registerItemsInComboBox Loaded
+[15:07:09] [load/INFO] (EmployeeStartupEvent) : EmployeeStartupEvent Loaded
+[15:07:09] [Employee_Load/INFO] (Employee) : Employee Loaded
+[15:07:09] [onChange/INFO] (ScreenChangeEvent) : Order -> Employee
+[15:07:09] [registerDataGridView/INFO] (EmployeeStartupEvent) : Successfully added item
+[15:07:09] [registerDataGridView/INFO] (EmployeeStartupEvent) : registerDataGridView Loaded
+[15:07:58] [INFO] : ---------------------------------------------------------------------------------------
+[15:07:58] [INFO] : Loading Main.Program
+[15:07:58] [Order/INFO] (Order) : Order Loading...
+[15:07:58] [onStartup/INFO] (OrderStartupEvent) : onStartup Loaded
+[15:07:58] [load/INFO] (OrderStartupEvent) : OrderStartupEvent Loaded
+[15:07:58] [Order_Load/INFO] (Order) : Order Loaded
+[15:07:59] [registerDataGridView/INFO] (OrderStartupEvent) : Successfully added items
+[15:07:59] [registerDataGridView/INFO] (OrderStartupEvent) : registerDataGridView Loaded
+[15:07:59] [registerItemsInComboBox/INFO] (OrderStartupEvent) : registerItemsInComboBox Loaded
+[15:08:05] [Employee/INFO] (Employee) : Employee Loading...
+[15:08:05] [onStartup/INFO] (EmployeeStartupEvent) : onStartup Loaded
+[15:08:05] [registerItemsInComboBox/INFO] (EmployeeStartupEvent) : registerItemsInComboBox Loaded
+[15:08:05] [load/INFO] (EmployeeStartupEvent) : EmployeeStartupEvent Loaded
+[15:08:05] [Employee_Load/INFO] (Employee) : Employee Loaded
+[15:08:06] [onChange/INFO] (ScreenChangeEvent) : Order -> Employee
+[15:08:06] [registerDataGridView/INFO] (EmployeeStartupEvent) : Successfully added item
+[15:08:06] [registerDataGridView/INFO] (EmployeeStartupEvent) : registerDataGridView Loaded
+[15:08:10] [Drink/INFO] (Drink) : Drink Loading...
+[15:08:10] [onStartup/INFO] (DrinkStartupEvent) : onStartup Loaded
+[15:08:10] [registerItemsInComboBox/INFO] (DrinkStartupEvent) : registerItemsInComboBox Loaded
+[15:08:10] [load/INFO] (DrinkStartupEvent) : DrinkStartupEvent Loaded
+[15:08:10] [Drink_Load/INFO] (Drink) : Drink Loading...
+[15:08:10] [onChange/INFO] (ScreenChangeEvent) : Employee -> Drink
+[15:08:10] [registerDataGridView/INFO] (DrinkStartupEvent) : Successfully added items
+[15:08:10] [registerDataGridView/INFO] (DrinkStartupEvent) : registerDataGridView Loaded
+[15:08:11] [Topping/INFO] (Topping) : Topping Loading...
+[15:08:11] [onStartup/INFO] (ToppingStartupEvent) : onStartup Loaded
+[15:08:11] [load/INFO] (ToppingStartupEvent) : ToppingStartupEvent Loaded
+[15:08:11] [Topping_Load/INFO] (Topping) : Topping Loaded
+[15:08:11] [onChange/INFO] (ScreenChangeEvent) : Drink -> Topping
+[15:08:11] [registerDataGridView/INFO] (ToppingStartupEvent) : Successfully added items
+[15:08:11] [registerDataGridView/INFO] (ToppingStartupEvent) : registerDataGridView Loaded
+[15:08:12] [OrderDetail/INFO] (OrderDetail) : OrderDetail Loading...
+[15:08:12] [onStartup/INFO] (OrderDetailStartupEvent) : onStartup Loaded
+[15:08:12] [load/INFO] (OrderDetailStartupEvent) : OrderDetailStartupEvent Loaded
+[15:08:12] [OrderDetail_Load/INFO] (OrderDetail) : OrderDetail Loaded
+[15:08:12] [onChange/INFO] (ScreenChangeEvent) : Topping -> OrderDetail
+[15:08:12] [registerDataGridView/INFO] (OrderDetailStartupEvent) : Successfully added items
+[15:08:12] [registerDataGridView/INFO] (OrderDetailStartupEvent) : registerDataGridView Loaded
+[15:08:12] [registerItemsInComboBox/INFO] (OrderDetailStartupEvent) : registerItemsInComboBox Loaded
+[15:08:13] [Material/INFO] (Material) : Material Loading...
+[15:08:13] [onStartup/INFO] (MaterialStartupEvent) : onStartup Loaded
+[15:08:13] [load/INFO] (MaterialStartupEvent) : MaterialStartupEvent Loaded
+[15:08:13] [Material_Load/INFO] (Material) : Material Loaded
+[15:08:13] [onChange/INFO] (ScreenChangeEvent) : OrderDetail -> Material
+[15:08:13] [registerDataGridView/INFO] (MaterialStartupEvent) : Successfully added item
+[15:08:13] [registerDataGridView/INFO] (MaterialStartupEvent) : registerDataGridView Loaded
+[15:08:14] [MaterialofDrink/INFO] (MaterialofDrink) : MaterialofDrink Loading...
+[15:08:14] [onStartup/INFO] (MaterialofDrinkStartupEvent) : onStartup Loaded
+[15:08:14] [load/INFO] (MaterialofDrinkStartupEvent) : MaterialofDrinkStartupEvent Loaded
+[15:08:14] [MaterialofDrink_Load/INFO] (MaterialofDrink) : MaterialofDrink Loaded
+[15:08:14] [onChange/INFO] (ScreenChangeEvent) : Material -> MaterialofDrink
+[15:08:14] [registerDataGridView/INFO] (MaterialofDrinkStartupEvent) : Successfully added item
+[15:08:14] [registerDataGridView/INFO] (MaterialofDrinkStartupEvent) : registerDataGridViewLoaded
+[15:08:14] [registerItemsInComboBox/INFO] (MaterialofDrinkStartupEvent) : registerItemsInComboBox Loaded
+[15:08:14] [Drink/INFO] (Drink) : Drink Loading...
+[15:08:14] [onStartup/INFO] (DrinkStartupEvent) : onStartup Loaded
+[15:08:14] [registerItemsInComboBox/INFO] (DrinkStartupEvent) : registerItemsInComboBox Loaded
+[15:08:14] [load/INFO] (DrinkStartupEvent) : DrinkStartupEvent Loaded
+[15:08:14] [Drink_Load/INFO] (Drink) : Drink Loading...
+[15:08:15] [onChange/INFO] (ScreenChangeEvent) : MaterialofDrink -> Drink
+[15:08:15] [registerDataGridView/INFO] (DrinkStartupEvent) : Successfully added items
+[15:08:15] [registerDataGridView/INFO] (DrinkStartupEvent) : registerDataGridView Loaded
+[15:08:15] [MaterialofDrink/INFO] (MaterialofDrink) : MaterialofDrink Loading...
+[15:08:15] [onStartup/INFO] (MaterialofDrinkStartupEvent) : onStartup Loaded
+[15:08:15] [load/INFO] (MaterialofDrinkStartupEvent) : MaterialofDrinkStartupEvent Loaded
+[15:08:15] [MaterialofDrink_Load/INFO] (MaterialofDrink) : MaterialofDrink Loaded
+[15:08:15] [onChange/INFO] (ScreenChangeEvent) : Drink -> MaterialofDrink
+[15:08:15] [registerDataGridView/INFO] (MaterialofDrinkStartupEvent) : Successfully added item
+[15:08:15] [registerDataGridView/INFO] (MaterialofDrinkStartupEvent) : registerDataGridViewLoaded
+[15:08:15] [registerItemsInComboBox/INFO] (MaterialofDrinkStartupEvent) : registerItemsInComboBox Loaded
+[15:08:15] [Material/INFO] (Material) : Material Loading...
+[15:08:15] [onStartup/INFO] (MaterialStartupEvent) : onStartup Loaded
+[15:08:15] [load/INFO] (MaterialStartupEvent) : MaterialStartupEvent Loaded
+[15:08:15] [Material_Load/INFO] (Material) : Material Loaded
+[15:08:15] [onChange/INFO] (ScreenChangeEvent) : MaterialofDrink -> Material
+[15:08:16] [registerDataGridView/INFO] (MaterialStartupEvent) : Successfully added item
+[15:08:16] [registerDataGridView/INFO] (MaterialStartupEvent) : registerDataGridView Loaded
+[15:08:16] [MaterialofDrink/INFO] (MaterialofDrink) : MaterialofDrink Loading...
+[15:08:16] [onStartup/INFO] (MaterialofDrinkStartupEvent) : onStartup Loaded
+[15:08:16] [load/INFO] (MaterialofDrinkStartupEvent) : MaterialofDrinkStartupEvent Loaded
+[15:08:16] [MaterialofDrink_Load/INFO] (MaterialofDrink) : MaterialofDrink Loaded
+[15:08:16] [onChange/INFO] (ScreenChangeEvent) : Material -> MaterialofDrink
+[15:08:16] [registerItemsInComboBox/INFO] (MaterialofDrinkStartupEvent) : registerItemsInComboBox Loaded
+[15:08:17] [registerDataGridView/INFO] (MaterialofDrinkStartupEvent) : Successfully added item
+[15:08:17] [registerDataGridView/INFO] (MaterialofDrinkStartupEvent) : registerDataGridViewLoaded
+[15:08:32] [OrderDetail/INFO] (OrderDetail) : OrderDetail Loading...
+[15:08:32] [onStartup/INFO] (OrderDetailStartupEvent) : onStartup Loaded
+[15:08:32] [load/INFO] (OrderDetailStartupEvent) : OrderDetailStartupEvent Loaded
+[15:08:32] [OrderDetail_Load/INFO] (OrderDetail) : OrderDetail Loaded
+[15:08:32] [onChange/INFO] (ScreenChangeEvent) : MaterialofDrink -> OrderDetail
+[15:08:32] [registerDataGridView/INFO] (OrderDetailStartupEvent) : Successfully added items
+[15:08:32] [registerDataGridView/INFO] (OrderDetailStartupEvent) : registerDataGridView Loaded
+[15:08:32] [registerItemsInComboBox/INFO] (OrderDetailStartupEvent) : registerItemsInComboBox Loaded
+[15:08:50] [INFO] : ---------------------------------------------------------------------------------------
+[15:08:50] [INFO] : Loading Main.Program
+[15:08:50] [Order/INFO] (Order) : Order Loading...
+[15:08:50] [onStartup/INFO] (OrderStartupEvent) : onStartup Loaded
+[15:08:50] [load/INFO] (OrderStartupEvent) : OrderStartupEvent Loaded
+[15:08:50] [Order_Load/INFO] (Order) : Order Loaded
+[15:09:05] [registerItemsInComboBox/INFO] (OrderStartupEvent) : registerItemsInComboBox Loaded
+[15:09:05] [registerDataGridView/INFO] (OrderStartupEvent) : registerDataGridView Loaded

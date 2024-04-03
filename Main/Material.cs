@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CSharp.Util.Logging;
+using System;
 using System.Windows.Forms;
 
 namespace Main
@@ -8,7 +9,15 @@ namespace Main
     {
         public Material()
         {
+            Program.logger.Log(Level.INFO, nameof(Material), nameof(Material), nameof(Material) + " Loading...");
+
             InitializeComponent();
+        }
+        private void Material_Load(object sender, EventArgs e)
+        {
+            Main.Events.MaterialEvent.MaterialStartupEvent.load(this);
+
+            Program.logger.Log(Level.INFO, nameof(Material_Load), nameof(Material), nameof(Material) + " Loaded");
         }
 
         protected override void OnFormClosing(FormClosingEventArgs e)
@@ -18,10 +27,6 @@ namespace Main
             Application.Exit();
         }
 
-        private void Material_Load(object sender, EventArgs e)
-        {
-            Main.Events.MaterialEvent.MaterialStartupEvent.load(this);
-        }
 
         private void bt_add_Material_Click(object sender, EventArgs e)
         {

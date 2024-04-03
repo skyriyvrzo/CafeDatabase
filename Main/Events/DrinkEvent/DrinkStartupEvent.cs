@@ -2,7 +2,6 @@
 using Main.Events.ScreenChangeEvent;
 using Main.Utils;
 using MySql.Data.MySqlClient;
-using System.Collections.Generic;
 using System.Data;
 using System.Threading;
 using System.Windows.Forms;
@@ -22,7 +21,7 @@ namespace Main.Events.DrinkEvent
                 Thread thread = new Thread(() => registerDataGridView(d));
                 thread.Start();
 
-                Program.logger.Log(Level.INFO, nameof(DrinkStartupEvent) + " Loaded");
+                Program.logger.Log(Level.INFO, nameof(load), nameof(DrinkStartupEvent), nameof(DrinkStartupEvent) + " Loaded");
             }
             catch (System.Exception e)
             {
@@ -36,7 +35,7 @@ namespace Main.Events.DrinkEvent
             d.dataGridView1.ReadOnly = true;
 
             ResetEvent.reset();
-            Program.logger.Log(Level.INFO, nameof(onStartup) + " Loaded");
+            Program.logger.Log(Level.INFO, nameof(onStartup), nameof(DrinkStartupEvent), nameof(onStartup) + " Loaded");
         }
 
         private static void registerItemsInComboBox(Drink d)
@@ -52,7 +51,7 @@ namespace Main.Events.DrinkEvent
             d.cb_status.Items.Add(item1);
             d.cb_status.Items.Add(item2);
 
-            Program.logger.Log(Level.INFO, nameof(registerItemsInComboBox) + " Loaded");
+            Program.logger.Log(Level.INFO, nameof(registerItemsInComboBox), nameof(DrinkStartupEvent), nameof(registerItemsInComboBox) + " Loaded");
         }
 
         internal static void registerDataGridView(Drink d)
@@ -75,7 +74,7 @@ namespace Main.Events.DrinkEvent
                         }
                     }
                     database.DisconnectDatabase();
-                    Program.logger.Log(Level.INFO, nameof(registerDataGridView) + " Successfully added item");
+                    Program.logger.Log(Level.INFO, nameof(registerDataGridView), nameof(DrinkStartupEvent), "Successfully added items");
                 }
 
                 d.dataGridView1.ClearSelection();
@@ -84,7 +83,7 @@ namespace Main.Events.DrinkEvent
                  */
                 d.dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
-                Program.logger.Log(Level.INFO, nameof(registerDataGridView) + " Loaded");
+                Program.logger.Log(Level.INFO, nameof(registerDataGridView), nameof(DrinkStartupEvent), nameof(registerDataGridView) + " Loaded");
             }
             catch (System.Exception e)
             {

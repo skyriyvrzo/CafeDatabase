@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CSharp.Util.Logging;
+using System;
 using System.Windows.Forms;
 
 namespace Main
@@ -8,11 +9,15 @@ namespace Main
     {
         public Topping()
         {
+            Program.logger.Log(Level.INFO, nameof(Topping), nameof(Topping), nameof(Topping) + " Loading...");
+
             InitializeComponent();
         }
         private void Topping_Load(object sender, EventArgs e)
         {
             Main.Events.ToppingEvent.ToppingStartupEvent.load(this);
+
+            Program.logger.Log(Level.INFO, nameof(Topping_Load), nameof(Topping), nameof(Topping) + " Loaded");
         }
 
         protected override void OnFormClosing(FormClosingEventArgs e)

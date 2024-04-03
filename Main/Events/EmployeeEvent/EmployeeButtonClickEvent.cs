@@ -1,4 +1,5 @@
 ﻿using CSharp.Util.Logging;
+using Main.Events.DrinkEvent;
 using Main.Utils;
 using MySql.Data.MySqlClient;
 using System;
@@ -63,7 +64,7 @@ namespace Main.Events.EmployeeEvent
             }
             catch (MySqlException e1)
             {
-                Program.logger.Log(Level.ERROR, nameof(onClickAdd), nameof(EmployeeButtonClickEvent) + "/" + e1.GetType().Name, e1.Message);
+                Program.logger.Log(Level.WARNING, nameof(onClickAdd), nameof(EmployeeButtonClickEvent) + "/" + e1.GetType().Name, e1.Message);
                 database.DisconnectDatabase();
 
                 if (e1.Message.Contains("Duplicate"))
@@ -143,7 +144,7 @@ namespace Main.Events.EmployeeEvent
             }
             catch(MySqlException e1)
             {
-                if(e1.Message.Contains("Cannot delete or update a parent row"))
+                if (e1.Message.Contains("Cannot delete or update a parent row"))
                 {
                     MessageBox.Show("Cannot delete or update a parent row", Reference.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
@@ -225,6 +226,8 @@ namespace Main.Events.EmployeeEvent
             e.tb_lname.Clear();
             e.tb_salary.Clear();
             e.cb_sex.SelectedItem = null;
+
+            Program.logger.Log(Level.INFO, nameof(clearTextBox), nameof(EmployeeButtonClickEvent), "Removed item(s) from components");
         }
     }
 }

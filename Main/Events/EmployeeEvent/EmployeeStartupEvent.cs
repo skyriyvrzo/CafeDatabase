@@ -1,4 +1,5 @@
 ﻿using CSharp.Util.Logging;
+using Main.Events.DrinkEvent;
 using Main.Events.OrderEvent;
 using Main.Events.ScreenChangeEvent;
 using Main.Utils;
@@ -30,8 +31,9 @@ namespace Main.Events.EmployeeEvent
                 Thread thread = new Thread(() => registerDataGridView(e));
                 thread.Start();
 
-                Program.logger.Log(Level.INFO, nameof(EmployeeStartupEvent) + " Loaded");
-            }catch(System.Exception e1)
+                Program.logger.Log(Level.INFO, nameof(load), nameof(EmployeeStartupEvent), nameof(EmployeeStartupEvent) + " Loaded");
+            }
+            catch (System.Exception e1)
             {
                 Program.logger.Log(Level.ERROR, nameof(load), nameof(EmployeeStartupEvent) + "/" + e1.GetType().Name, e1.Message);
             }
@@ -50,7 +52,7 @@ namespace Main.Events.EmployeeEvent
 
             ResetEvent.reset();
 
-            Program.logger.Log(Level.INFO, nameof(onStartup) + " Loaded");
+            Program.logger.Log(Level.INFO, nameof(onStartup), nameof(EmployeeStartupEvent), nameof(onStartup) + " Loaded");
         }
 
         /*
@@ -71,7 +73,7 @@ namespace Main.Events.EmployeeEvent
             e.cb_sex.Items.Add(m);
             e.cb_sex.Items.Add(f);
 
-            Program.logger.Log(Level.INFO, nameof(registerItemsInComboBox) + " Loaded");
+            Program.logger.Log(Level.INFO, nameof(registerItemsInComboBox), nameof(EmployeeStartupEvent), nameof(registerItemsInComboBox) + " Loaded");
         }
 
         /*
@@ -100,7 +102,7 @@ namespace Main.Events.EmployeeEvent
                         }
                     }
                     database.DisconnectDatabase();
-                    Program.logger.Log(Level.INFO, nameof(registerDataGridView) + " Successfully added item");
+                    Program.logger.Log(Level.INFO, nameof(registerDataGridView), nameof(EmployeeStartupEvent), "Successfully added item");
                 }
 
                 e.dataGridView1.ClearSelection();
@@ -109,7 +111,7 @@ namespace Main.Events.EmployeeEvent
                  */
                 e.dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
-                Program.logger.Log(Level.INFO, nameof(registerDataGridView) + " Loaded");
+                Program.logger.Log(Level.INFO, nameof(registerDataGridView), nameof(EmployeeStartupEvent), nameof(registerDataGridView) + " Loaded");
             }
             catch(System.Exception e1)
             {

@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CSharp.Util.Logging;
+using System;
 using System.Windows.Forms;
 
 namespace Main
@@ -14,12 +8,16 @@ namespace Main
     {
         public OrderDetail()
         {
+            Program.logger.Log(Level.INFO, nameof(OrderDetail), nameof(OrderDetail), nameof(OrderDetail) + " Loading...");
+
             InitializeComponent();
         }
 
         private void OrderDetail_Load(object sender, EventArgs e)
         {
             Main.Events.OrderDetailEvent.OrderDetailStartupEvent.load(this);
+
+            Program.logger.Log(Level.INFO, nameof(OrderDetail_Load), nameof(OrderDetail), nameof(OrderDetail) + " Loaded");
         }
 
         protected override void OnFormClosing(FormClosingEventArgs e)

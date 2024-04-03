@@ -1,4 +1,5 @@
 ﻿using CSharp.Util.Logging;
+using Main.Events.DrinkEvent;
 using Main.Events.ScreenChangeEvent;
 using MySql.Data.MySqlClient;
 using System.Data;
@@ -18,7 +19,7 @@ namespace Main.Events.ToppingEvent
                 Thread thread = new Thread(() => registerDataGridView(t));
                 thread.Start();
 
-                Program.logger.Log(Level.INFO, nameof(ToppingStartupEvent) + " Loaded");
+                Program.logger.Log(Level.INFO, nameof(load), nameof(ToppingStartupEvent), nameof(ToppingStartupEvent) + " Loaded");
             }
             catch (System.Exception e)
             {
@@ -32,7 +33,7 @@ namespace Main.Events.ToppingEvent
             t.dataGridView1.ReadOnly = true;
 
             ResetEvent.reset();
-            Program.logger.Log(Level.INFO, nameof(onStartup) + " Loaded");
+            Program.logger.Log(Level.INFO, nameof(onStartup), nameof(ToppingStartupEvent), nameof(onStartup) + " Loaded");
         }
 
         internal static void registerDataGridView(Topping t)
@@ -55,7 +56,7 @@ namespace Main.Events.ToppingEvent
                         }
                     }
                     database.DisconnectDatabase();
-                    Program.logger.Log(Level.INFO, nameof(registerDataGridView) + " Successfully added item");
+                    Program.logger.Log(Level.INFO, nameof(registerDataGridView), nameof(ToppingStartupEvent), "Successfully added items");
                 }
 
                 t.dataGridView1.ClearSelection();
@@ -64,7 +65,7 @@ namespace Main.Events.ToppingEvent
                  */
                 t.dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
-                Program.logger.Log(Level.INFO, nameof(registerDataGridView) + " Loaded");
+                Program.logger.Log(Level.INFO, nameof(registerDataGridView), nameof(ToppingStartupEvent), nameof(registerDataGridView) + " Loaded");
             }
             catch (System.Exception e)
             {

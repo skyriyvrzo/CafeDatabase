@@ -1,4 +1,6 @@
 ﻿using CSharp.Util.Logging;
+using Main.Events.DrinkEvent;
+using Main.Events.OrderDetailEvent;
 using Main.Utils;
 using System;
 using System.Windows.Forms;
@@ -33,7 +35,7 @@ namespace Main.Events.OrderEvent
                 }
             }catch (Exception e1)
             {
-                Program.logger.Log(Level.ERROR, nameof(onCellClick), nameof(OrderCellClickEvent), e1.Message);
+                Program.logger.Log(Level.ERROR, nameof(onCellClick), nameof(OrderStartupEvent) + "/" + e1.GetType().Name, e1.Message);
             }
         }
     }

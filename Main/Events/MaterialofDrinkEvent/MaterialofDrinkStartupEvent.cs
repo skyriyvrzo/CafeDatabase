@@ -1,15 +1,9 @@
 ﻿using CSharp.Util.Logging;
-using Main.Events.OrderEvent;
+using Main.Events.DrinkEvent;
 using Main.Events.ScreenChangeEvent;
 using MySql.Data.MySqlClient;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Main.Events.MaterialofDrinkEvent
@@ -27,7 +21,7 @@ namespace Main.Events.MaterialofDrinkEvent
                 thread1.Start();
                 thread2.Start();
 
-                Program.logger.Log(Level.INFO, nameof(MaterialofDrinkStartupEvent) + " Loaded");
+                Program.logger.Log(Level.INFO, nameof(load), nameof(MaterialofDrinkStartupEvent), nameof(MaterialofDrinkStartupEvent) + " Loaded");
             }
             catch (System.Exception e)
             {
@@ -41,7 +35,7 @@ namespace Main.Events.MaterialofDrinkEvent
             mod.dataGridView1.ReadOnly = true;
 
             ResetEvent.reset();
-            Program.logger.Log(Level.INFO, nameof(onStartup) + " Loaded");
+            Program.logger.Log(Level.INFO, nameof(onStartup), nameof(MaterialofDrinkStartupEvent), nameof(onStartup) + " Loaded");
         }
 
         private static void registerItemsInComboBox(MaterialofDrink mod)
@@ -81,7 +75,7 @@ namespace Main.Events.MaterialofDrinkEvent
                     }
                     database.DisconnectDatabase();
                 }
-                Program.logger.Log(Level.INFO, nameof(registerItemsInComboBox) + " Loaded");
+                Program.logger.Log(Level.INFO, nameof(registerItemsInComboBox), nameof(MaterialofDrinkStartupEvent), nameof(registerItemsInComboBox) + " Loaded");
             }
             catch (System.Exception e)
             {
@@ -111,7 +105,7 @@ namespace Main.Events.MaterialofDrinkEvent
                         }
                     }
                     database.DisconnectDatabase();
-                    Program.logger.Log(Level.INFO, nameof(registerDataGridView) + " Successfully added item");
+                    Program.logger.Log(Level.INFO, nameof(registerDataGridView), nameof(MaterialofDrinkStartupEvent), "Successfully added item");
                 }
 
                 mod.dataGridView1.ClearSelection();
@@ -120,7 +114,7 @@ namespace Main.Events.MaterialofDrinkEvent
                  */
                 mod.dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
-                Program.logger.Log(Level.INFO, nameof(registerDataGridView) + " Loaded");
+                Program.logger.Log(Level.INFO, nameof(registerDataGridView), nameof(MaterialofDrinkStartupEvent), nameof(registerDataGridView) + "Loaded");
             }
             catch (System.Exception e)
             {

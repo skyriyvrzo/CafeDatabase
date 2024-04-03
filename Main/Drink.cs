@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CSharp.Util.Logging;
+using System;
 using System.Windows.Forms;
 
 namespace Main
@@ -8,7 +9,15 @@ namespace Main
     {
         public Drink()
         {
+            Program.logger.Log(Level.INFO, nameof(Drink), nameof(Drink), nameof(Drink) + " Loading...");
+
             InitializeComponent();
+        }
+        private void Drink_Load(object sender, EventArgs e)
+        {
+            Main.Events.DrinkEvent.DrinkStartupEvent.load(this);
+
+            Program.logger.Log(Level.INFO, nameof(Drink_Load), nameof(Drink), nameof(Drink) + " Loading...");
         }
 
         protected override void OnFormClosing(FormClosingEventArgs e)
@@ -18,10 +27,6 @@ namespace Main
             Application.Exit();
         }
 
-        private void Drink_Load(object sender, EventArgs e)
-        {
-            Main.Events.DrinkEvent.DrinkStartupEvent.load(this);
-        }
 
         private void bt_add_Drink_Click(object sender, EventArgs e)
         {

@@ -37,7 +37,7 @@ namespace Main.Events.DrinkEvent
             }
             catch (System.Exception e1)
             {
-                Program.logger.Log(Level.ERROR, nameof(onCellClick), nameof(DrinkCellClickEvent), e1.Message);
+                Program.logger.Log(Level.ERROR, nameof(onCellClick), nameof(DrinkCellClickEvent) + "/" + e1.GetType().Name, e1.Message);
             }
         }
     }

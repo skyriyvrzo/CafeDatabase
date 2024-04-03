@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CSharp.Util.Logging;
+using System;
 using System.Windows.Forms;
 
 namespace Main
@@ -15,11 +9,15 @@ namespace Main
     {
         public Order()
         {
+            Program.logger.Log(Level.INFO, nameof(Order), nameof(Order), nameof(Order) + " Loading...");
+
             InitializeComponent();
         }
-        private void OrdersDetail_Load(object sender, EventArgs e)
+        private void Order_Load(object sender, EventArgs e)
         {
             Main.Events.OrderEvent.OrderStartupEvent.load(this);
+
+            Program.logger.Log(Level.INFO, nameof(Order_Load), nameof(Order), nameof(Order) + " Loaded");
         }
 
         protected override void OnFormClosing(FormClosingEventArgs e)
@@ -27,11 +25,6 @@ namespace Main
             base.OnFormClosing(e);
 
             Application.Exit();
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void bt_emp_Click(object sender, EventArgs e)

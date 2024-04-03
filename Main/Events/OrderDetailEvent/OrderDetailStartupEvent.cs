@@ -1,4 +1,5 @@
 ﻿using CSharp.Util.Logging;
+using Main.Events.DrinkEvent;
 using Main.Events.OrderEvent;
 using Main.Events.ScreenChangeEvent;
 using MySql.Data.MySqlClient;
@@ -22,7 +23,7 @@ namespace Main.Events.OrderDetailEvent
                 thread1.Start();
                 thread2.Start();
 
-                Program.logger.Log(Level.INFO, nameof(OrderDetailStartupEvent) + " Loaded");
+                Program.logger.Log(Level.INFO, nameof(load), nameof(OrderDetailStartupEvent), nameof(OrderDetailStartupEvent) + " Loaded");
             }
             catch (Exception e)
             {
@@ -36,7 +37,7 @@ namespace Main.Events.OrderDetailEvent
             od.dataGridView1.ReadOnly = true;
 
             ResetEvent.reset();
-            Program.logger.Log(Level.INFO, nameof(onStartup) + " Loaded");
+            Program.logger.Log(Level.INFO, nameof(onStartup), nameof(OrderDetailStartupEvent), nameof(onStartup) + " Loaded");
         }
 
         private static void registerItemsInComboBox(OrderDetail od)
@@ -90,7 +91,7 @@ namespace Main.Events.OrderDetailEvent
                     }
                     database.DisconnectDatabase();
                 }
-                Program.logger.Log(Level.INFO, nameof(registerItemsInComboBox) + " Loaded");
+                Program.logger.Log(Level.INFO, nameof(registerItemsInComboBox), nameof(OrderDetailStartupEvent), nameof(registerItemsInComboBox) + " Loaded");
             }
             catch (System.Exception e)
             {
@@ -119,7 +120,7 @@ namespace Main.Events.OrderDetailEvent
                         }
                     }
                     database.DisconnectDatabase();
-                    Program.logger.Log(Level.INFO, nameof(registerDataGridView) + " Successfully added item");
+                    Program.logger.Log(Level.INFO, nameof(registerDataGridView), nameof(OrderDetailStartupEvent), "Successfully added items");
                 }
 
                 od.dataGridView1.ClearSelection();
@@ -128,7 +129,7 @@ namespace Main.Events.OrderDetailEvent
                  */
                 od.dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
-                Program.logger.Log(Level.INFO, nameof(registerDataGridView) + " Loaded");
+                Program.logger.Log(Level.INFO, nameof(registerDataGridView), nameof(OrderDetailStartupEvent), nameof(registerDataGridView) + " Loaded");
             }
             catch (System.Exception e)
             {

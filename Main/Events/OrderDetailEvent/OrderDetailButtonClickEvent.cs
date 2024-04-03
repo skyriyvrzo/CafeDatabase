@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using System;
 using CSharp.Util.Logging;
+using Main.Events.DrinkEvent;
 
 namespace Main.Events.OrderDetailEvent
 {
@@ -44,7 +45,7 @@ namespace Main.Events.OrderDetailEvent
             }
             catch (MySqlException e1)
             {
-                Program.logger.Log(Level.ERROR, nameof(onClickAdd), nameof(OrderDetailButtonClickEvent) + "/" + e1.GetType().Name, e1.Message);
+                Program.logger.Log(Level.WARNING, nameof(onClickAdd), nameof(OrderDetailButtonClickEvent) + "/" + e1.GetType().Name, e1.Message);
                 database.DisconnectDatabase();
 
                 if (e1.Message.Contains("Duplicate"))
@@ -121,7 +122,7 @@ namespace Main.Events.OrderDetailEvent
             catch (MySqlException e1)
             {
                 database.DisconnectDatabase();
-                Program.logger.Log(Level.ERROR, nameof(onClickDelete), nameof(OrderDetailButtonClickEvent) + "/" + e1.GetType().Name, e1.Message);
+                Program.logger.Log(Level.WARNING, nameof(onClickDelete), nameof(OrderDetailButtonClickEvent) + "/" + e1.GetType().Name, e1.Message);
                 if (e1.Message.Contains("Cannot delete or update a parent row"))
                 {
                     MessageBox.Show("Cannot delete or update a parent row", Reference.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -192,6 +193,8 @@ namespace Main.Events.OrderDetailEvent
             od.cb_drink.SelectedItem = null;
             od.cb_topping.SelectedItem = null;
             od.tb_quantity.Clear();
+
+            Program.logger.Log(Level.INFO, nameof(clearTextBox), nameof(OrderDetailButtonClickEvent), "Removed item(s) from components");
         }
     }
 }

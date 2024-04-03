@@ -37,7 +37,7 @@ namespace Main.Events.EmployeeEvent
                 }
             }catch (Exception e1)
             {
-                Program.logger.Log(Level.ERROR, nameof(onCellClick), nameof(OrderCellClickEvent), e1.Message);
+                Program.logger.Log(Level.ERROR, nameof(onCellClick), nameof(OrderCellClickEvent) + "/" + e1.GetType().Name, e1.Message);
             }
         }
     }

@@ -1,4 +1,5 @@
 ﻿using CSharp.Util.Logging;
+using Main.Events.DrinkEvent;
 using Main.Events.OrderEvent;
 using Main.Events.ScreenChangeEvent;
 using MySql.Data.MySqlClient;
@@ -20,7 +21,7 @@ namespace Main.Events.MaterialEvent
                 Thread thread = new Thread(() => registerDataGridView(m));
                 thread.Start();
 
-                Program.logger.Log(Level.INFO, nameof(MaterialStartupEvent) + " Loaded");
+                Program.logger.Log(Level.INFO, nameof(load), nameof(MaterialStartupEvent), nameof(MaterialStartupEvent) + " Loaded");
             }
             catch (System.Exception e)
             {
@@ -34,7 +35,7 @@ namespace Main.Events.MaterialEvent
             m.dataGridView1.ReadOnly = true;
 
             ResetEvent.reset();
-            Program.logger.Log(Level.INFO, nameof(onStartup) + " Loaded");
+            Program.logger.Log(Level.INFO, nameof(onStartup), nameof(MaterialStartupEvent), nameof(onStartup) + " Loaded");
         }
 
         internal static void registerDataGridView(Material m)
@@ -57,7 +58,7 @@ namespace Main.Events.MaterialEvent
                         }
                     }
                     database.DisconnectDatabase();
-                    Program.logger.Log(Level.INFO, nameof(registerDataGridView) + " Successfully added item");
+                    Program.logger.Log(Level.INFO, nameof(registerDataGridView), nameof(MaterialStartupEvent), "Successfully added item");
                 }
 
                 m.dataGridView1.ClearSelection();
@@ -66,7 +67,7 @@ namespace Main.Events.MaterialEvent
                  */
                 m.dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
-                Program.logger.Log(Level.INFO, nameof(registerDataGridView) + " Loaded");
+                Program.logger.Log(Level.INFO, nameof(registerDataGridView), nameof(MaterialStartupEvent), nameof(registerDataGridView) + " Loaded");
             }
             catch (System.Exception e)
             {

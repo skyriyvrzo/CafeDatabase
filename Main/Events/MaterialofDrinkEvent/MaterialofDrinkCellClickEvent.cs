@@ -1,4 +1,5 @@
 ﻿using CSharp.Util.Logging;
+using Main.Events.DrinkEvent;
 using Main.Events.OrderEvent;
 using Main.Utils;
 using System;
@@ -40,7 +41,7 @@ namespace Main.Events.MaterialofDrinkEvent
             }
             catch (Exception e1)
             {
-                Program.logger.Log(Level.ERROR, nameof(onCellClick), nameof(OrderCellClickEvent), e1.Message);
+                Program.logger.Log(Level.ERROR, nameof(onCellClick), nameof(MaterialofDrinkCellClickEvent) + "/" + e1.GetType().Name, e1.Message);
             }
         }
     }

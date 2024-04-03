@@ -1,4 +1,5 @@
 ﻿using CSharp.Util.Logging;
+using Main.Events.DrinkEvent;
 using Main.Utils;
 using System;
 using System.Windows.Forms;
@@ -34,7 +35,7 @@ namespace Main.Events.ToppingEvent
             }
             catch (Exception e1)
             {
-                Program.logger.Log(Level.ERROR, nameof(onCellClick), nameof(ToppingCellClickEvent), e1.Message);
+                Program.logger.Log(Level.ERROR, nameof(onCellClick), nameof(ToppingCellClickEvent) + "/" + e1.GetType().Name, e1.Message);
             }
         }
     }

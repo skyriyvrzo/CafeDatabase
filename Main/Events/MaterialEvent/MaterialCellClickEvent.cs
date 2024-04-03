@@ -1,6 +1,5 @@
 ﻿using CSharp.Util.Logging;
-using Main.Events.EmployeeEvent;
-using Main.Events.ToppingEvent;
+using Main.Events.DrinkEvent;
 using Main.Utils;
 using System;
 using System.Windows.Forms;
@@ -35,7 +34,7 @@ namespace Main.Events.MaterialEvent
             }
             catch (Exception e1)
             {
-                Program.logger.Log(Level.ERROR, nameof(onCellClick), nameof(MaterialCellClickEvent), e1.Message);
+                Program.logger.Log(Level.ERROR, nameof(onCellClick), nameof(MaterialCellClickEvent) + "/" + e1.GetType().Name, e1.Message);
             }
         }
     }

@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CSharp.Util.Logging;
+using System;
 using System.Windows.Forms;
 
 namespace Main
@@ -14,12 +8,23 @@ namespace Main
     {
         public MaterialofDrink()
         {
+            Program.logger.Log(Level.INFO, nameof(MaterialofDrink), nameof(MaterialofDrink), nameof(MaterialofDrink) + " Loading...");
+
             InitializeComponent();
         }
 
         private void MaterialofDrink_Load(object sender, EventArgs e)
         {
             Main.Events.MaterialofDrinkEvent.MaterialofDrinkStartupEvent.load(this);
+
+            Program.logger.Log(Level.INFO, nameof(MaterialofDrink_Load), nameof(MaterialofDrink), nameof(MaterialofDrink) + " Loaded");
+        }
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+
+            Application.Exit();
         }
 
         private void bt_add_Click(object sender, EventArgs e)

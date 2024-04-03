@@ -1,4 +1,5 @@
 ﻿using CSharp.Util.Logging;
+using Main.Events.DrinkEvent;
 using Main.Events.EmployeeEvent;
 using Main.Utils;
 using MySql.Data.MySqlClient;
@@ -62,7 +63,7 @@ namespace Main.Events.ToppingEvent
             }
             catch (MySqlException e1)
             {
-                Program.logger.Log(Level.ERROR, nameof(onClickAdd), nameof(ToppingButtonClickEvent) + "/" + e1.GetType().Name, e1.Message);
+                Program.logger.Log(Level.WARNING, nameof(onClickAdd), nameof(ToppingButtonClickEvent) + "/" + e1.GetType().Name, e1.Message);
                 database.DisconnectDatabase();
 
                 if (e1.Message.Contains("Duplicate"))
@@ -145,6 +146,7 @@ namespace Main.Events.ToppingEvent
             }
             catch (MySqlException e1)
             {
+                Program.logger.Log(Level.ERROR, nameof(onClickDelete), nameof(ToppingButtonClickEvent) + "/" + e1.GetType().Name, e1.Message);
                 if (e1.Message.Contains("Cannot delete or update a parent row"))
                 {
                     MessageBox.Show("Cannot delete or update a parent row", Reference.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -221,6 +223,8 @@ namespace Main.Events.ToppingEvent
             t.tb_tp_id.Clear();
             t.tb_tp_name.Clear();
             t.tb_tp_price.Clear();
+
+            Program.logger.Log(Level.INFO, nameof(clearTextBox), nameof(ToppingButtonClickEvent), "Removed item(s) from components");
         }
     }
 }

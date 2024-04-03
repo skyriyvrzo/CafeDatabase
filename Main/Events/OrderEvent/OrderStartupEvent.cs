@@ -1,4 +1,6 @@
 ﻿using CSharp.Util.Logging;
+using Main.Events.DrinkEvent;
+using Main.Events.OrderDetailEvent;
 using Main.Events.ScreenChangeEvent;
 using MySql.Data.MySqlClient;
 using System.Data;
@@ -20,7 +22,7 @@ namespace Main.Events.OrderEvent
                 thread1.Start();
                 thread2.Start();
 
-                Program.logger.Log(Level.INFO, nameof(OrderStartupEvent) + " Loaded");
+                Program.logger.Log(Level.INFO, nameof(load), nameof(OrderStartupEvent), nameof(OrderStartupEvent) + " Loaded");
             }
             catch (System.Exception e)
             {
@@ -34,7 +36,7 @@ namespace Main.Events.OrderEvent
             o.dataGridView1.ReadOnly = true;
 
             ResetEvent.reset();
-            Program.logger.Log(Level.INFO, nameof(onStartup) + " Loaded");
+            Program.logger.Log(Level.INFO, nameof(onStartup), nameof(OrderStartupEvent), nameof(onStartup) + " Loaded");
         }
 
         private static void registerItemsInComboBox(Order o)
@@ -60,8 +62,9 @@ namespace Main.Events.OrderEvent
                     }
                     database.DisconnectDatabase();
                 }
-                Program.logger.Log(Level.INFO, nameof(registerItemsInComboBox) + " Loaded");
-            }catch(System.Exception e)
+                Program.logger.Log(Level.INFO, nameof(registerItemsInComboBox), nameof(OrderStartupEvent), nameof(registerItemsInComboBox) + " Loaded");
+            }
+            catch(System.Exception e)
             {
                 Program.logger.Log(Level.ERROR, nameof(registerItemsInComboBox), nameof(OrderStartupEvent) + "/" + e.GetType().Name, e.Message);
                 database.DisconnectDatabase();
@@ -89,7 +92,7 @@ namespace Main.Events.OrderEvent
                         }
                     }
                     database.DisconnectDatabase();
-                    Program.logger.Log(Level.INFO, nameof(registerDataGridView) + " Successfully added item");
+                    Program.logger.Log(Level.INFO, nameof(registerDataGridView), nameof(OrderStartupEvent), "Successfully added items");
                 }
 
                 o.dataGridView1.ClearSelection();
@@ -98,7 +101,7 @@ namespace Main.Events.OrderEvent
                  */
                 o.dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
-                Program.logger.Log(Level.INFO, nameof(registerDataGridView) + " Loaded");
+                Program.logger.Log(Level.INFO, nameof(registerDataGridView), nameof(OrderStartupEvent), nameof(registerDataGridView) + " Loaded");
             }
             catch (System.Exception e)
             {

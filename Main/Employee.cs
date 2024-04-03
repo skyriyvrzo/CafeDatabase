@@ -1,5 +1,4 @@
 ﻿using CSharp.Util.Logging;
-using Main.Utils;
 using System.Windows.Forms;
 
 namespace Main
@@ -9,16 +8,22 @@ namespace Main
     {
         public Employee()
         {
+            Program.logger.Log(Level.INFO, nameof(Employee), nameof(Employee), nameof(Employee) + " Loading...");
             InitializeComponent();
-
-            Program.logger.Log(Level.INFO, nameof(Employee) + " Loaded");
         }
 
         private void Employee_Load(object sender, System.EventArgs e)
         {
             Main.Events.EmployeeEvent.EmployeeStartupEvent.load(this);
 
-            Program.logger.Log(Level.INFO, nameof(Employee_Load) + " Loaded");
+            Program.logger.Log(Level.INFO, nameof(Employee_Load), nameof(Employee), nameof(Employee) + " Loaded");
+        }
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+
+            Application.Exit();
         }
 
         private void bt_add_emp_Click(object sender, System.EventArgs e)
