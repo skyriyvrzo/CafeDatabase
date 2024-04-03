@@ -19,7 +19,7 @@ namespace Main
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(Reference.employee = new Employee());
+            Application.Run(Reference.order = new Order());
         }
     }
 }

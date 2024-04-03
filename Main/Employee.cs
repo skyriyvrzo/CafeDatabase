@@ -1,4 +1,5 @@
 ﻿using CSharp.Util.Logging;
+using Main.Utils;
 using System.Windows.Forms;
 
 namespace Main
@@ -45,12 +46,16 @@ namespace Main
             Main.Events.EmployeeEvent.EmployeeButtonClickEvent.onClickSave(this);
         }
 
-        private void bt_order_emp_Click(object sender, System.EventArgs e)
+        private void bt_order_Click(object sender, System.EventArgs e)
         {
             Main.Events.ScreenChangeEvent.ScreenButtonClickEvent.onClickOrder(this);
         }
 
-        private void bt_drink_emp_Click(object sender, System.EventArgs e)
+        private void bt_employee_Click(object sender, System.EventArgs e)
+        {
+            Main.Events.ScreenChangeEvent.ScreenButtonClickEvent.onClickEmployee(this);
+        }
+        private void bt_drink_Click(object sender, System.EventArgs e)
         {
             Main.Events.ScreenChangeEvent.ScreenButtonClickEvent.onClickDrink(this);
         }
@@ -60,7 +65,7 @@ namespace Main
             Main.Events.ScreenChangeEvent.ScreenButtonClickEvent.onClickMaterial(this);
         }
 
-        private void bt_topping_emp_Click(object sender, System.EventArgs e)
+        private void bt_topping_Click(object sender, System.EventArgs e)
         {
             Main.Events.ScreenChangeEvent.ScreenButtonClickEvent.onClickTopping(this);
         }
