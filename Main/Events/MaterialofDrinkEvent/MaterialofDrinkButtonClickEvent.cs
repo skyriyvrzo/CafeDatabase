@@ -119,7 +119,7 @@ namespace Main.Events.MaterialofDrinkEvent
                 {
                     if (database.ConnectDatabase())
                     {
-                        string query = $"delete from `material_of_drink` where (DRINK_ID, MATERIAL_ID)= '({mod.cb_drink.SelectedValue}, {mod.cb_material.SelectedValue})'";
+                        string query = $"delete from `material_of_drink` where (DRINK_ID, MATERIAL_ID) = ({mod.cb_drink.SelectedValue}, {mod.cb_material.SelectedValue})";
                         int row = new MySqlCommand(query, database.connection).ExecuteNonQuery();
 
                         if (row > 0)

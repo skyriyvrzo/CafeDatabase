@@ -54,9 +54,9 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(54, 202);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 209);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(913, 356);
+            this.dataGridView1.Size = new System.Drawing.Size(973, 349);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -177,7 +177,7 @@
             this.bt_employee.Location = new System.Drawing.Point(133, 0);
             this.bt_employee.Name = "bt_employee";
             this.bt_employee.Size = new System.Drawing.Size(97, 37);
-            this.bt_employee.TabIndex = 29;
+            this.bt_employee.TabIndex = 16;
             this.bt_employee.Text = "Employee";
             this.bt_employee.UseVisualStyleBackColor = false;
             this.bt_employee.Click += new System.EventHandler(this.bt_employee_Click);
@@ -276,6 +276,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(219)))), ((int)(((byte)(219)))));
             this.ClientSize = new System.Drawing.Size(997, 570);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.bt_save);
@@ -293,7 +294,7 @@
             this.MaximizeBox = false;
             this.Name = "Topping";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cafe/Topping";
+            this.Text = "Cafe";
             this.Load += new System.EventHandler(this.Topping_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);

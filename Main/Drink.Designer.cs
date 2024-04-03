@@ -1,4 +1,6 @@
-﻿namespace Main
+﻿using Main.Utils;
+
+namespace Main
 {
     partial class Drink
     {
@@ -56,29 +58,29 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(40, 217);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 209);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(913, 341);
+            this.dataGridView1.Size = new System.Drawing.Size(973, 349);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // tb_drink_id
             // 
-            this.tb_drink_id.Location = new System.Drawing.Point(108, 76);
+            this.tb_drink_id.Location = new System.Drawing.Point(68, 62);
             this.tb_drink_id.Name = "tb_drink_id";
             this.tb_drink_id.Size = new System.Drawing.Size(100, 20);
             this.tb_drink_id.TabIndex = 2;
             // 
             // tb_name
             // 
-            this.tb_name.Location = new System.Drawing.Point(283, 76);
+            this.tb_name.Location = new System.Drawing.Point(243, 62);
             this.tb_name.Name = "tb_name";
             this.tb_name.Size = new System.Drawing.Size(100, 20);
             this.tb_name.TabIndex = 4;
             // 
             // tb_price
             // 
-            this.tb_price.Location = new System.Drawing.Point(108, 101);
+            this.tb_price.Location = new System.Drawing.Point(68, 87);
             this.tb_price.Name = "tb_price";
             this.tb_price.Size = new System.Drawing.Size(100, 20);
             this.tb_price.TabIndex = 5;
@@ -86,34 +88,34 @@
             // l_drinkid
             // 
             this.l_drinkid.AutoSize = true;
-            this.l_drinkid.Location = new System.Drawing.Point(57, 79);
+            this.l_drinkid.Location = new System.Drawing.Point(17, 65);
             this.l_drinkid.Name = "l_drinkid";
             this.l_drinkid.Size = new System.Drawing.Size(46, 13);
-            this.l_drinkid.TabIndex = 6;
+            this.l_drinkid.TabIndex = 32;
             this.l_drinkid.Text = "Drink ID";
             // 
             // l_drinkname
             // 
             this.l_drinkname.AutoSize = true;
-            this.l_drinkname.Location = new System.Drawing.Point(240, 79);
+            this.l_drinkname.Location = new System.Drawing.Point(200, 65);
             this.l_drinkname.Name = "l_drinkname";
             this.l_drinkname.Size = new System.Drawing.Size(35, 13);
-            this.l_drinkname.TabIndex = 7;
+            this.l_drinkname.TabIndex = 31;
             this.l_drinkname.Text = "Name";
             // 
             // l_drinkstatus
             // 
             this.l_drinkstatus.AutoSize = true;
-            this.l_drinkstatus.Location = new System.Drawing.Point(240, 108);
+            this.l_drinkstatus.Location = new System.Drawing.Point(200, 94);
             this.l_drinkstatus.Name = "l_drinkstatus";
             this.l_drinkstatus.Size = new System.Drawing.Size(37, 13);
-            this.l_drinkstatus.TabIndex = 9;
+            this.l_drinkstatus.TabIndex = 30;
             this.l_drinkstatus.Text = "Status";
             // 
             // l_drinkprice
             // 
             this.l_drinkprice.AutoSize = true;
-            this.l_drinkprice.Location = new System.Drawing.Point(57, 105);
+            this.l_drinkprice.Location = new System.Drawing.Point(17, 91);
             this.l_drinkprice.Name = "l_drinkprice";
             this.l_drinkprice.Size = new System.Drawing.Size(31, 13);
             this.l_drinkprice.TabIndex = 9;
@@ -122,7 +124,7 @@
             // bt_add_Drink
             // 
             this.bt_add_Drink.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_add_Drink.Location = new System.Drawing.Point(452, 62);
+            this.bt_add_Drink.Location = new System.Drawing.Point(361, 62);
             this.bt_add_Drink.Name = "bt_add_Drink";
             this.bt_add_Drink.Size = new System.Drawing.Size(79, 47);
             this.bt_add_Drink.TabIndex = 10;
@@ -133,7 +135,7 @@
             // bt_Edit_Drink
             // 
             this.bt_Edit_Drink.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_Edit_Drink.Location = new System.Drawing.Point(551, 62);
+            this.bt_Edit_Drink.Location = new System.Drawing.Point(458, 62);
             this.bt_Edit_Drink.Name = "bt_Edit_Drink";
             this.bt_Edit_Drink.Size = new System.Drawing.Size(79, 47);
             this.bt_Edit_Drink.TabIndex = 11;
@@ -144,7 +146,7 @@
             // bt_delete_drink
             // 
             this.bt_delete_drink.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_delete_drink.Location = new System.Drawing.Point(647, 62);
+            this.bt_delete_drink.Location = new System.Drawing.Point(554, 62);
             this.bt_delete_drink.Name = "bt_delete_drink";
             this.bt_delete_drink.Size = new System.Drawing.Size(79, 47);
             this.bt_delete_drink.TabIndex = 12;
@@ -155,7 +157,7 @@
             // bt_save_Drink
             // 
             this.bt_save_Drink.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_save_Drink.Location = new System.Drawing.Point(743, 62);
+            this.bt_save_Drink.Location = new System.Drawing.Point(650, 62);
             this.bt_save_Drink.Name = "bt_save_Drink";
             this.bt_save_Drink.Size = new System.Drawing.Size(79, 47);
             this.bt_save_Drink.TabIndex = 13;
@@ -167,10 +169,10 @@
             // 
             this.cb_status.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_status.FormattingEnabled = true;
-            this.cb_status.Location = new System.Drawing.Point(283, 105);
+            this.cb_status.Location = new System.Drawing.Point(243, 91);
             this.cb_status.Name = "cb_status";
             this.cb_status.Size = new System.Drawing.Size(100, 21);
-            this.cb_status.TabIndex = 19;
+            this.cb_status.TabIndex = 6;
             // 
             // panel1
             // 
@@ -197,7 +199,7 @@
             this.bt_employee.Location = new System.Drawing.Point(133, 0);
             this.bt_employee.Name = "bt_employee";
             this.bt_employee.Size = new System.Drawing.Size(97, 37);
-            this.bt_employee.TabIndex = 29;
+            this.bt_employee.TabIndex = 16;
             this.bt_employee.Text = "Employee";
             this.bt_employee.UseVisualStyleBackColor = false;
             this.bt_employee.Click += new System.EventHandler(this.bt_employee_Click);
@@ -296,6 +298,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(219)))), ((int)(((byte)(219)))));
             this.ClientSize = new System.Drawing.Size(997, 570);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.cb_status);
@@ -315,7 +318,7 @@
             this.MaximizeBox = false;
             this.Name = "Drink";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cafe/Drink";
+            this.Text = "Cafe";
             this.Load += new System.EventHandler(this.Drink_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);

@@ -20,11 +20,13 @@ namespace Main.Events.DrinkEvent
             {
                 if (d.tb_drink_id.Text == "" || d.tb_name.Text == "" || d.tb_price.Text == "" || d.cb_status.SelectedItem == null)
                 {
+                    Program.logger.Log(Level.WARNING, nameof(onClickAdd), nameof(DrinkButtonClickEvent), "Please fill in complete information.");
                     MessageBox.Show("Please fill in complete information.", Reference.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 else if (!int.TryParse(d.tb_drink_id.Text, out int result) || !int.TryParse(d.tb_price.Text, out int result1))
                 {
+                    Program.logger.Log(Level.WARNING, nameof(onClickAdd), nameof(DrinkButtonClickEvent), "Drink ID and price must be numbers only.");
                     MessageBox.Show("Drink ID and price must be numbers only.", Reference.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
@@ -40,6 +42,7 @@ namespace Main.Events.DrinkEvent
 
                     if (row > 0)
                     {
+                        Program.logger.Log(Level.INFO, nameof(onClickAdd), nameof(DrinkButtonClickEvent), "Add successfully");
                         MessageBox.Show("Add successfully", Reference.Information, MessageBoxButtons.OK, MessageBoxIcon.Information);
                         DrinkStartupEvent.registerDataGridView(d);
                     }
@@ -101,6 +104,7 @@ namespace Main.Events.DrinkEvent
             {
                 if (d.tb_drink_id.Text == "")
                 {
+                    Program.logger.Log(Level.WARNING, nameof(onClickDelete), nameof(DrinkButtonClickEvent), "Please select the drink you want to delete.");
                     MessageBox.Show("Please select the drink you want to delete.", Reference.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
@@ -113,6 +117,7 @@ namespace Main.Events.DrinkEvent
 
                         if (row > 0)
                         {
+                            Program.logger.Log(Level.INFO, nameof(onClickDelete), nameof(DrinkButtonClickEvent), "Delete successfully");
                             MessageBox.Show("Delete successfully", Reference.Information, MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
 
@@ -124,8 +129,8 @@ namespace Main.Events.DrinkEvent
             }
             catch (MySqlException e1)
             {
-                database.DisconnectDatabase();
                 Program.logger.Log(Level.ERROR, nameof(onClickDelete), nameof(DrinkButtonClickEvent) + "/" + e1.GetType().Name, e1.Message);
+                database.DisconnectDatabase();
                 if (e1.Message.Contains("Cannot delete or update a parent row"))
                 {
                     MessageBox.Show("Cannot delete or update a parent row", Reference.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -150,11 +155,13 @@ namespace Main.Events.DrinkEvent
 
                 if (d.tb_drink_id.Text == "" || d.tb_name.Text == "" || d.tb_price.Text == "" || d.cb_status.SelectedItem == null)
                 {
+                    Program.logger.Log(Level.WARNING, nameof(onClickSave), nameof(DrinkButtonClickEvent), "Please fill in complete information.");
                     MessageBox.Show("Please fill in complete information.", Reference.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 else if (!int.TryParse(d.tb_drink_id.Text, out int result) || !int.TryParse(d.tb_price.Text, out int result1))
                 {
+                    Program.logger.Log(Level.WARNING, nameof(onClickSave), nameof(DrinkButtonClickEvent), "Drink ID and price must be numbers only.");
                     MessageBox.Show("Drink ID and price must be numbers only.", Reference.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
@@ -170,6 +177,7 @@ namespace Main.Events.DrinkEvent
 
                     if (row > 0)
                     {
+                        Program.logger.Log(Level.INFO, nameof(onClickSave), nameof(DrinkButtonClickEvent), "Your changes have been successfully saved!");
                         MessageBox.Show("Your changes have been successfully saved!", Reference.Information, MessageBoxButtons.OK, MessageBoxIcon.Information);
                         DrinkStartupEvent.registerDataGridView(d);
                     }

@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "E:\\Github\\CafeDatabase\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|e:\\github\\cafedatabase\\main\\order.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|solutionrelative:main\\order.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|e:\\github\\cafedatabase\\main\\events\\orderevent\\orderstartupevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|solutionrelative:main\\events\\orderevent\\orderstartupevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|e:\\github\\cafedatabase\\main\\events\\materialofdrinkevent\\materialofdrinkbuttonclickevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|solutionrelative:main\\events\\materialofdrinkevent\\materialofdrinkbuttonclickevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,28 +30,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "OrderStartupEvent.cs",
-              "DocumentMoniker": "E:\\Github\\CafeDatabase\\Main\\Events\\OrderEvent\\OrderStartupEvent.cs",
-              "RelativeDocumentMoniker": "Main\\Events\\OrderEvent\\OrderStartupEvent.cs",
-              "ToolTip": "E:\\Github\\CafeDatabase\\Main\\Events\\OrderEvent\\OrderStartupEvent.cs",
-              "RelativeToolTip": "Main\\Events\\OrderEvent\\OrderStartupEvent.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAgwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T01:24:54.042Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Order.Designer.cs",
-              "DocumentMoniker": "E:\\Github\\CafeDatabase\\Main\\Order.Designer.cs",
-              "RelativeDocumentMoniker": "Main\\Order.Designer.cs",
-              "ToolTip": "E:\\Github\\CafeDatabase\\Main\\Order.Designer.cs",
-              "RelativeToolTip": "Main\\Order.Designer.cs",
-              "ViewState": "AQIAAHgAAAAAAAAAAAAAAIMAAAAkAAAA",
+              "Title": "MaterialofDrinkButtonClickEvent.cs",
+              "DocumentMoniker": "E:\\Github\\CafeDatabase\\Main\\Events\\MaterialofDrinkEvent\\MaterialofDrinkButtonClickEvent.cs",
+              "RelativeDocumentMoniker": "Main\\Events\\MaterialofDrinkEvent\\MaterialofDrinkButtonClickEvent.cs",
+              "ToolTip": "E:\\Github\\CafeDatabase\\Main\\Events\\MaterialofDrinkEvent\\MaterialofDrinkButtonClickEvent.cs",
+              "RelativeToolTip": "Main\\Events\\MaterialofDrinkEvent\\MaterialofDrinkButtonClickEvent.cs",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAowHkAAACoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T01:23:07.035Z",
+              "WhenOpened": "2024-04-03T02:15:26.405Z",
               "EditorCaption": ""
             }
           ]

@@ -1,4 +1,6 @@
-﻿namespace Main.Utils
+﻿using System.Drawing;
+
+namespace Main.Utils
 {
     internal class Reference
     {

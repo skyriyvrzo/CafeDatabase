@@ -59,7 +59,7 @@
             this.label1.Location = new System.Drawing.Point(42, 121);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(33, 13);
-            this.label1.TabIndex = 0;
+            this.label1.TabIndex = 35;
             this.label1.Text = "Order";
             // 
             // label2
@@ -68,7 +68,7 @@
             this.label2.Location = new System.Drawing.Point(43, 167);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(32, 13);
-            this.label2.TabIndex = 1;
+            this.label2.TabIndex = 34;
             this.label2.Text = "Drink";
             // 
             // cb_order
@@ -78,7 +78,7 @@
             this.cb_order.Location = new System.Drawing.Point(81, 118);
             this.cb_order.Name = "cb_order";
             this.cb_order.Size = new System.Drawing.Size(181, 21);
-            this.cb_order.TabIndex = 2;
+            this.cb_order.TabIndex = 0;
             // 
             // cb_drink
             // 
@@ -87,7 +87,7 @@
             this.cb_drink.Location = new System.Drawing.Point(81, 164);
             this.cb_drink.Name = "cb_drink";
             this.cb_drink.Size = new System.Drawing.Size(181, 21);
-            this.cb_drink.TabIndex = 3;
+            this.cb_drink.TabIndex = 1;
             // 
             // cb_topping
             // 
@@ -96,7 +96,7 @@
             this.cb_topping.Location = new System.Drawing.Point(342, 118);
             this.cb_topping.Name = "cb_topping";
             this.cb_topping.Size = new System.Drawing.Size(181, 21);
-            this.cb_topping.TabIndex = 5;
+            this.cb_topping.TabIndex = 2;
             // 
             // label3
             // 
@@ -166,9 +166,9 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(13, 228);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 209);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(972, 330);
+            this.dataGridView1.Size = new System.Drawing.Size(973, 349);
             this.dataGridView1.TabIndex = 12;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -197,7 +197,7 @@
             this.bt_employee.Location = new System.Drawing.Point(133, 0);
             this.bt_employee.Name = "bt_employee";
             this.bt_employee.Size = new System.Drawing.Size(97, 37);
-            this.bt_employee.TabIndex = 29;
+            this.bt_employee.TabIndex = 16;
             this.bt_employee.Text = "Employee";
             this.bt_employee.UseVisualStyleBackColor = false;
             this.bt_employee.Click += new System.EventHandler(this.bt_employee_Click);
@@ -296,6 +296,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(219)))), ((int)(((byte)(219)))));
             this.ClientSize = new System.Drawing.Size(997, 570);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
@@ -315,7 +316,7 @@
             this.MaximizeBox = false;
             this.Name = "OrderDetail";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cafe/OrdersDetail";
+            this.Text = "Cafe";
             this.Load += new System.EventHandler(this.OrderDetail_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
