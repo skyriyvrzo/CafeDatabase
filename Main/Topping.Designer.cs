@@ -63,7 +63,7 @@
             // l_toppingid
             // 
             this.l_toppingid.AutoSize = true;
-            this.l_toppingid.Location = new System.Drawing.Point(27, 74);
+            this.l_toppingid.Location = new System.Drawing.Point(15, 57);
             this.l_toppingid.Name = "l_toppingid";
             this.l_toppingid.Size = new System.Drawing.Size(46, 13);
             this.l_toppingid.TabIndex = 2;
@@ -72,7 +72,7 @@
             // l_toppingname
             // 
             this.l_toppingname.AutoSize = true;
-            this.l_toppingname.Location = new System.Drawing.Point(27, 112);
+            this.l_toppingname.Location = new System.Drawing.Point(15, 95);
             this.l_toppingname.Name = "l_toppingname";
             this.l_toppingname.Size = new System.Drawing.Size(74, 13);
             this.l_toppingname.TabIndex = 3;
@@ -81,7 +81,7 @@
             // l_toppingprice
             // 
             this.l_toppingprice.AutoSize = true;
-            this.l_toppingprice.Location = new System.Drawing.Point(27, 149);
+            this.l_toppingprice.Location = new System.Drawing.Point(15, 132);
             this.l_toppingprice.Name = "l_toppingprice";
             this.l_toppingprice.Size = new System.Drawing.Size(70, 13);
             this.l_toppingprice.TabIndex = 4;
@@ -89,21 +89,21 @@
             // 
             // tb_tp_id
             // 
-            this.tb_tp_id.Location = new System.Drawing.Point(107, 74);
+            this.tb_tp_id.Location = new System.Drawing.Point(95, 57);
             this.tb_tp_id.Name = "tb_tp_id";
             this.tb_tp_id.Size = new System.Drawing.Size(100, 20);
             this.tb_tp_id.TabIndex = 5;
             // 
             // tb_tp_name
             // 
-            this.tb_tp_name.Location = new System.Drawing.Point(107, 109);
+            this.tb_tp_name.Location = new System.Drawing.Point(95, 92);
             this.tb_tp_name.Name = "tb_tp_name";
             this.tb_tp_name.Size = new System.Drawing.Size(100, 20);
             this.tb_tp_name.TabIndex = 6;
             // 
             // tb_tp_price
             // 
-            this.tb_tp_price.Location = new System.Drawing.Point(107, 142);
+            this.tb_tp_price.Location = new System.Drawing.Point(95, 125);
             this.tb_tp_price.Name = "tb_tp_price";
             this.tb_tp_price.Size = new System.Drawing.Size(100, 20);
             this.tb_tp_price.TabIndex = 7;
@@ -111,7 +111,7 @@
             // bt_add
             // 
             this.bt_add.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_add.Location = new System.Drawing.Point(299, 95);
+            this.bt_add.Location = new System.Drawing.Point(217, 76);
             this.bt_add.Name = "bt_add";
             this.bt_add.Size = new System.Drawing.Size(79, 47);
             this.bt_add.TabIndex = 12;
@@ -122,7 +122,7 @@
             // bt_Edit
             // 
             this.bt_Edit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_Edit.Location = new System.Drawing.Point(384, 95);
+            this.bt_Edit.Location = new System.Drawing.Point(302, 76);
             this.bt_Edit.Name = "bt_Edit";
             this.bt_Edit.Size = new System.Drawing.Size(79, 47);
             this.bt_Edit.TabIndex = 13;
@@ -133,7 +133,7 @@
             // bt_delete
             // 
             this.bt_delete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_delete.Location = new System.Drawing.Point(469, 95);
+            this.bt_delete.Location = new System.Drawing.Point(387, 76);
             this.bt_delete.Name = "bt_delete";
             this.bt_delete.Size = new System.Drawing.Size(79, 47);
             this.bt_delete.TabIndex = 14;
@@ -144,7 +144,7 @@
             // bt_save
             // 
             this.bt_save.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_save.Location = new System.Drawing.Point(554, 95);
+            this.bt_save.Location = new System.Drawing.Point(472, 76);
             this.bt_save.Name = "bt_save";
             this.bt_save.Size = new System.Drawing.Size(79, 47);
             this.bt_save.TabIndex = 15;

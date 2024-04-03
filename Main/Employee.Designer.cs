@@ -69,28 +69,28 @@ namespace Main
             // 
             // tb_empid
             // 
-            this.tb_empid.Location = new System.Drawing.Point(121, 57);
+            this.tb_empid.Location = new System.Drawing.Point(90, 53);
             this.tb_empid.Name = "tb_empid";
             this.tb_empid.Size = new System.Drawing.Size(100, 20);
             this.tb_empid.TabIndex = 1;
             // 
             // tb_fname
             // 
-            this.tb_fname.Location = new System.Drawing.Point(121, 90);
+            this.tb_fname.Location = new System.Drawing.Point(90, 86);
             this.tb_fname.Name = "tb_fname";
             this.tb_fname.Size = new System.Drawing.Size(100, 20);
             this.tb_fname.TabIndex = 2;
             // 
             // tb_lname
             // 
-            this.tb_lname.Location = new System.Drawing.Point(121, 119);
+            this.tb_lname.Location = new System.Drawing.Point(90, 115);
             this.tb_lname.Name = "tb_lname";
             this.tb_lname.Size = new System.Drawing.Size(100, 20);
             this.tb_lname.TabIndex = 3;
             // 
             // tb_salary
             // 
-            this.tb_salary.Location = new System.Drawing.Point(121, 149);
+            this.tb_salary.Location = new System.Drawing.Point(90, 145);
             this.tb_salary.Name = "tb_salary";
             this.tb_salary.Size = new System.Drawing.Size(100, 20);
             this.tb_salary.TabIndex = 4;
@@ -98,7 +98,7 @@ namespace Main
             // l_emp_id
             // 
             this.l_emp_id.AutoSize = true;
-            this.l_emp_id.Location = new System.Drawing.Point(48, 60);
+            this.l_emp_id.Location = new System.Drawing.Point(17, 56);
             this.l_emp_id.Name = "l_emp_id";
             this.l_emp_id.Size = new System.Drawing.Size(67, 13);
             this.l_emp_id.TabIndex = 6;
@@ -107,7 +107,7 @@ namespace Main
             // l_fname
             // 
             this.l_fname.AutoSize = true;
-            this.l_fname.Location = new System.Drawing.Point(48, 93);
+            this.l_fname.Location = new System.Drawing.Point(17, 89);
             this.l_fname.Name = "l_fname";
             this.l_fname.Size = new System.Drawing.Size(57, 13);
             this.l_fname.TabIndex = 7;
@@ -116,7 +116,7 @@ namespace Main
             // l_lname
             // 
             this.l_lname.AutoSize = true;
-            this.l_lname.Location = new System.Drawing.Point(48, 122);
+            this.l_lname.Location = new System.Drawing.Point(17, 118);
             this.l_lname.Name = "l_lname";
             this.l_lname.Size = new System.Drawing.Size(58, 13);
             this.l_lname.TabIndex = 8;
@@ -125,7 +125,7 @@ namespace Main
             // l_sex
             // 
             this.l_sex.AutoSize = true;
-            this.l_sex.Location = new System.Drawing.Point(48, 183);
+            this.l_sex.Location = new System.Drawing.Point(17, 179);
             this.l_sex.Name = "l_sex";
             this.l_sex.Size = new System.Drawing.Size(25, 13);
             this.l_sex.TabIndex = 9;
@@ -134,7 +134,7 @@ namespace Main
             // l_salary
             // 
             this.l_salary.AutoSize = true;
-            this.l_salary.Location = new System.Drawing.Point(48, 152);
+            this.l_salary.Location = new System.Drawing.Point(17, 148);
             this.l_salary.Name = "l_salary";
             this.l_salary.Size = new System.Drawing.Size(36, 13);
             this.l_salary.TabIndex = 10;
@@ -143,9 +143,9 @@ namespace Main
             // bt_add_emp
             // 
             this.bt_add_emp.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_add_emp.Location = new System.Drawing.Point(296, 50);
+            this.bt_add_emp.Location = new System.Drawing.Point(234, 99);
             this.bt_add_emp.Name = "bt_add_emp";
-            this.bt_add_emp.Size = new System.Drawing.Size(75, 23);
+            this.bt_add_emp.Size = new System.Drawing.Size(75, 44);
             this.bt_add_emp.TabIndex = 11;
             this.bt_add_emp.Text = "Add";
             this.bt_add_emp.UseVisualStyleBackColor = true;
@@ -154,9 +154,9 @@ namespace Main
             // bt_edit_emp
             // 
             this.bt_edit_emp.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_edit_emp.Location = new System.Drawing.Point(377, 50);
+            this.bt_edit_emp.Location = new System.Drawing.Point(315, 99);
             this.bt_edit_emp.Name = "bt_edit_emp";
-            this.bt_edit_emp.Size = new System.Drawing.Size(75, 23);
+            this.bt_edit_emp.Size = new System.Drawing.Size(75, 44);
             this.bt_edit_emp.TabIndex = 12;
             this.bt_edit_emp.Text = "Edit";
             this.bt_edit_emp.UseVisualStyleBackColor = true;
@@ -165,9 +165,9 @@ namespace Main
             // bt_delete_emp
             // 
             this.bt_delete_emp.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_delete_emp.Location = new System.Drawing.Point(458, 50);
+            this.bt_delete_emp.Location = new System.Drawing.Point(396, 99);
             this.bt_delete_emp.Name = "bt_delete_emp";
-            this.bt_delete_emp.Size = new System.Drawing.Size(75, 23);
+            this.bt_delete_emp.Size = new System.Drawing.Size(75, 44);
             this.bt_delete_emp.TabIndex = 13;
             this.bt_delete_emp.Text = "Delete";
             this.bt_delete_emp.UseVisualStyleBackColor = true;
@@ -176,9 +176,9 @@ namespace Main
             // tb_save_emp
             // 
             this.tb_save_emp.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tb_save_emp.Location = new System.Drawing.Point(539, 50);
+            this.tb_save_emp.Location = new System.Drawing.Point(477, 99);
             this.tb_save_emp.Name = "tb_save_emp";
-            this.tb_save_emp.Size = new System.Drawing.Size(75, 23);
+            this.tb_save_emp.Size = new System.Drawing.Size(75, 44);
             this.tb_save_emp.TabIndex = 14;
             this.tb_save_emp.Text = "Save";
             this.tb_save_emp.UseVisualStyleBackColor = true;
@@ -211,7 +211,7 @@ namespace Main
             this.cb_sex.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cb_sex.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_sex.FormattingEnabled = true;
-            this.cb_sex.Location = new System.Drawing.Point(121, 175);
+            this.cb_sex.Location = new System.Drawing.Point(90, 171);
             this.cb_sex.Name = "cb_sex";
             this.cb_sex.Size = new System.Drawing.Size(100, 21);
             this.cb_sex.TabIndex = 5;

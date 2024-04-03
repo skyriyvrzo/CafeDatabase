@@ -80,7 +80,7 @@ namespace Main
             // 
             // tb_price
             // 
-            this.tb_price.Location = new System.Drawing.Point(68, 87);
+            this.tb_price.Location = new System.Drawing.Point(68, 96);
             this.tb_price.Name = "tb_price";
             this.tb_price.Size = new System.Drawing.Size(100, 20);
             this.tb_price.TabIndex = 5;
@@ -106,7 +106,7 @@ namespace Main
             // l_drinkstatus
             // 
             this.l_drinkstatus.AutoSize = true;
-            this.l_drinkstatus.Location = new System.Drawing.Point(200, 94);
+            this.l_drinkstatus.Location = new System.Drawing.Point(200, 103);
             this.l_drinkstatus.Name = "l_drinkstatus";
             this.l_drinkstatus.Size = new System.Drawing.Size(37, 13);
             this.l_drinkstatus.TabIndex = 30;
@@ -115,7 +115,7 @@ namespace Main
             // l_drinkprice
             // 
             this.l_drinkprice.AutoSize = true;
-            this.l_drinkprice.Location = new System.Drawing.Point(17, 91);
+            this.l_drinkprice.Location = new System.Drawing.Point(17, 100);
             this.l_drinkprice.Name = "l_drinkprice";
             this.l_drinkprice.Size = new System.Drawing.Size(31, 13);
             this.l_drinkprice.TabIndex = 9;
@@ -124,7 +124,7 @@ namespace Main
             // bt_add_Drink
             // 
             this.bt_add_Drink.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_add_Drink.Location = new System.Drawing.Point(361, 62);
+            this.bt_add_Drink.Location = new System.Drawing.Point(361, 68);
             this.bt_add_Drink.Name = "bt_add_Drink";
             this.bt_add_Drink.Size = new System.Drawing.Size(79, 47);
             this.bt_add_Drink.TabIndex = 10;
@@ -135,7 +135,7 @@ namespace Main
             // bt_Edit_Drink
             // 
             this.bt_Edit_Drink.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_Edit_Drink.Location = new System.Drawing.Point(458, 62);
+            this.bt_Edit_Drink.Location = new System.Drawing.Point(458, 68);
             this.bt_Edit_Drink.Name = "bt_Edit_Drink";
             this.bt_Edit_Drink.Size = new System.Drawing.Size(79, 47);
             this.bt_Edit_Drink.TabIndex = 11;
@@ -146,7 +146,7 @@ namespace Main
             // bt_delete_drink
             // 
             this.bt_delete_drink.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_delete_drink.Location = new System.Drawing.Point(554, 62);
+            this.bt_delete_drink.Location = new System.Drawing.Point(554, 68);
             this.bt_delete_drink.Name = "bt_delete_drink";
             this.bt_delete_drink.Size = new System.Drawing.Size(79, 47);
             this.bt_delete_drink.TabIndex = 12;
@@ -157,7 +157,7 @@ namespace Main
             // bt_save_Drink
             // 
             this.bt_save_Drink.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_save_Drink.Location = new System.Drawing.Point(650, 62);
+            this.bt_save_Drink.Location = new System.Drawing.Point(650, 68);
             this.bt_save_Drink.Name = "bt_save_Drink";
             this.bt_save_Drink.Size = new System.Drawing.Size(79, 47);
             this.bt_save_Drink.TabIndex = 13;
@@ -169,7 +169,7 @@ namespace Main
             // 
             this.cb_status.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_status.FormattingEnabled = true;
-            this.cb_status.Location = new System.Drawing.Point(243, 91);
+            this.cb_status.Location = new System.Drawing.Point(243, 100);
             this.cb_status.Name = "cb_status";
             this.cb_status.Size = new System.Drawing.Size(100, 21);
             this.cb_status.TabIndex = 6;

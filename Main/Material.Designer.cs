@@ -61,7 +61,7 @@
             // l_material_Material
             // 
             this.l_material_Material.AutoSize = true;
-            this.l_material_Material.Location = new System.Drawing.Point(71, 87);
+            this.l_material_Material.Location = new System.Drawing.Point(19, 64);
             this.l_material_Material.Name = "l_material_Material";
             this.l_material_Material.Size = new System.Drawing.Size(58, 13);
             this.l_material_Material.TabIndex = 1;
@@ -70,7 +70,7 @@
             // l_Materialname_Material
             // 
             this.l_Materialname_Material.AutoSize = true;
-            this.l_Materialname_Material.Location = new System.Drawing.Point(71, 140);
+            this.l_Materialname_Material.Location = new System.Drawing.Point(19, 96);
             this.l_Materialname_Material.Name = "l_Materialname_Material";
             this.l_Materialname_Material.Size = new System.Drawing.Size(35, 13);
             this.l_Materialname_Material.TabIndex = 2;
@@ -78,14 +78,14 @@
             // 
             // tb_matid
             // 
-            this.tb_matid.Location = new System.Drawing.Point(145, 84);
+            this.tb_matid.Location = new System.Drawing.Point(93, 61);
             this.tb_matid.Name = "tb_matid";
             this.tb_matid.Size = new System.Drawing.Size(100, 20);
             this.tb_matid.TabIndex = 3;
             // 
             // tb_matname
             // 
-            this.tb_matname.Location = new System.Drawing.Point(145, 137);
+            this.tb_matname.Location = new System.Drawing.Point(93, 93);
             this.tb_matname.Name = "tb_matname";
             this.tb_matname.Size = new System.Drawing.Size(100, 20);
             this.tb_matname.TabIndex = 4;
@@ -93,7 +93,7 @@
             // bt_add_Material
             // 
             this.bt_add_Material.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_add_Material.Location = new System.Drawing.Point(359, 74);
+            this.bt_add_Material.Location = new System.Drawing.Point(218, 64);
             this.bt_add_Material.Name = "bt_add_Material";
             this.bt_add_Material.Size = new System.Drawing.Size(79, 47);
             this.bt_add_Material.TabIndex = 11;
@@ -104,7 +104,7 @@
             // bt_Edit_Material
             // 
             this.bt_Edit_Material.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_Edit_Material.Location = new System.Drawing.Point(444, 74);
+            this.bt_Edit_Material.Location = new System.Drawing.Point(303, 64);
             this.bt_Edit_Material.Name = "bt_Edit_Material";
             this.bt_Edit_Material.Size = new System.Drawing.Size(79, 47);
             this.bt_Edit_Material.TabIndex = 12;
@@ -115,7 +115,7 @@
             // bt_delete_Material
             // 
             this.bt_delete_Material.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_delete_Material.Location = new System.Drawing.Point(529, 74);
+            this.bt_delete_Material.Location = new System.Drawing.Point(388, 64);
             this.bt_delete_Material.Name = "bt_delete_Material";
             this.bt_delete_Material.Size = new System.Drawing.Size(79, 47);
             this.bt_delete_Material.TabIndex = 13;
@@ -126,7 +126,7 @@
             // bt_save_Material
             // 
             this.bt_save_Material.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_save_Material.Location = new System.Drawing.Point(614, 74);
+            this.bt_save_Material.Location = new System.Drawing.Point(473, 64);
             this.bt_save_Material.Name = "bt_save_Material";
             this.bt_save_Material.Size = new System.Drawing.Size(79, 47);
             this.bt_save_Material.TabIndex = 14;

@@ -52,7 +52,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(35, 125);
+            this.label1.Location = new System.Drawing.Point(18, 55);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(32, 13);
             this.label1.TabIndex = 33;
@@ -62,7 +62,7 @@
             // 
             this.cb_drink.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_drink.FormattingEnabled = true;
-            this.cb_drink.Location = new System.Drawing.Point(73, 122);
+            this.cb_drink.Location = new System.Drawing.Point(68, 52);
             this.cb_drink.Name = "cb_drink";
             this.cb_drink.Size = new System.Drawing.Size(177, 21);
             this.cb_drink.TabIndex = 0;
@@ -70,7 +70,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(23, 163);
+            this.label2.Location = new System.Drawing.Point(18, 93);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 32;
@@ -80,14 +80,14 @@
             // 
             this.cb_material.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_material.FormattingEnabled = true;
-            this.cb_material.Location = new System.Drawing.Point(73, 160);
+            this.cb_material.Location = new System.Drawing.Point(68, 90);
             this.cb_material.Name = "cb_material";
             this.cb_material.Size = new System.Drawing.Size(177, 21);
             this.cb_material.TabIndex = 1;
             // 
             // bt_add
             // 
-            this.bt_add.Location = new System.Drawing.Point(583, 112);
+            this.bt_add.Location = new System.Drawing.Point(265, 64);
             this.bt_add.Name = "bt_add";
             this.bt_add.Size = new System.Drawing.Size(85, 39);
             this.bt_add.TabIndex = 4;
@@ -97,7 +97,7 @@
             // 
             // bt_edit
             // 
-            this.bt_edit.Location = new System.Drawing.Point(674, 112);
+            this.bt_edit.Location = new System.Drawing.Point(356, 64);
             this.bt_edit.Name = "bt_edit";
             this.bt_edit.Size = new System.Drawing.Size(85, 39);
             this.bt_edit.TabIndex = 5;
@@ -107,7 +107,7 @@
             // 
             // bt_delete
             // 
-            this.bt_delete.Location = new System.Drawing.Point(765, 112);
+            this.bt_delete.Location = new System.Drawing.Point(447, 64);
             this.bt_delete.Name = "bt_delete";
             this.bt_delete.Size = new System.Drawing.Size(85, 39);
             this.bt_delete.TabIndex = 6;
@@ -117,7 +117,7 @@
             // 
             // bt_save
             // 
-            this.bt_save.Location = new System.Drawing.Point(856, 112);
+            this.bt_save.Location = new System.Drawing.Point(538, 64);
             this.bt_save.Name = "bt_save";
             this.bt_save.Size = new System.Drawing.Size(85, 39);
             this.bt_save.TabIndex = 7;

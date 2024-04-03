@@ -56,7 +56,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(42, 121);
+            this.label1.Location = new System.Drawing.Point(17, 65);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(33, 13);
             this.label1.TabIndex = 35;
@@ -65,7 +65,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(43, 167);
+            this.label2.Location = new System.Drawing.Point(18, 101);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(32, 13);
             this.label2.TabIndex = 34;
@@ -75,7 +75,7 @@
             // 
             this.cb_order.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_order.FormattingEnabled = true;
-            this.cb_order.Location = new System.Drawing.Point(81, 118);
+            this.cb_order.Location = new System.Drawing.Point(56, 62);
             this.cb_order.Name = "cb_order";
             this.cb_order.Size = new System.Drawing.Size(181, 21);
             this.cb_order.TabIndex = 0;
@@ -84,7 +84,7 @@
             // 
             this.cb_drink.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_drink.FormattingEnabled = true;
-            this.cb_drink.Location = new System.Drawing.Point(81, 164);
+            this.cb_drink.Location = new System.Drawing.Point(56, 98);
             this.cb_drink.Name = "cb_drink";
             this.cb_drink.Size = new System.Drawing.Size(181, 21);
             this.cb_drink.TabIndex = 1;
@@ -93,7 +93,7 @@
             // 
             this.cb_topping.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_topping.FormattingEnabled = true;
-            this.cb_topping.Location = new System.Drawing.Point(342, 118);
+            this.cb_topping.Location = new System.Drawing.Point(317, 62);
             this.cb_topping.Name = "cb_topping";
             this.cb_topping.Size = new System.Drawing.Size(181, 21);
             this.cb_topping.TabIndex = 2;
@@ -101,7 +101,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(290, 121);
+            this.label3.Location = new System.Drawing.Point(265, 65);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(46, 13);
             this.label3.TabIndex = 4;
@@ -110,7 +110,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(290, 167);
+            this.label4.Location = new System.Drawing.Point(265, 101);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(46, 13);
             this.label4.TabIndex = 6;
@@ -118,14 +118,14 @@
             // 
             // tb_quantity
             // 
-            this.tb_quantity.Location = new System.Drawing.Point(342, 164);
+            this.tb_quantity.Location = new System.Drawing.Point(317, 98);
             this.tb_quantity.Name = "tb_quantity";
             this.tb_quantity.Size = new System.Drawing.Size(181, 20);
             this.tb_quantity.TabIndex = 7;
             // 
             // bt_add
             // 
-            this.bt_add.Location = new System.Drawing.Point(647, 121);
+            this.bt_add.Location = new System.Drawing.Point(528, 69);
             this.bt_add.Name = "bt_add";
             this.bt_add.Size = new System.Drawing.Size(78, 38);
             this.bt_add.TabIndex = 8;
@@ -135,7 +135,7 @@
             // 
             // bt_edit
             // 
-            this.bt_edit.Location = new System.Drawing.Point(731, 121);
+            this.bt_edit.Location = new System.Drawing.Point(612, 69);
             this.bt_edit.Name = "bt_edit";
             this.bt_edit.Size = new System.Drawing.Size(78, 38);
             this.bt_edit.TabIndex = 9;
@@ -145,7 +145,7 @@
             // 
             // bt_delete
             // 
-            this.bt_delete.Location = new System.Drawing.Point(647, 167);
+            this.bt_delete.Location = new System.Drawing.Point(698, 69);
             this.bt_delete.Name = "bt_delete";
             this.bt_delete.Size = new System.Drawing.Size(78, 38);
             this.bt_delete.TabIndex = 10;
@@ -155,7 +155,7 @@
             // 
             // bt_save
             // 
-            this.bt_save.Location = new System.Drawing.Point(731, 167);
+            this.bt_save.Location = new System.Drawing.Point(782, 69);
             this.bt_save.Name = "bt_save";
             this.bt_save.Size = new System.Drawing.Size(78, 38);
             this.bt_save.TabIndex = 11;

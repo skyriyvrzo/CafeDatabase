@@ -63,7 +63,7 @@
             // l_orderid_od
             // 
             this.l_orderid_od.AutoSize = true;
-            this.l_orderid_od.Location = new System.Drawing.Point(24, 84);
+            this.l_orderid_od.Location = new System.Drawing.Point(23, 64);
             this.l_orderid_od.Name = "l_orderid_od";
             this.l_orderid_od.Size = new System.Drawing.Size(47, 13);
             this.l_orderid_od.TabIndex = 1;
@@ -72,7 +72,7 @@
             // bt_add_od
             // 
             this.bt_add_od.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_add_od.Location = new System.Drawing.Point(523, 81);
+            this.bt_add_od.Location = new System.Drawing.Point(254, 67);
             this.bt_add_od.Name = "bt_add_od";
             this.bt_add_od.Size = new System.Drawing.Size(79, 47);
             this.bt_add_od.TabIndex = 11;
@@ -83,7 +83,7 @@
             // bt_edit_
             // 
             this.bt_edit_.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_edit_.Location = new System.Drawing.Point(628, 81);
+            this.bt_edit_.Location = new System.Drawing.Point(353, 67);
             this.bt_edit_.Name = "bt_edit_";
             this.bt_edit_.Size = new System.Drawing.Size(79, 47);
             this.bt_edit_.TabIndex = 12;
@@ -94,7 +94,7 @@
             // bt_delete_od
             // 
             this.bt_delete_od.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_delete_od.Location = new System.Drawing.Point(738, 81);
+            this.bt_delete_od.Location = new System.Drawing.Point(453, 67);
             this.bt_delete_od.Name = "bt_delete_od";
             this.bt_delete_od.Size = new System.Drawing.Size(79, 47);
             this.bt_delete_od.TabIndex = 13;
@@ -105,7 +105,7 @@
             // bt_save_od
             // 
             this.bt_save_od.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_save_od.Location = new System.Drawing.Point(523, 146);
+            this.bt_save_od.Location = new System.Drawing.Point(548, 67);
             this.bt_save_od.Name = "bt_save_od";
             this.bt_save_od.Size = new System.Drawing.Size(79, 47);
             this.bt_save_od.TabIndex = 14;
@@ -116,7 +116,7 @@
             // l_empid_od
             // 
             this.l_empid_od.AutoSize = true;
-            this.l_empid_od.Location = new System.Drawing.Point(18, 127);
+            this.l_empid_od.Location = new System.Drawing.Point(21, 101);
             this.l_empid_od.Name = "l_empid_od";
             this.l_empid_od.Size = new System.Drawing.Size(53, 13);
             this.l_empid_od.TabIndex = 17;
@@ -126,14 +126,14 @@
             // 
             this.cb_emp.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_emp.FormattingEnabled = true;
-            this.cb_emp.Location = new System.Drawing.Point(81, 124);
+            this.cb_emp.Location = new System.Drawing.Point(84, 98);
             this.cb_emp.Name = "cb_emp";
             this.cb_emp.Size = new System.Drawing.Size(150, 21);
             this.cb_emp.TabIndex = 8;
             // 
             // tb_orderid_od
             // 
-            this.tb_orderid_od.Location = new System.Drawing.Point(81, 81);
+            this.tb_orderid_od.Location = new System.Drawing.Point(84, 61);
             this.tb_orderid_od.Name = "tb_orderid_od";
             this.tb_orderid_od.Size = new System.Drawing.Size(150, 20);
             this.tb_orderid_od.TabIndex = 7;
