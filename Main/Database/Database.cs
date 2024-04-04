@@ -10,7 +10,7 @@ namespace Main
 
         static readonly string conString = "datasource=sql.cafeempty.net;" +
             "port=3307;" +
-            "database=cafe_db_1;" +
+            "database=cafe_db;" +
             "username=lowidea;" +
             "password=LowIdea66;";
         public MySqlConnection connection = new MySqlConnection(conString);

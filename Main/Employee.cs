@@ -84,5 +84,10 @@ namespace Main
         {
             Main.Events.ScreenChangeEvent.ScreenButtonClickEvent.onClickOrderDetail(this);
         }
+
+        private void dataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            Main.Events.EmployeeEvent.EmployeeCellFormattingEvent.onCellFormat(this, e);
+        }
     }
 }

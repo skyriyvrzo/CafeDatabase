@@ -136,7 +136,9 @@
     <Compile Include="Database\Database.cs" />
     <Compile Include="Events\DrinkEvent\DrinkButtonClickEvent.cs" />
     <Compile Include="Events\DrinkEvent\DrinkCellClickEvent.cs" />
+    <Compile Include="Events\DrinkEvent\DrinkCellFormattingEvent.cs" />
     <Compile Include="Events\DrinkEvent\DrinkStartupEvent.cs" />
+    <Compile Include="Events\EmployeeEvent\EmployeeCellFormattingEvent.cs" />
     <Compile Include="Events\EmployeeEvent\EmployeeButtonClickEvent.cs" />
     <Compile Include="Events\EmployeeEvent\EmployeeCellClickEvent.cs" />
     <Compile Include="Events\EmployeeEvent\EmployeeStartupEvent.cs" />
@@ -154,6 +156,7 @@
     <Compile Include="Events\OrderEvent\OrderStartupEvent.cs" />
     <Compile Include="Events\ScreenChangeEvent\Reset.cs" />
     <Compile Include="Events\ScreenChangeEvent\ScreenButtonClickEvent.cs" />
+    <Compile Include="Events\ToppingEvent\ToppingCellFormattingEvent.cs" />
     <Compile Include="Events\ToppingEvent\ToppingButtonClickEvent.cs" />
     <Compile Include="Events\ToppingEvent\ToppingCellClickEvent.cs" />
     <Compile Include="Events\ToppingEvent\ToppingStartupEvent.cs" />

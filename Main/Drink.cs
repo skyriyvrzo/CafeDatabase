@@ -17,7 +17,7 @@ namespace Main
         {
             Main.Events.DrinkEvent.DrinkStartupEvent.load(this);
 
-            Program.logger.Log(Level.INFO, nameof(Drink_Load), nameof(Drink), nameof(Drink) + " Loading...");
+            Program.logger.Log(Level.INFO, nameof(Drink_Load), nameof(Drink), nameof(Drink) + " Loaded");
         }
 
         protected override void OnFormClosing(FormClosingEventArgs e)
@@ -84,6 +84,11 @@ namespace Main
         private void bt_od_Click(object sender, System.EventArgs e)
         {
             Main.Events.ScreenChangeEvent.ScreenButtonClickEvent.onClickOrderDetail(this);
+        }
+
+        private void dataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            Main.Events.DrinkEvent.DrinkCellFormattingEvent.onCellFormat(this, e);
         }
     }
 }

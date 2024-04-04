@@ -4,7 +4,6 @@ using System.Drawing;
 using System.Windows.Forms;
 using System;
 using CSharp.Util.Logging;
-using Main.Events.DrinkEvent;
 
 namespace Main.Events.OrderDetailEvent
 {
@@ -17,7 +16,7 @@ namespace Main.Events.OrderDetailEvent
 
             try
             {
-                if (od.cb_order.SelectedItem == null || od.cb_drink.SelectedItem == null || od.cb_topping.SelectedItem == null || od.tb_quantity.Text == "")
+                if (od.cb_order.SelectedItem == null || od.cb_drink.SelectedItem == null || od.tb_quantity.Text == "")
                 {
                     MessageBox.Show("Please fill in complete information.", Reference.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
@@ -30,7 +29,17 @@ namespace Main.Events.OrderDetailEvent
 
                 if (database.ConnectDatabase())
                 {
-                    string query = $"insert into `order_detail` (ORDER_ID, DRINK_ID, TOPPING_ID, QUANTITY) values ('{od.cb_order.SelectedValue}', '{od.cb_drink.SelectedValue}', '{od.cb_topping.SelectedValue}', '{od.tb_quantity.Text}')";
+                    string query;
+
+                    if (od.cb_topping.SelectedItem == null)
+                    {
+                        query = $"insert into `order_detail` (ORDER_ID, DRINK_ID, QUANTITY) values ('{od.cb_order.SelectedValue}', '{od.cb_drink.SelectedValue}', '{od.tb_quantity.Text}')";
+                    }
+                    else
+                    {
+                        query = $"insert into `order_detail` (ORDER_ID, DRINK_ID, TOPPING_ID, QUANTITY) values ('{od.cb_order.SelectedValue}', '{od.cb_drink.SelectedValue}', '{od.cb_topping.SelectedValue}', '{od.tb_quantity.Text}')";
+
+                    }
                     int row = new MySqlCommand(query, database.connection).ExecuteNonQuery();
 
                     if (row > 0)
