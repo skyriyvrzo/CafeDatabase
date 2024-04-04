@@ -1,5 +1,4 @@
 ﻿using CSharp.Util.Logging;
-using Main.Events.DrinkEvent;
 using Main.Utils;
 using MySql.Data.MySqlClient;
 using System;

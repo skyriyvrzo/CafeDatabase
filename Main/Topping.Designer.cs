@@ -55,43 +55,40 @@ namespace Main
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 209);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(973, 349);
             this.dataGridView1.TabIndex = 1;
-            /*
-             * Resize the table to fit the data grid view
-             */
-            this.dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // l_toppingid
             // 
             this.l_toppingid.AutoSize = true;
-            this.l_toppingid.Location = new System.Drawing.Point(15, 57);
+            this.l_toppingid.Location = new System.Drawing.Point(19, 60);
             this.l_toppingid.Name = "l_toppingid";
-            this.l_toppingid.Size = new System.Drawing.Size(46, 13);
+            this.l_toppingid.Size = new System.Drawing.Size(60, 13);
             this.l_toppingid.TabIndex = 2;
-            this.l_toppingid.Text = "Topping";
+            this.l_toppingid.Text = "Topping ID";
             // 
             // l_toppingname
             // 
             this.l_toppingname.AutoSize = true;
-            this.l_toppingname.Location = new System.Drawing.Point(15, 95);
+            this.l_toppingname.Location = new System.Drawing.Point(19, 95);
             this.l_toppingname.Name = "l_toppingname";
-            this.l_toppingname.Size = new System.Drawing.Size(74, 13);
+            this.l_toppingname.Size = new System.Drawing.Size(35, 13);
             this.l_toppingname.TabIndex = 3;
-            this.l_toppingname.Text = "ToppingName";
+            this.l_toppingname.Text = "Name";
             // 
             // l_toppingprice
             // 
             this.l_toppingprice.AutoSize = true;
-            this.l_toppingprice.Location = new System.Drawing.Point(15, 132);
+            this.l_toppingprice.Location = new System.Drawing.Point(19, 128);
             this.l_toppingprice.Name = "l_toppingprice";
-            this.l_toppingprice.Size = new System.Drawing.Size(70, 13);
+            this.l_toppingprice.Size = new System.Drawing.Size(31, 13);
             this.l_toppingprice.TabIndex = 4;
-            this.l_toppingprice.Text = "ToppingPrice";
+            this.l_toppingprice.Text = "Price";
             // 
             // tb_tp_id
             // 
