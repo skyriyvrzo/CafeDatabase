@@ -58,7 +58,7 @@ namespace Main.Events.DrinkEvent
                     return;
                 }
 
-                throw new System.Exception(e1.Message);
+                Program.logger.Log(Level.ERROR, nameof(onClickAdd), nameof(DrinkButtonClickEvent) + "/" + e1.GetType().Name, e1.Message);
             }
             catch (System.Exception e1)
             {
@@ -131,7 +131,7 @@ namespace Main.Events.DrinkEvent
                     return;
                 }
 
-                throw new Exception(e1.Message);
+                Program.logger.Log(Level.ERROR, nameof(onClickDelete), nameof(DrinkButtonClickEvent) + "/" + e1.GetType().Name, e1.Message);
             }
             catch (System.Exception e1)
             {

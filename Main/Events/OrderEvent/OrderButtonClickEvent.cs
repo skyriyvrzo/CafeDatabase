@@ -1,10 +1,7 @@
 ﻿using CSharp.Util.Logging;
-using Main.Events.DrinkEvent;
-using Main.Events.EmployeeEvent;
 using Main.Utils;
 using MySql.Data.MySqlClient;
 using System;
-using System.Data.Odbc;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -56,7 +53,7 @@ namespace Main.Events.OrderEvent
                     return;
                 }
 
-                throw new System.Exception(e1.Message);
+                Program.logger.Log(Level.ERROR, nameof(onClickAdd), nameof(OrderButtonClickEvent) + "/" + e1.GetType().Name, e1.Message);
             }
             catch (System.Exception e1)
             {
@@ -129,7 +126,7 @@ namespace Main.Events.OrderEvent
                     return;
                 }
 
-                throw new Exception(e1.Message);
+                Program.logger.Log(Level.ERROR, nameof(onClickDelete), nameof(OrderButtonClickEvent) + "/" + e1.GetType().Name, e1.Message);
             }
             catch (System.Exception e1)
             {

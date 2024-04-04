@@ -70,7 +70,7 @@ namespace Main.Events.MaterialEvent
                     return;
                 }
 
-                throw new System.Exception(e1.Message);
+                Program.logger.Log(Level.ERROR, nameof(onClickAdd), nameof(MaterialButtonClickEvent) + "/" + e1.GetType().Name, e1.Message);
             }
             catch (System.Exception e1)
             {
@@ -152,7 +152,7 @@ namespace Main.Events.MaterialEvent
                     return;
                 }
 
-                throw new Exception(e1.Message);
+                Program.logger.Log(Level.ERROR, nameof(onClickDelete), nameof(MaterialButtonClickEvent) + "/" + e1.GetType().Name, e1.Message);
             }
             catch (System.Exception e1)
             {

@@ -72,7 +72,7 @@ namespace Main.Events.ToppingEvent
                     return;
                 }
 
-                throw new System.Exception(e1.Message);
+                Program.logger.Log(Level.ERROR, nameof(onClickAdd), nameof(ToppingButtonClickEvent) + "/" + e1.GetType().Name, e1.Message);
             }
             catch (System.Exception e1)
             {
@@ -153,7 +153,7 @@ namespace Main.Events.ToppingEvent
                     return;
                 }
 
-                throw new Exception(e1.Message);
+                Program.logger.Log(Level.ERROR, nameof(onClickDelete), nameof(ToppingButtonClickEvent) + "/" + e1.GetType().Name, e1.Message);
             }
             catch (System.Exception e1)
             {

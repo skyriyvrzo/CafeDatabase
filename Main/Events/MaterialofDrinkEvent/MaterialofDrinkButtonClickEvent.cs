@@ -64,7 +64,7 @@ namespace Main.Events.MaterialofDrinkEvent
                     return;
                 }
 
-                throw new System.Exception(e1.Message);
+                Program.logger.Log(Level.ERROR, nameof(onClickAdd), nameof(MaterialofDrinkStartupEvent) + "/" + e1.GetType().Name, e1.Message);
             }
             catch (System.Exception e1)
             {
@@ -143,7 +143,7 @@ namespace Main.Events.MaterialofDrinkEvent
                     return;
                 }
 
-                throw new Exception(e1.Message);
+                Program.logger.Log(Level.ERROR, nameof(onClickDelete), nameof(MaterialofDrinkStartupEvent) + "/" + e1.GetType().Name, e1.Message);
             }
             catch (System.Exception e1)
             {
