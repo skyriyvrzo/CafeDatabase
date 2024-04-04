@@ -85,7 +85,7 @@ namespace Main.Events.EmployeeEvent
 
         /*
          * change button color.
-         * lock textBox(Employee ID)
+         * disable textBox(Employee ID)
          * 
          * @param {@e Employee} to set properties of component
          */

@@ -66,7 +66,7 @@ namespace Main.Events.OrderDetailEvent
 
         /*
          * change button color.
-         * lock textBox(Order ID)
+         * disable textBox(Order ID)
          * 
          * @param {@od OrderDetail} to set properties of component
          */

@@ -76,7 +76,7 @@ namespace Main.Events.MaterialofDrinkEvent
 
         /*
          * change button color.
-         * lock comboBox(Drink ID)
+         * disable comboBox(Drink ID)
          * 
          * @param {@mod MaterialofDrink} to set properties of component
          */

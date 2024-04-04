@@ -1,12 +1,10 @@
-﻿using System.Drawing;
-
-namespace Main.Utils
+﻿namespace Main.Utils
 {
     internal class Reference
     {
 
         /*
-         * Title MessageBox
+         * Title Bar (MessageBox)
          */
         internal static string Default => "Cafe";
         internal static string Information => "Information";

@@ -84,7 +84,7 @@ namespace Main.Events.ToppingEvent
 
         /*
          * change button color.
-         * lock textBox(Topping ID)
+         * disable textBox(Topping ID)
          * 
          * @param {@t Topping} to set properties of component
          */

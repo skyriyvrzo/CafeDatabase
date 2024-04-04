@@ -70,7 +70,7 @@ namespace Main.Events.DrinkEvent
 
         /*
          * change button color.
-         * lock textBox(Drink ID)
+         * disable textBox(Drink ID)
          * 
          * @param {@d Drink} to set properties of component
          */
