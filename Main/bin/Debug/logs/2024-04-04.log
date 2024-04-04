@@ -662,3 +662,56 @@
 [08:18:14] [registerDataGridView/INFO] (OrderStartupEvent) : Successfully added items
 [08:18:14] [registerDataGridView/INFO] (OrderStartupEvent) : registerDataGridView Loaded
 [08:18:14] [registerItemsInComboBox/INFO] (OrderStartupEvent) : registerItemsInComboBox Loaded
+[08:22:07] [INFO] : ---------------------------------------------------------------------------------------
+[08:22:07] [INFO] : Loading Main.Program
+[08:22:07] [Order/INFO] (Order) : Order Loading...
+[08:22:07] [onStartup/INFO] (OrderStartupEvent) : onStartup Loaded
+[08:22:07] [load/INFO] (OrderStartupEvent) : OrderStartupEvent Loaded
+[08:22:07] [Order_Load/INFO] (Order) : Order Loaded
+[08:22:07] [registerDataGridView/INFO] (OrderStartupEvent) : Successfully added items
+[08:22:07] [registerDataGridView/INFO] (OrderStartupEvent) : registerDataGridView Loaded
+[08:22:07] [registerItemsInComboBox/INFO] (OrderStartupEvent) : registerItemsInComboBox Loaded
+[08:22:41] [Employee/INFO] (Employee) : Employee Loading...
+[08:22:41] [onStartup/INFO] (EmployeeStartupEvent) : onStartup Loaded
+[08:22:41] [registerItemsInComboBox/INFO] (EmployeeStartupEvent) : registerItemsInComboBox Loaded
+[08:22:41] [load/INFO] (EmployeeStartupEvent) : EmployeeStartupEvent Loaded
+[08:22:41] [Employee_Load/INFO] (Employee) : Employee Loaded
+[08:22:41] [onChange/INFO] (ScreenChangeEvent) : Order -> Employee
+[08:22:41] [registerDataGridView/INFO] (EmployeeStartupEvent) : Successfully added item
+[08:22:41] [registerDataGridView/INFO] (EmployeeStartupEvent) : registerDataGridView Loaded
+[08:22:42] [Order/INFO] (Order) : Order Loading...
+[08:22:42] [onStartup/INFO] (OrderStartupEvent) : onStartup Loaded
+[08:22:42] [load/INFO] (OrderStartupEvent) : OrderStartupEvent Loaded
+[08:22:42] [Order_Load/INFO] (Order) : Order Loaded
+[08:22:42] [onChange/INFO] (ScreenChangeEvent) : Employee -> Order
+[08:22:42] [registerDataGridView/INFO] (OrderStartupEvent) : Successfully added items
+[08:22:42] [registerDataGridView/INFO] (OrderStartupEvent) : registerDataGridView Loaded
+[08:22:42] [registerItemsInComboBox/INFO] (OrderStartupEvent) : registerItemsInComboBox Loaded
+[08:22:48] [registerDataGridView/INFO] (OrderStartupEvent) : Successfully added items
+[08:22:48] [registerDataGridView/INFO] (OrderStartupEvent) : registerDataGridView Loaded
+[08:22:48] [clearTextBox/INFO] (OrderButtonClickEvent) : Removed item(s) from components
+[08:22:53] [OrderDetail/INFO] (OrderDetail) : OrderDetail Loading...
+[08:22:53] [onStartup/INFO] (OrderDetailStartupEvent) : onStartup Loaded
+[08:22:53] [load/INFO] (OrderDetailStartupEvent) : OrderDetailStartupEvent Loaded
+[08:22:53] [OrderDetail_Load/INFO] (OrderDetail) : OrderDetail Loaded
+[08:22:53] [onChange/INFO] (ScreenChangeEvent) : Order -> OrderDetail
+[08:22:53] [registerItemsInComboBox/INFO] (OrderDetailStartupEvent) : registerItemsInComboBox Loaded
+[08:22:54] [registerDataGridView/INFO] (OrderDetailStartupEvent) : Successfully added items
+[08:22:54] [registerDataGridView/INFO] (OrderDetailStartupEvent) : registerDataGridView Loaded
+[08:22:57] [Order/INFO] (Order) : Order Loading...
+[08:22:57] [onStartup/INFO] (OrderStartupEvent) : onStartup Loaded
+[08:22:57] [load/INFO] (OrderStartupEvent) : OrderStartupEvent Loaded
+[08:22:57] [Order_Load/INFO] (Order) : Order Loaded
+[08:22:57] [onChange/INFO] (ScreenChangeEvent) : OrderDetail -> Order
+[08:22:58] [registerDataGridView/INFO] (OrderStartupEvent) : Successfully added items
+[08:22:58] [registerDataGridView/INFO] (OrderStartupEvent) : registerDataGridView Loaded
+[08:22:58] [registerItemsInComboBox/INFO] (OrderStartupEvent) : registerItemsInComboBox Loaded
+[08:34:15] [INFO] : ---------------------------------------------------------------------------------------
+[08:34:15] [INFO] : Loading Main.Program
+[08:34:15] [Order/INFO] (Order) : Order Loading...
+[08:34:16] [onStartup/INFO] (OrderStartupEvent) : onStartup Loaded
+[08:34:16] [load/INFO] (OrderStartupEvent) : OrderStartupEvent Loaded
+[08:34:16] [Order_Load/INFO] (Order) : Order Loaded
+[08:34:16] [registerDataGridView/INFO] (OrderStartupEvent) : Successfully added items
+[08:34:16] [registerDataGridView/INFO] (OrderStartupEvent) : registerDataGridView Loaded
+[08:34:16] [registerItemsInComboBox/INFO] (OrderStartupEvent) : registerItemsInComboBox Loaded

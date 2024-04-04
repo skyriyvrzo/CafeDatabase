@@ -6,7 +6,7 @@ namespace Main.Utils
     {
 
         /*
-         * Title
+         * Title MessageBox
          */
         internal static string Default => "Cafe";
         internal static string Information => "Information";
@@ -16,7 +16,6 @@ namespace Main.Utils
         /*
          * Menu Screen
          */
-
         internal static Employee employee;
         internal static Order order;
         internal static Drink drink;
