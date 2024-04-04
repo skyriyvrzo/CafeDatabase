@@ -101,18 +101,20 @@ namespace Main.Events.MaterialofDrinkEvent
                         {
                             DataTable dataTable = new DataTable();
                             adapter.Fill(dataTable);
-                            mod.dataGridView1.DataSource = dataTable;
+                            mod.dataGridView1.Invoke((MethodInvoker)delegate
+                            {
+                                mod.dataGridView1.DataSource = dataTable;
+                            });
                         }
                     }
                     database.DisconnectDatabase();
                     Program.logger.Log(Level.INFO, nameof(registerDataGridView), nameof(MaterialofDrinkStartupEvent), "Successfully added item");
                 }
 
-                mod.dataGridView1.ClearSelection();
-                /*
-                 * Resize the table to fit the data grid view
-                 */
-                mod.dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                mod.dataGridView1.Invoke((MethodInvoker)delegate
+                {
+                    mod.dataGridView1.ClearSelection();
+                });
 
                 Program.logger.Log(Level.INFO, nameof(registerDataGridView), nameof(MaterialofDrinkStartupEvent), nameof(registerDataGridView) + "Loaded");
             }

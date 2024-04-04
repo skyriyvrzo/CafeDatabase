@@ -97,3 +97,7 @@ E:\Github\CafeDatabase\Main\obj\Debug\Main.Material.resources
 E:\Github\CafeDatabase\Main\obj\Debug\Main.MaterialofDrink.resources
 E:\Github\CafeDatabase\Main\obj\Debug\Main.OrderDetail.resources
 E:\Github\CafeDatabase\Main\obj\Debug\Main.Order.resources
+E:\Github\CafeDatabase\Main\bin\Debug\Main.exe.manifest
+E:\Github\CafeDatabase\Main\bin\Debug\Main.application
+E:\Github\CafeDatabase\Main\obj\Debug\Main.exe.manifest
+E:\Github\CafeDatabase\Main\obj\Debug\Main.application

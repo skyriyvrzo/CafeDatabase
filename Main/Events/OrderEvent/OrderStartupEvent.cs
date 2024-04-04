@@ -88,18 +88,20 @@ namespace Main.Events.OrderEvent
                         {
                             DataTable dataTable = new DataTable();
                             adapter.Fill(dataTable);
-                            o.dataGridView1.DataSource = dataTable;
+                            o.dataGridView1.Invoke((MethodInvoker)delegate
+                            {
+                                o.dataGridView1.DataSource = dataTable;
+                            });
                         }
                     }
                     database.DisconnectDatabase();
                     Program.logger.Log(Level.INFO, nameof(registerDataGridView), nameof(OrderStartupEvent), "Successfully added items");
                 }
 
-                o.dataGridView1.ClearSelection();
-                /*
-                 * Resize the table to fit the data grid view
-                 */
-                o.dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                o.dataGridView1.Invoke((MethodInvoker)delegate
+                {
+                    o.dataGridView1.ClearSelection();
+                });
 
                 Program.logger.Log(Level.INFO, nameof(registerDataGridView), nameof(OrderStartupEvent), nameof(registerDataGridView) + " Loaded");
             }

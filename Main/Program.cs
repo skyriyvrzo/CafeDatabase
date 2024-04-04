@@ -17,6 +17,8 @@ namespace Main
             logger.Log(Level.INFO, "---------------------------------------------------------------------------------------");
             logger.Log(Level.INFO, "Loading " + typeof(Program));
 
+            Control.CheckForIllegalCrossThreadCalls = false;
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(Reference.order = new Order());

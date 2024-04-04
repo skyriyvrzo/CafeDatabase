@@ -52,18 +52,20 @@ namespace Main.Events.ToppingEvent
                         {
                             DataTable dataTable = new DataTable();
                             adapter.Fill(dataTable);
-                            t.dataGridView1.DataSource = dataTable;
+                            t.dataGridView1.Invoke((MethodInvoker)delegate
+                            {
+                                t.dataGridView1.DataSource = dataTable;
+                            });
                         }
                     }
                     database.DisconnectDatabase();
                     Program.logger.Log(Level.INFO, nameof(registerDataGridView), nameof(ToppingStartupEvent), "Successfully added items");
                 }
 
-                t.dataGridView1.ClearSelection();
-                /*
-                 * Resize the table to fit the data grid view
-                 */
-                t.dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                t.dataGridView1.Invoke((MethodInvoker)delegate
+                {
+                    t.dataGridView1.ClearSelection();
+                });
 
                 Program.logger.Log(Level.INFO, nameof(registerDataGridView), nameof(ToppingStartupEvent), nameof(registerDataGridView) + " Loaded");
             }

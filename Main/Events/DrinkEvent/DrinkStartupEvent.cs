@@ -70,18 +70,20 @@ namespace Main.Events.DrinkEvent
                         {
                             DataTable dataTable = new DataTable();
                             adapter.Fill(dataTable);
-                            d.dataGridView1.DataSource = dataTable;
+                            d.dataGridView1.Invoke((MethodInvoker)delegate
+                            {
+                                d.dataGridView1.DataSource = dataTable;
+                            });
                         }
                     }
                     database.DisconnectDatabase();
                     Program.logger.Log(Level.INFO, nameof(registerDataGridView), nameof(DrinkStartupEvent), "Successfully added items");
                 }
 
-                d.dataGridView1.ClearSelection();
-                /*
-                 * Resize the table to fit the data grid view
-                 */
-                d.dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                d.dataGridView1.Invoke((MethodInvoker)delegate
+                {
+                    d.dataGridView1.ClearSelection();
+                });
 
                 Program.logger.Log(Level.INFO, nameof(registerDataGridView), nameof(DrinkStartupEvent), nameof(registerDataGridView) + " Loaded");
             }

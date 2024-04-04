@@ -98,18 +98,20 @@ namespace Main.Events.EmployeeEvent
                         {
                             DataTable dataTable = new DataTable();
                             adapter.Fill(dataTable);
-                            e.dataGridView1.DataSource = dataTable;
+                            e.dataGridView1.Invoke((MethodInvoker)delegate
+                            {
+                                e.dataGridView1.DataSource = dataTable;
+                            });
                         }
                     }
                     database.DisconnectDatabase();
                     Program.logger.Log(Level.INFO, nameof(registerDataGridView), nameof(EmployeeStartupEvent), "Successfully added item");
                 }
 
-                e.dataGridView1.ClearSelection();
-                /*
-                 * Resize the table to fit the data grid view
-                 */
-                e.dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                e.dataGridView1.Invoke((MethodInvoker)delegate
+                {
+                    e.dataGridView1.ClearSelection();
+                });
 
                 Program.logger.Log(Level.INFO, nameof(registerDataGridView), nameof(EmployeeStartupEvent), nameof(registerDataGridView) + " Loaded");
             }

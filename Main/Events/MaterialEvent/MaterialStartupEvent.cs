@@ -54,18 +54,20 @@ namespace Main.Events.MaterialEvent
                         {
                             DataTable dataTable = new DataTable();
                             adapter.Fill(dataTable);
-                            m.dataGridView1.DataSource = dataTable;
+                            m.dataGridView1.Invoke((MethodInvoker)delegate
+                            {
+                                m.dataGridView1.DataSource = dataTable;
+                            });
                         }
                     }
                     database.DisconnectDatabase();
                     Program.logger.Log(Level.INFO, nameof(registerDataGridView), nameof(MaterialStartupEvent), "Successfully added item");
                 }
 
-                m.dataGridView1.ClearSelection();
-                /*
-                 * Resize the table to fit the data grid view
-                 */
-                m.dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                m.dataGridView1.Invoke((MethodInvoker)delegate
+                {
+                    m.dataGridView1.ClearSelection();
+                });
 
                 Program.logger.Log(Level.INFO, nameof(registerDataGridView), nameof(MaterialStartupEvent), nameof(registerDataGridView) + " Loaded");
             }
