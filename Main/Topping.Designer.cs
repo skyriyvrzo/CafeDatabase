@@ -30,6 +30,7 @@ namespace Main
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Topping));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.l_toppingid = new System.Windows.Forms.Label();
             this.l_toppingname = new System.Windows.Forms.Label();
@@ -295,6 +296,7 @@ namespace Main
             this.Controls.Add(this.l_toppingid);
             this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Topping";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

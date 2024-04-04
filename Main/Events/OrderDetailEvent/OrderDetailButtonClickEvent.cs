@@ -105,7 +105,7 @@ namespace Main.Events.OrderDetailEvent
 
             try
             {
-                if (od.cb_order.SelectedText == null)
+                if (od.cb_order.SelectedValue == null || od.cb_drink.SelectedValue == null)
                 {
                     MessageBox.Show("Please select the item you want to delete.", Reference.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
@@ -167,10 +167,21 @@ namespace Main.Events.OrderDetailEvent
 
                 if (database.ConnectDatabase())
                 {
-                    string query = "update `order_detail` set " +
+                    string query;
+
+                    if (od.cb_topping.SelectedValue == null)
+                    {
+                        query = "update `order_detail` set " +
+                        $"QUANTITY = '{od.tb_quantity.Text}' " +
+                        $"where (ORDER_ID, DRINK_ID) = ({od.cb_order.SelectedValue}, {od.cb_drink.SelectedValue})";
+                    }
+                    else
+                    {
+                        query = "update `order_detail` set " +
                         $"TOPPING_ID = '{od.cb_topping.SelectedValue}'," +
                         $"QUANTITY = '{od.tb_quantity.Text}' " +
                         $"where (ORDER_ID, DRINK_ID) = ({od.cb_order.SelectedValue}, {od.cb_drink.SelectedValue})";
+                    }
                     int row = new MySqlCommand(query, database.connection).ExecuteNonQuery();
 
                     if (row > 0)

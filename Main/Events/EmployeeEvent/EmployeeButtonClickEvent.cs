@@ -33,7 +33,7 @@ namespace Main.Events.EmployeeEvent
                         MessageBox.Show("Please fill in complete information.", Reference.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
-                    else if(!int.TryParse(e.tb_empid.Text, out int result) || !double.TryParse(e.tb_salary.Text, out double result1))
+                    else if(!long.TryParse(e.tb_empid.Text, out long result) || !double.TryParse(e.tb_salary.Text, out double result1))
                     {
                         MessageBox.Show("Employee ID and salary must be numbers only.", Reference.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
@@ -175,7 +175,7 @@ namespace Main.Events.EmployeeEvent
                     MessageBox.Show("Please fill in complete information.", Reference.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-                else if (!int.TryParse(e.tb_empid.Text, out int result) || !int.TryParse(e.tb_salary.Text, out int result1))
+                else if (!long.TryParse(e.tb_empid.Text, out long result) || !double.TryParse(e.tb_salary.Text, out double result1))
                 {
                     MessageBox.Show("Employee ID and salary must be numbers only.", Reference.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;

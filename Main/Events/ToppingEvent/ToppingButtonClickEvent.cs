@@ -179,7 +179,7 @@ namespace Main.Events.ToppingEvent
                     MessageBox.Show("Please fill in complete information.", Reference.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-                else if (!int.TryParse(t.tb_tp_id.Text, out int result) || !int.TryParse(t.tb_tp_price.Text, out int result1))
+                else if (!int.TryParse(t.tb_tp_id.Text, out int result) || !double.TryParse(t.tb_tp_price.Text, out double result1))
                 {
                     MessageBox.Show("Topping ID and price must be numbers only.", Reference.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
@@ -187,7 +187,6 @@ namespace Main.Events.ToppingEvent
 
                 if (database.ConnectDatabase())
                 {
-
                     string query = "update `topping` set " +
                         $"TOPPING_NAME = '{t.tb_tp_name.Text}', " +
                         $"TOPPING_PRICE = '{t.tb_tp_price.Text}' " +

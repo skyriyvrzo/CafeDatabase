@@ -31,6 +31,7 @@ namespace Main
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Drink));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tb_drink_id = new System.Windows.Forms.TextBox();
             this.tb_name = new System.Windows.Forms.TextBox();
@@ -318,6 +319,7 @@ namespace Main
             this.Controls.Add(this.tb_drink_id);
             this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Drink";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
