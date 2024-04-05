@@ -153,7 +153,6 @@ namespace Main.Events.OrderDetailEvent
 
             try
             {
-
                 if (od.cb_order.SelectedItem == null || od.cb_drink.SelectedItem == null || od.cb_topping.SelectedItem == null || od.tb_quantity.Text == "")
                 {
                     MessageBox.Show("Please fill in complete information.", Reference.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);

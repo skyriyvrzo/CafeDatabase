@@ -1,20 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\Github\\CafeDatabase\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|e:\\github\\cafedatabase\\main\\events\\orderdetailevent\\orderdetailcellclickevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|solutionrelative:main\\events\\orderdetailevent\\orderdetailcellclickevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|e:\\github\\cafedatabase\\main\\events\\orderdetailevent\\orderdetailbuttonclickevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|solutionrelative:main\\events\\orderdetailevent\\orderdetailbuttonclickevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|e:\\github\\cafedatabase\\main\\events\\orderevent\\ordercellclickevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7FAA0736-6E64-41C1-BF74-93C5D19652C1}|Main\\Main.csproj|solutionrelative:main\\events\\orderevent\\ordercellclickevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -22,21 +9,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "OrderDetailButtonClickEvent.cs",
-              "DocumentMoniker": "E:\\Github\\CafeDatabase\\Main\\Events\\OrderDetailEvent\\OrderDetailButtonClickEvent.cs",
-              "RelativeDocumentMoniker": "Main\\Events\\OrderDetailEvent\\OrderDetailButtonClickEvent.cs",
-              "ToolTip": "E:\\Github\\CafeDatabase\\Main\\Events\\OrderDetailEvent\\OrderDetailButtonClickEvent.cs",
-              "RelativeToolTip": "Main\\Events\\OrderDetailEvent\\OrderDetailButtonClickEvent.cs",
-              "ViewState": "AQIAAMsAAAAAAAAAAAAIwNEAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-05T00:01:42.759Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -48,32 +22,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "OrderDetailCellClickEvent.cs",
-              "DocumentMoniker": "E:\\Github\\CafeDatabase\\Main\\Events\\OrderDetailEvent\\OrderDetailCellClickEvent.cs",
-              "RelativeDocumentMoniker": "Main\\Events\\OrderDetailEvent\\OrderDetailCellClickEvent.cs",
-              "ToolTip": "E:\\Github\\CafeDatabase\\Main\\Events\\OrderDetailEvent\\OrderDetailCellClickEvent.cs",
-              "RelativeToolTip": "Main\\Events\\OrderDetailEvent\\OrderDetailCellClickEvent.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwCoAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T23:58:31.343Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "OrderCellClickEvent.cs",
-              "DocumentMoniker": "E:\\Github\\CafeDatabase\\Main\\Events\\OrderEvent\\OrderCellClickEvent.cs",
-              "RelativeDocumentMoniker": "Main\\Events\\OrderEvent\\OrderCellClickEvent.cs",
-              "ToolTip": "E:\\Github\\CafeDatabase\\Main\\Events\\OrderEvent\\OrderCellClickEvent.cs",
-              "RelativeToolTip": "Main\\Events\\OrderEvent\\OrderCellClickEvent.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T23:58:02.083Z",
-              "EditorCaption": ""
             }
           ]
         }
