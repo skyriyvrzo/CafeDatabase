@@ -207,7 +207,7 @@ namespace Main.Events.OrderDetailEvent
          *
          * @param {@od OrderDetail} to set properties of component
          */
-        private static void clearTextBox(OrderDetail od)
+        internal static void clearTextBox(OrderDetail od)
         {
             od.cb_order.SelectedItem = null;
             od.cb_drink.SelectedItem = null;

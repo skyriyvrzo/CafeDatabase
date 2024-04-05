@@ -1,6 +1,4 @@
 ﻿using CSharp.Util.Logging;
-using Main.Events.DrinkEvent;
-using Main.Events.OrderEvent;
 using Main.Utils;
 using System;
 using System.Windows.Forms;
@@ -29,10 +27,20 @@ namespace Main.Events.OrderDetailEvent
                 {
                     if (OrderDetailButtonClickEvent.editButtonIsEnable == false) { return; }
 
-                    od.cb_order.SelectedValue = od.dataGridView1.Rows[ce.RowIndex].Cells["ORDER_ID"].Value.ToString();
-                    od.cb_drink.SelectedValue = od.dataGridView1.Rows[ce.RowIndex].Cells["DRINK_ID"].Value.ToString();
-                    od.cb_topping.SelectedValue = od.dataGridView1.Rows[ce.RowIndex].Cells["TOPPING_ID"].Value.ToString();
-                    od.tb_quantity.Text = od.dataGridView1.Rows[ce.RowIndex].Cells["Quantity"].Value.ToString();
+                    OrderDetailButtonClickEvent.clearTextBox(od);
+                    if (od.dataGridView1.Rows[ce.RowIndex].Cells["TOPPING_ID"].Value.ToString() == "")
+                    {
+                        od.cb_order.SelectedValue = od.dataGridView1.Rows[ce.RowIndex].Cells["ORDER_ID"].Value.ToString();
+                        od.cb_drink.SelectedValue = od.dataGridView1.Rows[ce.RowIndex].Cells["DRINK_ID"].Value.ToString();
+                        od.tb_quantity.Text = od.dataGridView1.Rows[ce.RowIndex].Cells["Quantity"].Value.ToString();
+                    }
+                    else
+                    {
+                        od.cb_order.SelectedValue = od.dataGridView1.Rows[ce.RowIndex].Cells["ORDER_ID"].Value.ToString();
+                        od.cb_drink.SelectedValue = od.dataGridView1.Rows[ce.RowIndex].Cells["DRINK_ID"].Value.ToString();
+                        od.cb_topping.SelectedValue = od.dataGridView1.Rows[ce.RowIndex].Cells["TOPPING_ID"].Value.ToString();
+                        od.tb_quantity.Text = od.dataGridView1.Rows[ce.RowIndex].Cells["Quantity"].Value.ToString();
+                    }
                 }
             }
             catch (Exception e1)

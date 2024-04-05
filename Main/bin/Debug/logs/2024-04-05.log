@@ -1,0 +1,86 @@
+[06:59:48] [INFO] : ---------------------------------------------------------------------------------------
+[06:59:48] [INFO] : Loading Main.Program
+[06:59:48] [Order/INFO] (Order) : Order Loading...
+[06:59:48] [onStartup/INFO] (OrderStartupEvent) : onStartup Loaded
+[06:59:48] [load/INFO] (OrderStartupEvent) : OrderStartupEvent Loaded
+[06:59:48] [Order_Load/INFO] (Order) : Order Loaded
+[06:59:49] [registerDataGridView/INFO] (OrderStartupEvent) : Successfully added items
+[06:59:49] [registerDataGridView/INFO] (OrderStartupEvent) : registerDataGridView Loaded
+[06:59:49] [registerItemsInComboBox/INFO] (OrderStartupEvent) : registerItemsInComboBox Loaded
+[06:59:50] [OrderDetail/INFO] (OrderDetail) : OrderDetail Loading...
+[06:59:50] [onStartup/INFO] (OrderDetailStartupEvent) : onStartup Loaded
+[06:59:50] [load/INFO] (OrderDetailStartupEvent) : OrderDetailStartupEvent Loaded
+[06:59:50] [OrderDetail_Load/INFO] (OrderDetail) : OrderDetail Loaded
+[06:59:50] [onChange/INFO] (ScreenChangeEvent) : Order -> OrderDetail
+[06:59:50] [registerDataGridView/INFO] (OrderDetailStartupEvent) : Successfully added items
+[06:59:50] [registerDataGridView/INFO] (OrderDetailStartupEvent) : registerDataGridView Loaded
+[06:59:52] [registerItemsInComboBox/INFO] (OrderDetailStartupEvent) : registerItemsInComboBox Loaded
+[07:00:53] [INFO] : ---------------------------------------------------------------------------------------
+[07:00:53] [INFO] : Loading Main.Program
+[07:00:53] [Order/INFO] (Order) : Order Loading...
+[07:00:54] [onStartup/INFO] (OrderStartupEvent) : onStartup Loaded
+[07:00:54] [load/INFO] (OrderStartupEvent) : OrderStartupEvent Loaded
+[07:00:54] [Order_Load/INFO] (Order) : Order Loaded
+[07:00:54] [registerDataGridView/INFO] (OrderStartupEvent) : Successfully added items
+[07:00:54] [registerDataGridView/INFO] (OrderStartupEvent) : registerDataGridView Loaded
+[07:00:55] [registerItemsInComboBox/INFO] (OrderStartupEvent) : registerItemsInComboBox Loaded
+[07:01:04] [OrderDetail/INFO] (OrderDetail) : OrderDetail Loading...
+[07:01:04] [onStartup/INFO] (OrderDetailStartupEvent) : onStartup Loaded
+[07:01:04] [load/INFO] (OrderDetailStartupEvent) : OrderDetailStartupEvent Loaded
+[07:01:04] [OrderDetail_Load/INFO] (OrderDetail) : OrderDetail Loaded
+[07:01:04] [onChange/INFO] (ScreenChangeEvent) : Order -> OrderDetail
+[07:01:05] [registerDataGridView/INFO] (OrderDetailStartupEvent) : Successfully added items
+[07:01:05] [registerDataGridView/INFO] (OrderDetailStartupEvent) : registerDataGridView Loaded
+[07:01:05] [MaterialofDrink/INFO] (MaterialofDrink) : MaterialofDrink Loading...
+[07:01:05] [onStartup/INFO] (MaterialofDrinkStartupEvent) : onStartup Loaded
+[07:01:05] [load/INFO] (MaterialofDrinkStartupEvent) : MaterialofDrinkStartupEvent Loaded
+[07:01:05] [MaterialofDrink_Load/INFO] (MaterialofDrink) : MaterialofDrink Loaded
+[07:01:05] [onChange/INFO] (ScreenChangeEvent) : OrderDetail -> MaterialofDrink
+[07:01:05] [registerItemsInComboBox/INFO] (OrderDetailStartupEvent) : registerItemsInComboBox Loaded
+[07:01:05] [registerItemsInComboBox/INFO] (MaterialofDrinkStartupEvent) : registerItemsInComboBox Loaded
+[07:01:05] [OrderDetail/INFO] (OrderDetail) : OrderDetail Loading...
+[07:01:05] [onStartup/INFO] (OrderDetailStartupEvent) : onStartup Loaded
+[07:01:05] [load/INFO] (OrderDetailStartupEvent) : OrderDetailStartupEvent Loaded
+[07:01:05] [OrderDetail_Load/INFO] (OrderDetail) : OrderDetail Loaded
+[07:01:05] [onChange/INFO] (ScreenChangeEvent) : MaterialofDrink -> OrderDetail
+[07:01:05] [registerDataGridView/INFO] (MaterialofDrinkStartupEvent) : Successfully added item
+[07:01:05] [registerDataGridView/INFO] (MaterialofDrinkStartupEvent) : registerDataGridViewLoaded
+[07:01:06] [registerDataGridView/INFO] (OrderDetailStartupEvent) : Successfully added items
+[07:01:06] [registerDataGridView/INFO] (OrderDetailStartupEvent) : registerDataGridView Loaded
+[07:01:06] [registerItemsInComboBox/INFO] (OrderDetailStartupEvent) : registerItemsInComboBox Loaded
+[07:02:04] [INFO] : ---------------------------------------------------------------------------------------
+[07:02:04] [INFO] : Loading Main.Program
+[07:02:04] [Order/INFO] (Order) : Order Loading...
+[07:02:05] [onStartup/INFO] (OrderStartupEvent) : onStartup Loaded
+[07:02:05] [load/INFO] (OrderStartupEvent) : OrderStartupEvent Loaded
+[07:02:05] [Order_Load/INFO] (Order) : Order Loaded
+[07:02:05] [OrderDetail/INFO] (OrderDetail) : OrderDetail Loading...
+[07:02:06] [onStartup/INFO] (OrderDetailStartupEvent) : onStartup Loaded
+[07:02:06] [load/INFO] (OrderDetailStartupEvent) : OrderDetailStartupEvent Loaded
+[07:02:06] [OrderDetail_Load/INFO] (OrderDetail) : OrderDetail Loaded
+[07:02:06] [onChange/INFO] (ScreenChangeEvent) : Order -> OrderDetail
+[07:02:06] [registerDataGridView/INFO] (OrderStartupEvent) : Successfully added items
+[07:02:06] [registerDataGridView/INFO] (OrderStartupEvent) : registerDataGridView Loaded
+[07:02:06] [registerItemsInComboBox/INFO] (OrderStartupEvent) : registerItemsInComboBox Loaded
+[07:02:06] [registerDataGridView/INFO] (OrderDetailStartupEvent) : Successfully added items
+[07:02:06] [registerDataGridView/INFO] (OrderDetailStartupEvent) : registerDataGridView Loaded
+[07:02:06] [registerItemsInComboBox/INFO] (OrderDetailStartupEvent) : registerItemsInComboBox Loaded
+[07:02:07] [onCellClick/ERROR] (OrderDetailStartupEvent/ArgumentOutOfRangeException) : Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+[07:02:08] [onCellClick/ERROR] (OrderDetailStartupEvent/ArgumentOutOfRangeException) : Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+[07:02:08] [clearTextBox/INFO] (OrderDetailButtonClickEvent) : Removed item(s) from components
+[07:02:09] [clearTextBox/INFO] (OrderDetailButtonClickEvent) : Removed item(s) from components
+[07:02:09] [clearTextBox/INFO] (OrderDetailButtonClickEvent) : Removed item(s) from components
+[07:02:10] [clearTextBox/INFO] (OrderDetailButtonClickEvent) : Removed item(s) from components
+[07:02:10] [clearTextBox/INFO] (OrderDetailButtonClickEvent) : Removed item(s) from components
+[07:02:11] [clearTextBox/INFO] (OrderDetailButtonClickEvent) : Removed item(s) from components
+[07:02:11] [clearTextBox/INFO] (OrderDetailButtonClickEvent) : Removed item(s) from components
+[07:02:12] [clearTextBox/INFO] (OrderDetailButtonClickEvent) : Removed item(s) from components
+[07:02:12] [clearTextBox/INFO] (OrderDetailButtonClickEvent) : Removed item(s) from components
+[07:02:13] [clearTextBox/INFO] (OrderDetailButtonClickEvent) : Removed item(s) from components
+[07:02:13] [clearTextBox/INFO] (OrderDetailButtonClickEvent) : Removed item(s) from components
+[07:02:13] [clearTextBox/INFO] (OrderDetailButtonClickEvent) : Removed item(s) from components
+[07:02:14] [clearTextBox/INFO] (OrderDetailButtonClickEvent) : Removed item(s) from components
+[07:02:14] [clearTextBox/INFO] (OrderDetailButtonClickEvent) : Removed item(s) from components
+[07:02:14] [clearTextBox/INFO] (OrderDetailButtonClickEvent) : Removed item(s) from components
